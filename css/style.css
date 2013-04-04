@@ -1227,12 +1227,12 @@
   */
   
   .verhalenbank #admin-bar { /*ADDED BY IWE*/
+    color: white;
     background-color: gray;
     position: fixed;
     opacity: 0.8;
     height: 27px;
     padding-top: 1px;
-    color: #cccccc;
     z-index:1;
   }
   
@@ -1326,12 +1326,16 @@
   }
   
   .verhalenbank #advanced-form {
-    background-color: #252525;
+    background-color: #bc5454;
     color: #cccccc;
     border-width: 0 1px 1px 1px;
     border-style: solid;
-    border-color: #313131;
+    border-color: #bc5454;
   }
+  .verhalenbank #advanced-form > p{
+    color: #cccccc;
+  }
+  
   
   .verhalenbank #home #content > div {
     border-color: #ab2929;
@@ -1645,10 +1649,16 @@
     width: 32.20339%;
     float: right;
     margin-right: 0;
-    #margin-left: -1em;
+    margin-left: 0;
     display: inline;
-    margin-top: 3.5em;
+    padding-top: 2.5em;
+    margin-bottom: 0;
   }
+  
+  #search-container a{
+    position: relative;
+  }
+
   #search-container input {
     padding: 0.46875em 8px;
   }
@@ -1701,6 +1711,10 @@
     *zoom: 1;
     padding-left: 14.70588%;
     padding-right: 14.70588%;
+/*    margin-left: 14.70588%;
+    margin-right: 14.70588%;
+    background-color: white;*/
+
   }
   header:after, nav.top:after, #content:after, footer:after {
     content: "";

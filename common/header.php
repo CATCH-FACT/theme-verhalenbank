@@ -40,6 +40,7 @@
             </div>
             <div id="search-container">
                 <?php echo search_form(array('show_advanced' => true)); ?>
+                <?php echo link_to_item_search(__('Advanced Search (Items only)')); ?>
             </div>
         </header>
 

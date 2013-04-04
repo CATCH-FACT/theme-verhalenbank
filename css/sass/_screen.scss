@@ -1164,492 +1164,7 @@ footer {
     @include trailer();
 }
 
-/* Winter Styles */
-.winter {
 
-    body {
-        background-color: $winter-footer-blue;
-        color: $winter-dark-gray;
-    }
-    
-    h1, #site-title a { color:#859ca2; }
-
-    input[type=submit], button { background-color: $winter-slate; }
-
-    input[type=text], input[type=password], textarea { background-color: $winter-light-gray; }
-
-    a {
-        &:link { color: $winter-bright-blue; }
-        &:visited { color: $winter-pale-blue; }
-        &:hover, &:active { color: $winter-hover-blue; }
-    }
-    
-    header { background-color: #fff; }
-    
-    nav.top { 
-        background-color: $winter-bright-blue; 
-        
-        li:hover a { color: #fff; }
-
-        a:link, a:visited  { color: $winter-blue-on-pale-blue; }
-        a:active, a:hover  { color: #fff; }
-        
-        ul li ul {
-            background-color: $winter-bright-blue;
-            li {
-                & > a:link, & > a:visited, & > a:active, & > a:hover { color:#fff; }
-            }
-        }
-    }
-
-    #intro { color: #fff; }
-    
-    #content,
-    #secondary-nav .current a,
-    #secondary-nav a.current,
-    .exhibit-section-nav .current a {
-        background-color: $winter-pale-blue;
-    }
-
-    #home #content > div { 
-        border-color: $winter-slate; 
-        *border-width: 10px 1px 1px 1px;
-        *border-style: solid;
-        *border-color: #e8e8e8;
-        *border-top-color: $winter-slate;
-    }
-
-    #content {
-        
-        h1 { color: #fff; }
-        
-        h2 { border-color: $winter-light-gray; }
-
-        div { border-color: $winter-title-blue; }
-        
-        & > div, #primary > div, #sidebar > div,
-        #advanced-search-form > div, #exhibit-pages { 
-            border-color: $winter-slate;
-            *border-width: 10px 1px 1px 1px;
-            *border-style: solid;
-            *border-color: #e8e8e8;
-            *border-top-color: $winter-slate; 
-        }
-        
-        .pagination_list { 
-            background-color: $winter-bright-blue; 
-            
-            a:link, a:visited { color: $winter-blue-on-pale-blue; }
-            a:hover, a:active { color: #fff; }
-        }
-        
-        .items-nav, #secondary-nav {
-            a:link, a:visited { color: $winter-blue-on-pale-blue; }
-            a:hover, a:active { color: #fff; }
-        }
-        
-        .item-img { border-color: $winter-light-gray; }
-        
-        div.hTagcloud {
-            border: 0;
-            background-color: transparent;
-            @include box-shadow(transparent 0 0 0);
-        }
-    }
-
-    #search-results th { background-color: $winter-slate; }
-
-    #search-filters, #item-filters {
-        li { background-color: $winter-blue-on-pale-blue; }
-    }
-
-    .page #content { 
-        border-color: $winter-slate; 
-        *border-width: 10px 1px 1px 1px;
-        *border-style: solid;
-        *border-color: #e8e8e8;
-        *border-top-color: $winter-slate;
-    }
-
-    footer {
-        background-color: $winter-footer-blue;
-    }
-
-    footer p {
-        color:#fff;
-    }
-    
-    .exhibit-page-nav { background-color: $summer-blue; }
-    
-    .exhibit-page-nav {
-        a:link, a:visited { color: $winter-blue-on-pale-blue; }
-        a:hover, a:active { color: #fff; }
-    }
-} 
-
-/*Spring Styles*/
-.spring {
-
-    body {
-        background-color: $spring-dark-green;
-        color: $spring-brown;
-    }
-    
-    h1, #site-title a { color: $spring-dark-green; }
-
-    input[type=submit], button, .button {  background-color: $spring-red; }
-
-    input[type=text], input[type=password], textarea { 
-        background-color: #fff; 
-        border: 1px solid #e8e8e8;
-    }
-
-    a {
-        &:link { color: $spring-link; }
-        &:visited { color: $spring-visited; }
-        &:hover, &:active { color: $spring-active; }
-    }
-
-    header { background-color: $spring-light-green; }
-    
-    nav.top { 
-        background-color: $spring-green; 
-
-        li:hover a { color: #fff; }
-        
-        a:link, a:visited  { color: $spring-light-green; }
-        a:active, a:hover  { color: $spring-white; }
-        
-        ul li ul {
-            background-color: $spring-green;
-            li {
-                & > a:link, & > a:visited { color: $spring-light-green; }
-                & > a:active, & > a:hover, &:hover > a { color:#fff; }
-            }
-        }
-    }
-    
-    #intro { color: $spring-link; }
-
-    #content,
-    #secondary-nav .current a,
-    #secondary-nav a.current,
-    .exhibit-section-nav .current a {
-        background-color: $spring-white;
-    }
-
-    #home #content > div { 
-        border-color: $spring-red; 
-        *border-width: 10px 1px 1px 1px;
-        *border-style: solid;
-        *border-color: #e8e8e8;
-        *border-top-color: $spring-red;
-    }
-
-    #content {
-        h1 { color: $spring-link; }
-        
-        h2 { border-color: #e8e8e8; }
-
-        & > div, #primary > div, #sidebar > div,
-        #advanced-search-form > div, #exhibit-pages { 
-            border-color: $spring-red; 
-            *border-width: 10px 1px 1px 1px;
-            *border-style: solid;
-            *border-color: #e8e8e8;
-            *border-top-color: $spring-red;
-        }
-
-        .pagination_list { 
-            background-color: $spring-red; 
-            
-            a:link, a:visited { color: $spring-yellow; }
-            a:hover, a:active { color: #fff; }
-        }
-        
-        .items-nav {
-            a:link, a:visited { color: $spring-green; }
-            a:active, a:hover { color: $spring-hover-green; }
-        }
-        
-        .item-img { border-color: #e8e8e8; }
-        
-        div.hTagcloud {
-            border: 0;
-            background-color: transparent;
-            @include box-shadow(transparent 0 0 0);
-        }
-    }
-
-    #search-results th { background-color: $spring-red; }
-
-    #search-filters, #item-filters {
-        li { background-color: $spring-yellow; }
-    }
-    
-    .page #content { 
-        border-color: $spring-red; 
-        *border-width: 10px 1px 1px 1px;
-        *border-style: solid;
-        *border-color: #e8e8e8;
-        *border-top-color: $spring-red;
-    }
-
-    footer {
-        background-color: $spring-dark-green;
-    }
-
-    footer p {
-        color:#000;
-    }
-    
-    .exhibit-page-nav { background-color: $spring-red; }
-    
-    .exhibit-page-nav {
-        a:link, a:visited { color: $spring-yellow; }
-        a:hover, a:active { color: #fff; }
-    }
-} 
-
-/*Summer Styles*/
-.summer {
-
-    body {
-        background-color: $summer-dark-blue;
-        color: $summer-gray;
-    }
-    
-    h1, #site-title a { color: $summer-title-blue; }
-
-    input[type=submit], button, .button { background-color: $summer-blue; }
-
-    input[type=text], input[type=password], textarea { background-color: $summer-light-blue; }
-
-    a {
-        &:link { color: $summer-link-red; }
-        &:visited { color: $summer-visited-red; }
-        &:hover, &:active { color: $summer-active-red; }
-    }
-
-    header { background-color: #fff; }
-    
-    nav.top { 
-        background-color: $summer-yellow; 
-
-        li:hover a { color: $summer-dark-blue; }
-        
-        a:link, a:visited  { color: $summer-title-blue; }
-        a:active, a:hover  { color: $summer-dark-blue; }
-        
-        ul li ul {
-            background-color: $summer-yellow;
-            li {
-                & > a:link, & > a:visited { color: $summer-title-blue; }
-                & > a:active, & > a:hover, &:hover > a { color: $summer-dark-blue; }
-            }
-        }
-    }
-    
-    #intro { color: $summer-link-red; }
-
-    #content,
-    #secondary-nav .current a,
-    #secondary-nav a.current,
-    .exhibit-section-nav .current a {
-        background-color: $summer-light-yellow;
-    }
-
-    #home #content > div { 
-        border-color: $summer-blue; 
-        *border-width: 10px 1px 1px 1px;
-        *border-style: solid;
-        *border-color: #e8e8e8;
-        *border-top-color: $summer-blue;
-    }
-    
-    #item h1 { color: $summer-link-red; }
-    
-    #content {
-
-        h1 { color: $summer-link-red; }
-        
-        h2 { border-color: $summer-light-red; }
-
-        & > div, #primary > div, #sidebar > div,
-        #advanced-search-form > div, #exhibit-pages { 
-            border-color: $summer-blue; 
-            *border-width: 10px 1px 1px 1px;
-            *border-style: solid;
-            *border-color: #e8e8e8;
-            *border-top-color: $summer-blue;
-        }
-        
-        .pagination_list { 
-            background-color: $summer-blue; 
-            
-            a:link, a:visited { color: $summer-yellow; }
-            a:hover, a:active { color: #fff; }
-        }
-        
-        .items-nav {
-            a:link, a:visited { color: $summer-link-red; }
-            a:active, a:hover { color: $summer-active-red; }
-        }
-        
-        .item-img { border-color: $summer-light-blue; }
-        
-        div.hTagcloud {
-            border: 0;
-            background-color: transparent;
-            @include box-shadow(transparent 0 0 0);
-        }
-    }
-
-    #search-results th { background-color: $summer-blue; }
-
-    #search-filters, #item-filters {
-        li { background-color: #fff; }
-    }
-    
-    .page #content { 
-        border-color: $summer-blue; 
-        *border-width: 10px 1px 1px 1px;
-        *border-style: solid;
-        *border-color: #e8e8e8;
-        *border-top-color: $summer-blue;
-    }
-
-    footer {
-        background-color: $summer-dark-blue;
-    }
-
-    footer p {
-        color:#fff;
-    }
-    
-    .exhibit-page-nav { background-color: $summer-blue; }
-    
-    .exhibit-page-nav {
-        a:link, a:visited { color: $summer-yellow; }
-        a:hover, a:active { color: #fff; }
-    }
-} 
-
-/*Autumn Styles*/
-.autumn {
-
-    body {
-        background-color: $autumn-dark-red;
-        color: $autumn-dark-red;
-    }
-    
-    h1, #site-title a { color: $autumn-beige; }
-
-    input[type=submit], button, .button { background-color: $autumn-dark-red; }
-
-    input[type=text], input[type=password], textarea { background-color: $autumn-beige; }
-
-    a {
-        &:link { color: $autumn-link; }
-        &:visited { color: $autumn-visited; }
-        &:hover, &:active { color: $autumn-active; }
-    }
-
-    header { background-color: $autumn-red; }
-    
-    nav.top { 
-        background-color: $autumn-dark-beige; 
-
-        li:hover a { color: #fff; }
-        
-        a:link, a:visited  { color: $autumn-nav-link; }
-        a:active, a:hover  { color: #fff; }
-        
-        ul li ul {
-            background-color: $autumn-dark-beige;
-            li {
-                & > a:link, & > a:visited { color: $autumn-nav-link; }
-                & > a:active, & > a:hover, &:hover > a { color:#fff; }
-            }
-        }
-    }
-    
-    #intro { color: $autumn-brown; }
-
-    #content,
-    #secondary-nav .current a,
-    #secondary-nav a.current,
-    .exhibit-section-nav .current a {
-        background-color: $autumn-beige;
-    }
-
-    #home #content > div { 
-        border-color: $autumn-dark-beige; 
-        *border-width: 10px 1px 1px 1px;
-        *border-style: solid;
-        *border-color: #e8e8e8;
-        *border-top-color: $autumn-dark-beige;
-    }
-
-    #content {
-        h1 { color: $autumn-brown; }
-        
-        h2 { border-color: $autumn-gray; }
-
-        & > div, #primary > div, #sidebar > div,
-        #advanced-search-form > div, #exhibit-pages { 
-            border-color: $autumn-dark-beige; 
-            *border-width: 10px 1px 1px 1px;
-            *border-style: solid;
-            *border-color: #e8e8e8;
-            *border-top-color: $autumn-dark-beige;
-        }
-        
-        .pagination_list { 
-            background-color: $autumn-dark-red; 
-            
-            a:link, a:visited { color: $autumn-dark-beige; }
-            a:hover, a:active { color: #fff; }
-        }
-
-        .item-img { border-color: $autumn-gray; }
-        
-        div.hTagcloud {
-            border: 0;
-            background-color: transparent;
-            @include box-shadow(transparent 0 0 0);
-        }
-    }
-
-    #search-results th { background-color: $autumn-dark-beige; }
-
-    #search-filters, #item-filters {
-        li { background-color: #fff; }
-    }
-    
-    .page #content { 
-        border-color: $autumn-dark-beige; 
-        *border-width: 10px 1px 1px 1px;
-        *border-style: solid;
-        *border-color: #e8e8e8;
-        *border-top-color: $autumn-dark-beige;
-    }
-
-    footer {
-        background-color: $autumn-dark-red;
-    }
-
-    footer p {
-        color:#fff;
-    }
-
-    .exhibit-page-nav { background-color: $autumn-dark-red; }
-    
-    .exhibit-page-nav {
-        a:link, a:visited { color: $autumn-dark-beige; }
-        a:hover, a:active { color: #fff; }
-    }
-} 
 
 /*Autumn Styles*/
 .night {
@@ -1800,3 +1315,186 @@ footer {
         a:hover, a:active { color: #fff; }
     }
 } 
+
+
+
+
+/* 
+######################################################################
+VERHALENBANK Styles
+######################################################################
+*/
+
+.verhalenbank {
+
+    #admin-bar { /*ADDED BY IWE*/
+        background-color: $verhalenbank_grey_admin_bar;
+        color: $verhalenbank_bg_white;
+        position: fixed;
+        opacity: 0.8;
+        height: 27px;
+        padding-top: 1px;
+        z-index:1;
+      }
+
+    body {
+        background: url("../images/background_maps_TEMP.jpg") fixed;
+        background-color: $verhalenbank_bg_white;
+        color: $verhalenbank_text_on_bg;
+    }
+    
+    h1 { color: $night-light; }
+    
+    #site-title { 
+        color: #555555;
+        a { 
+            font-family: Georgia, Times, "Times New Roman", serif;
+            line-height: 1.3;
+            margin-top: 0;
+            font-weight: normal;
+            margin-bottom: 0.3em;
+            padding-left: 16px;
+            color: $night-link; 
+        }
+    }
+            
+    input[type=submit], button, .button, #advanced-search { 
+        background-color: $verhalenbank_highlight; 
+        color: $verhalenbank_darker;
+    }
+
+    input[type=text], input[type=password], textarea { 
+        background-color: $night-darker; 
+        border: 1px solid $night-shadow;
+        color: $verhalenbank_text_on_bg;
+    }
+
+    a {
+        &:link { color: $verhalenbank_link; }
+        &:visited { color: $verhalenbank_visited; }
+        &:hover, &:active { color: $verhalenbank_active; }
+    }
+
+    header { background-color: $verhalenbank_bg_white; }
+    
+    nav.top { 
+        background-color: $verhalenbank_bg_red; 
+
+        li:hover a { color: $verhalenbank_shadow; }
+        
+        a:link, a:visited  { color: $verhalenbank_visited_nav; }
+        a:active, a:hover  {  }
+        
+        ul li ul {
+            background-color: $verhalenbank_bg_red;
+            li {
+                & > a:link, & > a:visited { color: $verhalenbank_link; }
+                & > a:active, & > a:hover, &:hover > a { color: $verhalenbank_active; }
+            }
+        }
+    }
+    
+    #intro { 
+        color: $verhalenbank_bg_white; 
+        padding: 2px 4px 2px 6px;
+    }
+
+    #content,
+    #secondary-nav .current a,
+    #secondary-nav a.current,
+    .exhibit-section-nav .current a {
+//        background-color: $night-content;
+    }
+    
+    #advanced-form {
+        background-color: $night-darker;
+        color: $night-text-on-darker;
+        border-width: 0 1px 1px 1px;
+        border-style: solid;
+        border-color: $night-shadow;
+    }
+
+    #home #content > div { 
+        border-color: $night-highlight; 
+        *border-width: 10px 1px 1px 1px;
+        *border-style: solid;
+        *border-color: #e8e8e8;
+        *border-top-color: $night-highlight;
+    }
+    
+    #home #content > div img, .item #itemfiles a,
+    #home #content .item, #home #content div .view-items-link,
+    .collections #content div .view-items-link { 
+        border-color: $night-shadow; 
+    }
+
+    #content {
+        h1 { color: $night-light; }
+        
+        h2 { border-color: $night-shadow; }
+
+        & > div, #primary > div, #sidebar > div,
+        #advanced-search-form > div, #exhibit-pages { 
+            border-color: $night-highlight; 
+            *border-width: 10px 1px 1px 1px;
+            *border-style: solid;
+            *border-color: #e8e8e8;
+            *border-top-color: $night-highlight;
+            background-color: $night-darker;
+        }
+        
+        .pagination_list { 
+            background-color: $night-darker; 
+            
+            a:link, a:visited { color: $night-highlight; }
+            a:hover, a:active { color: #fff; }
+        }
+
+        .item-img { border-color: $night-shadow; }
+        
+        div.hTagcloud {
+            border: 0;
+            background-color: transparent;
+            @include box-shadow(transparent 0 0 0);
+        }
+        
+        #primary > div, #sidebar > div,
+        .item-pagination li { background-color: $night-darker; }
+    }
+    
+    #search-results th { 
+        background-color: $night-highlight; 
+        color: $night-light;
+    }
+    
+    #search-results td { background-color: $night-darker; }
+
+    #search-filters, #item-filters {
+        li { background-color: $night-highlight; }
+    }
+    
+    .page #content { 
+        border-color: $night-highlight; 
+        *border-width: 10px 1px 1px 1px;
+        *border-style: solid;
+        *border-color: #e8e8e8;
+        *border-top-color: $night-highlight;
+    }
+    
+    .page #content #primary { background-color: $night-darker; }
+
+    footer {
+        background-color: transparent;
+    }
+
+    footer p {
+        color: $verhalenbank_text_on_bg;
+    }
+
+    .exhibit-page-nav { background-color: $night-darker; }
+    
+    .exhibit-page-nav {
+        a:link, a:visited { color: $night-darkest; }
+        a:hover, a:active { color: #fff; }
+    }
+}
