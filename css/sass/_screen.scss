@@ -9,10 +9,15 @@
 
 /* == Generic == */
 body {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 300;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+    font-weight: $base_font_weight;
     font-size: $base-font-size;
     line-height: $base-line-height;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
     word-wrap: break-word;
     height: 100%;
 }
@@ -123,7 +128,6 @@ fieldset {
             .previous { float: left; }
         }
         
-        
 /* == Header == */
 
 header { 
@@ -132,7 +136,7 @@ header {
 }
 
 #site-title {
-    font-size: 2 * $base-font-size;
+    font-size: 2.5 * $base-font-size;
     line-height: 2 * $base-line-height;
     font-weight: 300;
     text-align: center;
@@ -253,7 +257,7 @@ footer {
     #content {
         clear:both;
         overflow:visible;
-        padding: rhythm(1) 16px;
+        padding: rhythm(0.25) 16px;
     }
     
     /* -- General -- */
@@ -348,7 +352,8 @@ footer {
         
         li {
             display:block;
-            
+            font-family: Georgia, Times, "Times New Roman", serif;
+            font-style: italic;
             ul li {
                 padding-left: 16px;
             }
@@ -434,7 +439,7 @@ footer {
     & > * > div {
         background-color: #fff;
         border-style: solid;
-        border-width: 10px 0 0 0;
+        border-width: 10px 3px 3px 3px;
         overflow: visible;
         padding: 0 0 rhythm(1) 0;
         @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
@@ -559,12 +564,16 @@ footer {
         @include trailer(.25);
     }
 
-    & > h2, & > div > h2, #primary > h2, #primary > div > h2,
-    #sidebar > h2, #sidebar > div > h2 {
-        padding: 0 16px rhythm(.25);
-        font-weight: 500;
+    & > h2, 
+    & > div > h2, 
+    #primary > h2, 
+    #primary > div > h2,
+    #sidebar > h2, 
+    #sidebar > div > h2 {
+//        padding: 0 9px rhythm(.1);
+        font-weight: 300;
         border-style: solid;
-        border-width: 0 0 5px 0;
+        border-width: 0 0 0 0;
         @include leader(0);
         @include trailer(.5);
     }
@@ -580,7 +589,8 @@ footer {
     & > div, section {
         background-color: #fff;
         border-style: solid;
-        border-width: 10px 0 0 0;
+//        border-width: 0 0 0 0 ;
+        border-width: 3px 3px 3px 3px;
         overflow: visible;
         @include padding-leader(.5);
         @include padding-trailer(.5);
@@ -650,6 +660,7 @@ footer {
 
     
     .element-set {
+        border-width: 0 0 0 0;
         div {
             @include padding-trailer(.5);
             margin-bottom: 0;
@@ -692,15 +703,23 @@ footer {
         }
     }
 
-    #primary > div, #sidebar > div {
+    #primary > div, 
+    #sidebar > div {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+//        font-family: Georgia, Times, "Times New Roman", serif;
+        font-size: 16px;
         background-color: #fff;
         border-style: solid;
-        border-width: 10px 0 0 0;
+        border-width: 3px 3px 3px 3px;
         @include boxsizing(border-box);
-        @include padding-leader(.5);
+//        @include padding-leader(.5);
         @include padding-trailer(.5);
         @include trailer(.75);
         @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+        
+        & > div{
+            border-width: 0 0 0 0;
+        }
         
         & > *:first-child { @include leader(0); }
         
@@ -769,7 +788,9 @@ footer {
         
     }
     
-    #sidebar h3 { padding: 0 16px; }
+    #sidebar h3 { 
+//        padding: 0 16px; 
+    }
 
 
     #search-filters, #item-filters {
@@ -850,7 +871,7 @@ footer {
     }
     
     #sort-links {
-        border-top: 0;
+        padding-top: 4px;
         padding: rhythm(.25) 12px;
         *border: 1px solid #e8e8e8;
         @include leader(.25);
@@ -862,6 +883,7 @@ footer {
             display: inline;
         }
     }
+    
 }
 
 .collections {
@@ -886,8 +908,8 @@ footer {
 
     #collection-items {
         > div {
-        border-top: 1px solid $winter-light-gray;
-
+//        border-top: 1px solid $winter-light-gray;
+        
             &:first-of-type {
                 border-top: 0;
             }
@@ -899,7 +921,7 @@ footer {
     }
     
     #content .view-items-link {
-        border-top: 1px solid $winter-light-gray;
+//        border-top: 1px solid $winter-light-gray;
         padding: rhythm(.5) 16px 0;
         margin: rhythm(1) 0 0 0;
     }
@@ -983,14 +1005,14 @@ footer {
         #exhibit-pages {
             background-color: #fff;
             border-style: solid;
-            border-width: 10px 0 0 0;
+            border-width: 3px 3px 3px 3px;
             overflow: visible;
             @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
             @include padding-leader();
             @include padding-trailer();
             
             ul { 
-                margin-left: 0; 
+                margin-left: 6px; 
                 ul { padding-left: 0; }
             }
         }
@@ -1118,7 +1140,7 @@ footer {
 .page #content #primary {
     background-color: #fff;
     border-style: solid;
-    border-width: 10px 0 0 0;
+    border-width: 10px 3px 3px 3px;
     overflow: visible;
     @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
     @include boxsizing(border-box);
@@ -1166,7 +1188,7 @@ footer {
 
 
 
-/*Autumn Styles*/
+/*Night Styles*/
 .night {
 
     body {
@@ -1226,14 +1248,14 @@ footer {
     #advanced-form {
         background-color: $night-darker;
         color: $night-text-on-darker;
-        border-width: 0 1px 1px 1px;
+        border-width: 3px 3px 3px 3px;
         border-style: solid;
         border-color: $night-shadow;
     }
 
     #home #content > div { 
         border-color: $night-highlight; 
-        *border-width: 10px 1px 1px 1px;
+        *border-width: 3px 3px 3px 3px;
         *border-style: solid;
         *border-color: #e8e8e8;
         *border-top-color: $night-highlight;
@@ -1250,10 +1272,13 @@ footer {
         
         h2 { border-color: $night-shadow; }
 
-        & > div, #primary > div, #sidebar > div,
-        #advanced-search-form > div, #exhibit-pages { 
+        & > div, 
+        #primary > div,
+        #sidebar > div,
+        #advanced-search-form > div, 
+        #exhibit-pages { 
             border-color: $night-highlight; 
-            *border-width: 10px 1px 1px 1px;
+            *border-width: 10px 3px 3px 3px;
             *border-style: solid;
             *border-color: #e8e8e8;
             *border-top-color: $night-highlight;
@@ -1343,10 +1368,9 @@ VERHALENBANK Styles
         color: $verhalenbank_text_on_bg;
     }
     
-    h1 { color: $night-light; }
+    h1 { color: $verhalenbank_h_colors; }
     
     #site-title { 
-        color: #555555;
         a { 
             font-family: Georgia, Times, "Times New Roman", serif;
             line-height: 1.3;
@@ -1354,25 +1378,28 @@ VERHALENBANK Styles
             font-weight: normal;
             margin-bottom: 0.3em;
             padding-left: 16px;
-            color: $night-link; 
+            color: $verhalenbank_super_h_colors; 
         }
     }
             
     input[type=submit], button, .button, #advanced-search { 
-        background-color: $verhalenbank_highlight; 
+        background-color: $verhalenbank_grey_buttons;
         color: $verhalenbank_darker;
     }
 
     input[type=text], input[type=password], textarea { 
-        background-color: $night-darker; 
-        border: 1px solid $night-shadow;
+        background-color: $verhalenbank_hyperlight;
+        border: 2px solid $verhalenbank_shadow;
         color: $verhalenbank_text_on_bg;
     }
 
     a {
         &:link { color: $verhalenbank_link; }
         &:visited { color: $verhalenbank_visited; }
-        &:hover, &:active { color: $verhalenbank_active; }
+        &:hover, &:active { 
+            color: $verhalenbank_active; 
+            text-decoration: underline;
+        }
     }
 
     header { background-color: $verhalenbank_bg_white; }
@@ -1380,16 +1407,21 @@ VERHALENBANK Styles
     nav.top { 
         background-color: $verhalenbank_bg_red; 
 
-        li:hover a { color: $verhalenbank_shadow; }
+        li:hover a { color: $verhalenbank_bg_white; }
         
-        a:link, a:visited  { color: $verhalenbank_visited_nav; }
-        a:active, a:hover  {  }
+        a:link, a:visited  { color: $verhalenbank_nav_visited; }
+        a:active, a:hover  { 
+            color: $verhalenbank_bg_white;
+            text-decoration: underline; }
         
         ul li ul {
             background-color: $verhalenbank_bg_red;
             li {
                 & > a:link, & > a:visited { color: $verhalenbank_link; }
-                & > a:active, & > a:hover, &:hover > a { color: $verhalenbank_active; }
+                & > a:active, & > a:hover, &:hover > a {
+                    color: $verhalenbank_bg_white; 
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -1399,58 +1431,118 @@ VERHALENBANK Styles
         padding: 2px 4px 2px 6px;
     }
 
-    #content,
+    #content{
+        background-color: $verhalenbank_bg_white;
+    }
+
+    div{
+        h1, h2, h3, h4{
+            color: $verhalenbank_h_colors;
+            font-family: Georgia, Times, "Times New Roman", serif;
+            font-size: 1.3em;
+        }
+    }
+    
     #secondary-nav .current a,
     #secondary-nav a.current,
     .exhibit-section-nav .current a {
-//        background-color: $night-content;
     }
-    
+
     #advanced-form {
-        background-color: $night-darker;
-        color: $night-text-on-darker;
-        border-width: 0 1px 1px 1px;
+        background-color: $verhalenbank_bg_red;
+        color: $verhalenbank_cccccc;
+        border-width: 3px 3px 3px 3px;
         border-style: solid;
-        border-color: $night-shadow;
+        border-color: $verhalenbank_bg_red;
     }
 
     #home #content > div { 
-        border-color: $night-highlight; 
-        *border-width: 10px 1px 1px 1px;
+        border-color: $verhalenbank_border_colors; 
+//        border-width: 3px 3px 3px 3px;
         *border-style: solid;
         *border-color: #e8e8e8;
-        *border-top-color: $night-highlight;
+        *border-top-color: $verhalenbank_border_colors;
     }
     
-    #home #content > div img, .item #itemfiles a,
-    #home #content .item, #home #content div .view-items-link,
+    #home #content > div img, 
+    #home #content .item, 
+    #home #content div .view-items-link,
+    .item #itemfiles a,
     .collections #content div .view-items-link { 
-        border-color: $night-shadow; 
+        border-color: $verhalenbank_border_colors; 
     }
 
     #content {
-        h1 { color: $night-light; }
         
-        h2 { border-color: $night-shadow; }
-
-        & > div, #primary > div, #sidebar > div,
-        #advanced-search-form > div, #exhibit-pages { 
-            border-color: $night-highlight; 
-            *border-width: 10px 1px 1px 1px;
-            *border-style: solid;
-            *border-color: #e8e8e8;
-            *border-top-color: $night-highlight;
-            background-color: $night-darker;
+        h1 { 
+            color: $verhalenbank_super_h_colors; 
+            background-color: white;
         }
         
-        .pagination_list { 
-            background-color: $night-darker; 
+        h2 { 
+            color: $verhalenbank_super_h_colors;
+            padding-left: 9px;
+        }
+
+        & h2 > a:link, & h2 > a:visited { 
+            color: $verhalenbank_bg_white; 
+        }
+        & h2 > a:hover, & h2 > a:active { 
+            color: $verhalenbank_superlight; 
+            background-color: $verhalenbank_active;
+            text-decoration: underline;
+        }
+
+        & > h2, 
+        & > div > h2, 
+        #primary > h2,  
+        #primary > div > h2,
+        #sidebar > h2, 
+        #sidebar > div > h2 {
+            color: $verhalenbank_bg_white;
+            background-color: $verhalenbank_shadow;
+        }
             
-            a:link, a:visited { color: $night-highlight; }
-            a:hover, a:active { color: #fff; }
+        & > div,
+        #sidebar > div,
+        #advanced-search-form > div, 
+        #exhibit-pages { 
+            padding-top: 0;
+            border-color: $verhalenbank_border_colors; 
+            border-width: 3px 3px 3px 3px;
+            border-style: solid;
+            *border-top-color: $verhalenbank_border_top_colors;
+            background-color: $verhalenbank_bg_white;
         }
 
-        .item-img { border-color: $night-shadow; }
+        #primary > div{ /*ADDED BY IWE: */
+            border-width: 0 0 0 0;
+            box-shadow: 0 0 0;
+        }
+        
+        .toggler {
+            border: 0;
+            padding: 0;
+            margin: 0;
+            border-width: 0 0 0 0;
+            border-color: green;
+        }
+        
+        .pagination {
+            border-width: 3px 3px 3px 3px;
+            background-color: $verhalenbank_bg_white; 
+            
+            a:link, a:visited { 
+                color: $verhalenbank_link; 
+            }
+            a:hover, a:active { 
+                color: $verhalenbank_superlight; 
+                background-color: $verhalenbank_active;
+                text-decoration: underline;
+            }
+        }
+
+        .item-img { border-color: $verhalenbank_border_colors; }
         
         div.hTagcloud {
             border: 0;
@@ -1459,29 +1551,29 @@ VERHALENBANK Styles
         }
         
         #primary > div, #sidebar > div,
-        .item-pagination li { background-color: $night-darker; }
+        .item-pagination li { background-color: $verhalenbank_bg_white; }
     }
     
     #search-results th { 
-        background-color: $night-highlight; 
-        color: $night-light;
+        background-color: $verhalenbank_border_colors; 
+        color: $verhalenbank_bg_white;
     }
     
-    #search-results td { background-color: $night-darker; }
+    #search-results td { background-color: $verhalenbank_bg_white; }
 
     #search-filters, #item-filters {
-        li { background-color: $night-highlight; }
+        li { background-color: $verhalenbank_superlight; }
     }
     
     .page #content { 
-        border-color: $night-highlight; 
-        *border-width: 10px 1px 1px 1px;
+        border-color: $verhalenbank_border_colors; 
+        *border-width: 0 3px 3px 3px;
         *border-style: solid;
         *border-color: #e8e8e8;
-        *border-top-color: $night-highlight;
+        *border-top-color: $verhalenbank_border_top_colors;
     }
     
-    .page #content #primary { background-color: $night-darker; }
+    .page #content #primary { background-color: $verhalenbank_bg_white; }
 
     footer {
         background-color: transparent;
@@ -1491,10 +1583,13 @@ VERHALENBANK Styles
         color: $verhalenbank_text_on_bg;
     }
 
-    .exhibit-page-nav { background-color: $night-darker; }
+    .exhibit-page-nav { background-color: $verhalenbank_bg_white; }
     
     .exhibit-page-nav {
-        a:link, a:visited { color: $night-darkest; }
-        a:hover, a:active { color: #fff; }
+        a:link, a:visited { color: $verhalenbank_link; }
+        a:hover, a:active {
+            color: $verhalenbank_active;
+            text-decoration: underline;
+        }
     }
 }

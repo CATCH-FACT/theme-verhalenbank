@@ -24,6 +24,9 @@
 
 <aside id="sidebar">
 
+    <!-- To add divs under the collection div. -->
+    <?php fire_plugin_hook('public_items_show_sidebar_ultimate_top', array('view' => $this, 'item' => $item)); ?>
+
     <!-- If the item belongs to a collection, the following creates a link to that collection. -->
     <?php if (metadata('item', 'Collection Name')): ?>
     <div id="collection" class="element">

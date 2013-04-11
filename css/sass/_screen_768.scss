@@ -1,5 +1,6 @@
 header {
     @include pie-clearfix;
+    @include leader(1);
 }
 
 #site-title {
@@ -16,8 +17,8 @@ header {
 }
 
 #search-container {
-    @include span-columns(4 omega,12);
-    @include leader(1.25);
+    @include span-columns(3 alpha,12);
+    @include leader(1.5);
     input { padding: rhythm(.3125) 8px; }
 }
 
@@ -66,8 +67,10 @@ nav.top {
 
 header, nav.top, #content, footer {
     @include pie-clearfix;
-    @include prefix(1);
-    @include suffix(1);
+    @include pre(1);
+    @include post(1);
+/*    @include prefix(1);
+    @include suffix(1);*/
 }
 
 #content .pagination_list {
@@ -84,7 +87,7 @@ header, nav.top, #content, footer {
                 font-size: 1.5 * $base-font-size;
                 line-height: 1.5 * $base-line-height;
                 @include box-shadow(transparent 0 0 0);
-                @include trailer(.75);
+                @include trailer(.5);
                 
                 p { margin: 0; }
             }
