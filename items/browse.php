@@ -38,9 +38,17 @@ $sortLinks[__('Identifier')] = 'Dublin Core,Identifier';
 
     <?php if ($subgenre = metadata('item', array('Item Type Metadata', 'Subgenre'))): ?>
     <div class="item-description">
-        <h4 ><?php echo $subgenre; ?></h4>
+        <h4 style = "display:inline;"><?php echo $subgenre; ?></h4>
+        
+        <?php if ($date = metadata('item', array('Dublin Core', 'Date'))): ?>
+        <div style = "display:inline-block; float:right;" class="item-date">
+            <?php echo $date; ?>
+        </div>
+        <?php endif; ?>
+        
     </div>
     <?php endif; ?>
+
 
     <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
     <div class="item-description">

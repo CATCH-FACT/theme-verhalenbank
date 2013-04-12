@@ -170,7 +170,7 @@
   }
 
   #search-container {
-    padding-bottom: 1.71429em;
+    padding-bottom: 0.34286em;
   }
   #search-container:after {
     content: "";
@@ -178,6 +178,10 @@
     height: 0;
     width: 100px;
     clear: both;
+  }
+  #search-container > div {
+    margin: 12px;
+    position: relative;
   }
 
   #search-form {
@@ -608,9 +612,9 @@
     overflow: visible;
     padding-top: 0.85714em;
     padding-bottom: 0.85714em;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    -webkit-box-shadow: gray 2px 2px 6px;
+    -moz-box-shadow: gray 2px 2px 6px;
+    box-shadow: gray 2px 2px 6px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -729,9 +733,9 @@
     *behavior: url("../javascripts/boxsizing.htc");
     padding-bottom: 0.85714em;
     margin-bottom: 1.28571em;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
+    -webkit-box-shadow: gray 2px 2px 6px;
+    -moz-box-shadow: gray 2px 2px 6px;
+    box-shadow: gray 2px 2px 6px;
   }
   #content #primary > div > div,
   #content #sidebar > div > div {
@@ -771,7 +775,7 @@
   #content .pagination_list li {
     display: inline-block;
     width: auto;
-    color: #fff;
+    color: #000;
     margin: 0 4px;
     zoom: 1;
     *display: inline;
@@ -780,7 +784,7 @@
     padding: 0;
   }
   #content .pagination_list .pagination_current {
-    font-weight: 500;
+    font-weight: 700;
   }
   #content .pagination_list .pagination_first a, #content .pagination_list .pagination_last a,
   #content .pagination_list .pagination_previous a, #content .pagination_list .pagination_next a {
@@ -819,6 +823,7 @@
     content: ">";
   }
   #content #search-filters, #content #item-filters {
+    float: left;
     border: 0;
     background-color: transparent;
     -webkit-box-shadow: transparent 0 0 0;
@@ -956,10 +961,10 @@
     color: #fff;
   }
   .search #search-results th, .search #search-results td {
-    padding: 0.85714em 8px;
+    padding: 0.42857em 4px;
   }
   .search #search-results th:last-of-type, .search #search-results td:last-of-type {
-    border-right: 0;
+    border-right: 1;
   }
 
   /* == Exhibit Pages == */
@@ -1410,8 +1415,8 @@
     color: #252525;
   }
   .verhalenbank input[type=text], .verhalenbank input[type=password], .verhalenbank textarea {
-    background-color: #dbb6b6;
-    border: 2px solid #ab2929;
+    background-color: #e8e8e8;
+    border: 1px solid #ab2929;
     color: #272727;
   }
   .verhalenbank a:link {
@@ -1451,8 +1456,9 @@
     text-decoration: underline;
   }
   .verhalenbank #intro {
-    color: #fffffe;
-    padding: 2px 4px 2px 6px;
+    color: black;
+    padding-top: 40px;
+    padding: 12px 12px 12px 12px;
   }
   .verhalenbank #content {
     background-color: #fffffe;
@@ -1691,12 +1697,12 @@
   }
 
   #home #content #intro {
-    border-top: 0;
+    border-top: 20px;
     background-color: transparent;
-    padding: 0;
+    padding: 20px;
     margin: 0;
-    font-size: 21px;
-    line-height: 36px;
+    font-size: 16.8px;
+    line-height: 33.6px;
     -webkit-box-shadow: transparent 0 0 0;
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;

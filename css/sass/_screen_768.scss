@@ -80,12 +80,12 @@ header, nav.top, #content, footer {
 #home {
     #content {
         #intro {
-                border-top: 0;
+                border-top: 20px;
                 background-color: transparent;
-                padding: 0;
+                padding: 20px;
                 margin: 0;
-                font-size: 1.5 * $base-font-size;
-                line-height: 1.5 * $base-line-height;
+                font-size: 1.2 * $base-font-size;
+                line-height: 1.4 * $base-line-height;
                 @include box-shadow(transparent 0 0 0);
                 @include trailer(.5);
                 

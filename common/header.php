@@ -40,7 +40,7 @@
             </div>
             <div id="search-container">
                 <?php echo search_form(array('show_advanced' => true)); ?>
-                <br><br>
+                <br>
                 <div class="advanced-search-link"><?php echo link_to_item_search(__('Advanced Search')); ?></div><!-- ADDED BY IWE-->
             </div>
         </header>

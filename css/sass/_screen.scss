@@ -146,7 +146,7 @@ header {
 }
 
 #search-container {
-    @include padding-trailer();
+    @include padding-trailer(0.2);
     
     &:after {
         content: "";
@@ -155,6 +155,12 @@ header {
         width: 100px;
         clear: both;
     }
+    
+    > div{
+        margin: 12px;
+        position: relative;
+    }
+    
 }
 
 #search-form{
@@ -594,7 +600,8 @@ footer {
         overflow: visible;
         @include padding-leader(.5);
         @include padding-trailer(.5);
-        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+        @include box-shadow(gray 2px 2px 6px);
+//        @include box-shadow(rgba(0,0,0,.15) 0 0 10px); //Original shadow
         @include boxsizing(border-box);
         @include trailer(.75);
 
@@ -715,7 +722,8 @@ footer {
 //        @include padding-leader(.5);
         @include padding-trailer(.5);
         @include trailer(.75);
-        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+//        @include box-shadow(rgba(0,0,0,.15) 0 0 10px);
+        @include box-shadow(gray 2px 2px 6px);
         
         & > div{
             border-width: 0 0 0 0;
@@ -751,7 +759,7 @@ footer {
         li { 
             display:inline-block;
             width: auto;
-            color: #fff;
+            color: #000;
             margin: 0 4px;
             zoom: 1;
             *display: inline;
@@ -759,7 +767,7 @@ footer {
         
         a { padding: 0; }
         
-        .pagination_current { font-weight: 500; }
+        .pagination_current { font-weight: 700; }
         
         .pagination_first, .pagination_last,
         .pagination_previous, .pagination_next {
@@ -794,6 +802,7 @@ footer {
 
 
     #search-filters, #item-filters {
+        float: left;
         border: 0;
         background-color: transparent;
         @include box-shadow(transparent 0 0 0);
@@ -938,8 +947,8 @@ footer {
         }
         
         th, td {
-            padding: rhythm(.5) 8px;
-            &:last-of-type { border-right: 0; }
+            padding: rhythm(.25) 4px;
+            &:last-of-type { border-right: 1; }
         }
         
     }
@@ -1389,7 +1398,7 @@ VERHALENBANK Styles
 
     input[type=text], input[type=password], textarea { 
         background-color: $verhalenbank_hyperlight;
-        border: 2px solid $verhalenbank_shadow;
+        border: 1px solid $verhalenbank_shadow;
         color: $verhalenbank_text_on_bg;
     }
 
@@ -1427,8 +1436,9 @@ VERHALENBANK Styles
     }
     
     #intro { 
-        color: $verhalenbank_bg_white; 
-        padding: 2px 4px 2px 6px;
+        color: $verhalenbank_blackness; 
+        padding-top: 40px;
+        padding: 12px 12px 12px 12px;
     }
 
     #content{
