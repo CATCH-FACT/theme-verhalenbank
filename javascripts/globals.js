@@ -19,7 +19,21 @@ Modernizr.addTest("boxsizing", function() {
             advancedForm.click(function (event) {
                 event.stopPropagation();
             });
-            $("#advanced-search").click(function (event) {
+            $("#query").focus(
+                function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                advancedForm.fadeIn();
+                $(document).click(function (event) {
+                    if (event.target.id == 'query') {
+                        return;
+                    }
+                    advancedForm.fadeOut();
+                    $(this).unbind(event);
+                });
+            });            
+            $("#advanced-search").click(
+                function (event) {
                 event.preventDefault();
                 event.stopPropagation();
                 advancedForm.fadeToggle();

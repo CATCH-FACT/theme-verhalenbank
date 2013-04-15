@@ -198,14 +198,20 @@ header {
     background-color: #4b6569;
     @include has-layout-zoom();
     @include boxsizing(content-box);
-    *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '+');
+    *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\\/');
     *text-indent: 0;
 
+    &:hover {
+        text-decoration: underline;
+        
+    }
     
-    &:link, &:hover, &:active, &:visited { color: #fff; }
-
+    &:link, &:active, &:visited { color: #fff; }
+    
+    
+    
     &:after {
-        content: "+";
+        content: "\\/";
         display: block;
         text-indent: 0;
         text-align: center;

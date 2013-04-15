@@ -220,14 +220,17 @@
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     *behavior: url("../javascripts/boxsizing.htc");
-    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '+');
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '\\/');
     *text-indent: 0;
   }
-  #advanced-search:link, #advanced-search:hover, #advanced-search:active, #advanced-search:visited {
+  #advanced-search:hover {
+    text-decoration: underline;
+  }
+  #advanced-search:link, #advanced-search:active, #advanced-search:visited {
     color: #fff;
   }
   #advanced-search:after {
-    content: "+";
+    content: "\\/";
     display: block;
     text-indent: 0;
     text-align: center;
