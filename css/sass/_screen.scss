@@ -60,7 +60,7 @@ p, ol, ul {
 
 ul { 
     list-style-type: disc; 
-    padding-left: 1em;
+    padding-left: 0em;
 }
 
 /* -- Form Elements -- */
@@ -72,7 +72,8 @@ label {
 }
 
 input[type=text], input[type=password], textarea,
-input[type=submit], button, .button {
+input[type=submit], input[type=button], button, .button {
+    display: inline;
     height: 35px;
     border: 0;
     padding: rhythm(.3125) 16px;
@@ -169,6 +170,7 @@ header {
     overflow: visible;
 
     input[type=text] {
+        display: inline;
         width: 60%;
         @include adjust-font-size-to(14px);
         float: left;
@@ -228,7 +230,7 @@ header {
     position: absolute;
     top: 35px;
     left: 0;
-    border: 1px solid #e7e7e7;
+    border: 3px solid #e7e7e7;
     width: 100%;
     padding: rhythm(1) 16px;
     text-align: left;
@@ -745,7 +747,7 @@ footer {
         & > ul, & ol {
             margin-left: 16px;
             margin-right: 16px;
-            padding-left: 1em;
+            padding-left: 0;
         }
     }
     
@@ -1175,7 +1177,7 @@ footer {
     
     & > * { padding: 0; }
     
-    & > ul, & > ol { padding-left: 1em; }
+    & > ul, & > ol { padding-left: 0em; }
 }
 
 .simple-pages-navigation {
@@ -1403,6 +1405,7 @@ VERHALENBANK Styles
     }
 
     input[type=text], input[type=password], textarea { 
+        display: inline;
         background-color: $verhalenbank_hyperlight;
         border: 1px solid $verhalenbank_shadow;
         color: $verhalenbank_text_on_bg;
@@ -1469,7 +1472,10 @@ VERHALENBANK Styles
         color: $verhalenbank_cccccc;
         border-width: 3px 3px 3px 3px;
         border-style: solid;
-        border-color: $verhalenbank_bg_red;
+        border-color: $verhalenbank_shadow;
+        a{
+            color: white;
+        }
     }
 
     #home #content > div { 

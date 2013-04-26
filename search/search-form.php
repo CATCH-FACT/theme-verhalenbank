@@ -3,7 +3,7 @@
     <?php if ($options['show_advanced']): ?>
     <fieldset id="advanced-form">
         <fieldset id="query-types">
-            <p><?php echo __('Search using this query type:'); ?></p>
+            <p><?php echo __('Zoektype:'); ?> <a href="<?php print url("/zoekhulp"); ?>" target="help">(zoekhulp)</a></p>
             <?php echo $this->formRadio('query_type', $filters['query_type'], null, $query_types); ?>
         </fieldset>
         <?php if ($record_types): ?>

@@ -76,7 +76,7 @@
 
   ul {
     list-style-type: disc;
-    padding-left: 1em;
+    padding-left: 0em;
   }
 
   /* -- Form Elements -- */
@@ -87,7 +87,8 @@
   }
 
   input[type=text], input[type=password], textarea,
-  input[type=submit], button, .button {
+  input[type=submit], input[type=button], button, .button {
+    display: inline;
     height: 35px;
     border: 0;
     padding: 0.53571em 16px;
@@ -190,6 +191,7 @@
     overflow: visible;
   }
   #search-form input[type=text] {
+    display: inline;
     width: 60%;
     font-size: 1em;
     line-height: 1.71429em;
@@ -246,7 +248,7 @@
     position: absolute;
     top: 35px;
     left: 0;
-    border: 1px solid #e7e7e7;
+    border: 3px solid #e7e7e7;
     width: 100%;
     padding: 1.71429em 16px;
     text-align: left;
@@ -758,7 +760,7 @@
   #content #sidebar > div ol {
     margin-left: 16px;
     margin-right: 16px;
-    padding-left: 1em;
+    padding-left: 0;
   }
   #content .pagination {
     display: inline;
@@ -1198,7 +1200,7 @@
     padding: 0;
   }
   .page #content #primary > ul, .page #content #primary > ol {
-    padding-left: 1em;
+    padding-left: 0em;
   }
 
   .simple-pages-navigation {
@@ -1418,6 +1420,7 @@
     color: #252525;
   }
   .verhalenbank input[type=text], .verhalenbank input[type=password], .verhalenbank textarea {
+    display: inline;
     background-color: #e8e8e8;
     border: 1px solid #ab2929;
     color: #272727;
@@ -1476,7 +1479,10 @@
     color: #cccccc;
     border-width: 3px 3px 3px 3px;
     border-style: solid;
-    border-color: #bc5454;
+    border-color: #ab2929;
+  }
+  .verhalenbank #advanced-form a {
+    color: white;
   }
   .verhalenbank #home #content > div {
     border-color: #ab2929;
