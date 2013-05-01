@@ -1438,6 +1438,9 @@
   .verhalenbank header {
     background-color: #fffffe;
   }
+  .verhalenbank nav .navigation_current {
+    background-color: #e8e8e8;
+  }
   .verhalenbank nav.top {
     background-color: #bc5454;
   }

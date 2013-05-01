@@ -1421,7 +1421,12 @@ VERHALENBANK Styles
     }
 
     header { background-color: $verhalenbank_bg_white; }
-    
+
+    nav{
+        .navigation_current{
+            background-color: $verhalenbank_hyperlight;
+        }
+    }
     nav.top { 
         background-color: $verhalenbank_bg_red; 
 
