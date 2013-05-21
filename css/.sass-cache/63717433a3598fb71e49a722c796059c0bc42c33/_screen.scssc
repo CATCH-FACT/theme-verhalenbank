@@ -1,7 +1,7 @@
 3.2.3 (Media Mark)
-be7603a5c101c9da807b3f1cae7757b65e8a9557
+47d3b2ba4ad708c66725245fab1d0108c88a9e36
 o:Sass::Tree::RootNode
-:@template"Dñ/* -------------------------------------------------------------------------*/
+:@template"(â/* -------------------------------------------------------------------------*/
 /* Layout */
 
 .container {
@@ -203,7 +203,7 @@ header {
     background-color: #4b6569;
     @include has-layout-zoom();
     @include boxsizing(content-box);
-    *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '\\/');
+    *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '+');
     *text-indent: 0;
 
     &:hover {
@@ -216,7 +216,7 @@ header {
     
     
     &:after {
-        content: "\\/";
+        content: "+";
         display: block;
         text-indent: 0;
         text-align: center;
@@ -1207,163 +1207,6 @@ footer {
 }
 
 
-
-/*Night Styles*/
-.night {
-
-    body {
-        background-color: $night-darkest;
-        color: $night-text-on-darker;
-    }
-    
-    h1 { color: $night-light; }
-    
-    #site-title a { color: $night-link; }
-
-    input[type=submit], button, .button, #advanced-search { 
-        background-color: $night-highlight; 
-        color: $night-darker;
-    }
-
-    input[type=text], input[type=password], textarea { 
-        background-color: $night-darker; 
-        border: 1px solid $night-shadow;
-        color: $night-text-on-darker;
-    }
-
-    a {
-        &:link { color: $night-link; }
-        &:visited { color: $night-visited; }
-        &:hover, &:active { color: $night-active; }
-    }
-
-    header { background-color: $night-darkest; }
-    
-    nav.top { 
-        background-color: $night-light; 
-
-        li:hover a { color: $night-shadow; }
-        
-        a:link, a:visited  { color: $night-visited-nav; }
-        a:active, a:hover  {  }
-        
-        ul li ul {
-            background-color: $night-highlight;
-            li {
-                & > a:link, & > a:visited { color: $night-link; }
-                & > a:active, & > a:hover, &:hover > a { color: $night-active; }
-            }
-        }
-    }
-    
-    #intro { color: $night-light; }
-
-    #content,
-    #secondary-nav .current a,
-    #secondary-nav a.current,
-    .exhibit-section-nav .current a {
-        background-color: $night-content;
-    }
-    
-    #advanced-form {
-        background-color: $night-darker;
-        color: $night-text-on-darker;
-        border-width: 3px 3px 3px 3px;
-        border-style: solid;
-        border-color: $night-shadow;
-    }
-
-    #home #content > div { 
-        border-color: $night-highlight; 
-        *border-width: 3px 3px 3px 3px;
-        *border-style: solid;
-        *border-color: #e8e8e8;
-        *border-top-color: $night-highlight;
-    }
-    
-    #home #content > div img, .item #itemfiles a,
-    #home #content .item, #home #content div .view-items-link,
-    .collections #content div .view-items-link { 
-        border-color: $night-shadow; 
-    }
-
-    #content {
-        h1 { color: $night-light; }
-        
-        h2 { border-color: $night-shadow; }
-
-        & > div, 
-        #primary > div,
-        #sidebar > div,
-        #advanced-search-form > div, 
-        #exhibit-pages { 
-            border-color: $night-highlight; 
-            *border-width: 10px 3px 3px 3px;
-            *border-style: solid;
-            *border-color: #e8e8e8;
-            *border-top-color: $night-highlight;
-            background-color: $night-darker;
-        }
-        
-        .pagination_list { 
-            background-color: $night-darker; 
-            
-            a:link, a:visited { color: $night-highlight; }
-            a:hover, a:active { color: #fff; }
-        }
-
-        .item-img { border-color: $night-shadow; }
-        
-        div.hTagcloud {
-            border: 0;
-            background-color: transparent;
-            @include box-shadow(transparent 0 0 0);
-        }
-        
-        #primary > div, #sidebar > div,
-        .item-pagination li { background-color: $night-darker; }
-    }
-    
-    #search-results th { 
-        background-color: $night-highlight; 
-        color: $night-light;
-    }
-    
-    #search-results td { background-color: $night-darker; }
-
-    #search-filters, #item-filters {
-        li { background-color: $night-highlight; }
-    }
-    
-    .page #content { 
-        border-color: $night-highlight; 
-        *border-width: 10px 1px 1px 1px;
-        *border-style: solid;
-        *border-color: #e8e8e8;
-        *border-top-color: $night-highlight;
-    }
-    
-    .page #content #primary { background-color: $night-darker; }
-
-    footer {
-        background-color: transparent;
-    }
-
-    footer p {
-        color: $night-text-on-darker;
-    }
-
-    .exhibit-page-nav { background-color: $night-darker; }
-    
-    .exhibit-page-nav {
-        a:link, a:visited { color: $night-darkest; }
-        a:hover, a:active { color: #fff; }
-    }
-} 
-
-
-
-
 /* 
 ######################################################################
 VERHALENBANK Styles
@@ -1536,6 +1379,7 @@ VERHALENBANK Styles
         & > div,
         #sidebar > div,
         #advanced-search-form > div, 
+
         #exhibit-pages { 
             padding-top: 0;
             border-color: $verhalenbank_border_colors; 
@@ -1589,7 +1433,32 @@ VERHALENBANK Styles
         color: $verhalenbank_bg_white;
     }
     
-    #search-results td { background-color: $verhalenbank_bg_white; }
+    #search-results{
+        
+        tr {
+            background-color: $verhalenbank_bg_white; 
+        }
+        .Volksverhaal{
+            background-color: $verhalenbank_volksverhaal_color;
+            font-weight: bold; 
+        }
+        .Volksverhaaltype{
+            background-color: $verhalenbank_volksverhaaltype_color; 
+        }
+        .File{
+            background-color: $verhalenbank_file_color; 
+        }
+        .Text{
+            background-color: $verhalenbank_textedition_color; 
+        }
+        .Lexicon{
+            background-color: $verhalenbank_lexicon_color; 
+        }
+        .Persoon{
+            background-color: $verhalenbank_persoon_color; 
+        }
+           
+    }
 
     #search-filters, #item-filters {
         li { background-color: $verhalenbank_superlight; }
@@ -1622,7 +1491,7 @@ VERHALENBANK Styles
             text-decoration: underline;
         }
     }
-}:@has_childrenT:@options{ :@children[Jo:Sass::Tree::CommentNode
+}:@has_childrenT:@options{ :@children[Ho:Sass::Tree::CommentNode
 :
 @type:normal;@;	[ :@value["S/* -------------------------------------------------------------------------*/:
 @lineio;
@@ -1754,7 +1623,7 @@ input;" ;i¥;*0o;<;,"=;["	type;["submit;@|;=0;i¥;*0;o;; { ;!0;
 ;[o;>;["search-form;" ;iß;o;; { ;!0;@ê;iß;@ê;iß;ißo;;T;@;i ;	[o;";["
 width;@;i ;	[ ;#;$;o;%;;&;@;"10%;iæo;";["height;@;i ;	[ ;#;$;o;%;;&;@;"	35px;iøo;";["text-indent;@;i ;	[ ;#;$;o;0;1["px;@;2"-9999px;i˛Òÿ;3[ ;i¿;i¿o;";["display;@;i ;	[ ;#;$;o;%;;&;@;"
 block;i¡o;";["position;@;i ;	[ ;#;$;o;%;;&;@;"absolute;i¬o;";["padding;@;i ;	[ ;#;$;o;%;;&;@;"0;i√o;";["top;@;i ;	[ ;#;$;o;%;;&;@;"0;iƒo;";["	left;@;i ;	[ ;#;$;o;%;;&;@;"90%;i≈o;";["font-weight;@;i ;	[ ;#;$;o;%;;&;@;"	bold;i∆o;";["line-height;@;i ;	[ ;#;$;o;%;;&;@;"	30px;i«o;";["background-color;@;i ;	[ ;#;$;o;%;;&;@;"#4b6569;i»o;;"has-layout-zoom;@;	[ ;0;i…;{ ;[ o;;"boxsizing;@;	[ ;0;i ;{ ;[o;%	;;&;@;"content-box;i o;";["
-*zoom;@;i ;	[ ;#;$;o;%	;;&;@;"Hexpression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '\\/');iÀ;iÀo;";["*text-indent;@;i ;	[ ;#;$;o;%;;&;@;"0;iÃo;;T;@;i ;	[o;";["text-decoration;@;i ;	[ ;#;$;o;%;;&;@;"underline;iœ;["&:hover;o;;[o;;[o;
+*zoom;@;i ;	[ ;#;$;o;%	;;&;@;"Fexpression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '+');iÀ;iÀo;";["*text-indent;@;i ;	[ ;#;$;o;%;;&;@;"0;iÃo;;T;@;i ;	[o;";["text-decoration;@;i ;	[ ;#;$;o;%;;&;@;"underline;iœ;["&:hover;o;;[o;;[o;
 ;[o;4;" ;iŒo;5
 ;["
 hover;;6;@;iŒ;70;o;; { ;!0;@;iŒ;@;iŒ;iŒo;;T;@;i ;	[o;";["
@@ -1765,8 +1634,7 @@ color;@;i ;	[ ;#;$;o;%;;&;@;"	#fff;i”;[" &:link, &:active, &:visite
 ;["active;;6;@;i”;70;o;; { ;!0;@;i”o;;[o;
 ;[o;4;@;i”o;5
 ;["visited;;6;@;i”;70;o;; { ;!0;@;i”;@;i”;i”o;;T;@;i ;	[
-o;";["content;@;i ;	[ ;#;$;o;%;;&;@;"
-"\\/";iÿo;";["display;@;i ;	[ ;#;$;o;%;;&;@;"
+o;";["content;@;i ;	[ ;#;$;o;%;;&;@;""+";iÿo;";["display;@;i ;	[ ;#;$;o;%;;&;@;"
 block;iŸo;";["text-indent;@;i ;	[ ;#;$;o;%;;&;@;"0;i⁄o;";["text-align;@;i ;	[ ;#;$;o;%;;&;@;"center;i€o;";["margin-top;@;i ;	[ ;#;$;o;0;1["em;@;2"-1.75em;f
 -1.75;3[ ;i‹;i‹;["&:after;o;;[o;;[o;
 ;[o;4;" ;i◊o;5
@@ -2407,500 +2275,295 @@ block;i¨o;";["font-weight;@;i ;	[ ;#;$;o;%;;&;@;"	bold;i≠o;"
 ;[o;)	;["a;@≈';i©;*0;o;; { ;!0;@≈';i©;@≈';i©;i©o;;T;@;i ;	[o;";["font-weight;@;i ;	[ ;#;$;o;%;;&;@;"	bold;i≤o;;"trailer;@;	[ ;0;i≥;{ ;[ ;["#simple-pages-breadcrumbs;o;;[o;;[o;
 ;[o;>;["simple-pages-breadcrumbs;" ;i±;o;; { ;!0;@Á';i±;@Á';i±;i±o;
 
-;;;@;	[ ;["/*Night Styles*/;i∏o;;T;@;i ;	[o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"night-darkest;@;("night_darkest;iº;iºo;";["
-color;@;i ;	[ ;#;$;o;'	;"night-text-on-darker;@;("night_text_on_darker;iΩ;iΩ;["	body;o;;[o;;[o;
-;[o;)	;["	body;" ;iª;*0;o;; { ;!0;@(;iª;@(;iª;iªo;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-light;@;("night_light;i¿;i¿;["h1;o;;[o;;[o;
-;[o;)	;["h1;" ;i¿;*0;o;; { ;!0;@"(;i¿;@"(;i¿;i¿o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-link;@;("night_link;i¬;i¬;["#site-title a;o;;[o;;[o;
-;[o;>;["site-title;" ;i¬;o;; { ;!0;@9(;i¬o;
-;[o;)	;["a;@9(;i¬;*0;o;; { ;!0;@9(;i¬;@9(;i¬;i¬o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"night-highlight;@;("night_highlight;i≈;i≈o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-darker;@;("night_darker;i∆;i∆;[":input[type=submit], button, .button, #advanced-search;o;;[	o;;[o;
-;[o;)	;["
-input;" ;iƒ;*0o;<;,"=;["	type;["submit;@^(;=0;iƒ;*0;o;; { ;!0;@^(;iƒo;;[o;
-;[o;)	;["button;@^(;iƒ;*0;o;; { ;!0;@^(;iƒo;;[o;
-;[o;;["button;@^(;iƒ;o;; { ;!0;@^(;iƒo;;[o;
-;[o;>;["advanced-search;@^(;iƒ;o;; { ;!0;@^(;iƒ;@^(;iƒ;iƒo;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"night-darker;@;("night_darker;i ;i o;";["border;@;i ;	[ ;#;$;o;8	;@;9;:;[o;0;1["px;@;2"1px;i;3[ ;iÀo;%	;;&;@;"
-solid;iÀo;'	;"night-shadow;@;("night_shadow;iÀ;iÀ;iÀo;";["
-color;@;i ;	[ ;#;$;o;'	;"night-text-on-darker;@;("night_text_on_darker;iÃ;iÃ;["5input[type=text], input[type=password], textarea;o;;[o;;[o;
-;[o;)	;["
-input;" ;i…;*0o;<;,"=;["	type;["	text;@≠(;=0;i…;*0;o;; { ;!0;@≠(;i…o;;[o;
-;[o;)	;["
-input;@≠(;i…;*0o;<;,"=;["	type;["password;@≠(;=0;i…;*0;o;; { ;!0;@≠(;i…o;;[o;
-;[o;)	;["textarea;@≠(;i…;*0;o;; { ;!0;@≠(;i…;@≠(;i…;i…o;;T;@;i ;	[o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-link;@;("night_link;i–;i–;["&:link;o;;[o;;[o;
-;[o;4;" ;i–o;5
-;["	link;;6;@‚(;i–;70;o;; { ;!0;@‚(;i–;@‚(;i–;i–o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-visited;@;("night_visited;i—;i—;["&:visited;o;;[o;;[o;
-;[o;4;" ;i—o;5
-;["visited;;6;@˙(;i—;70;o;; { ;!0;@˙(;i—;@˙(;i—;i—o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-active;@;("night_active;i“;i“;["&:hover, &:active;o;;[o;;[o;
-;[o;4;" ;i“o;5
-;["
-hover;;6;@);i“;70;o;; { ;!0;@);i“o;;[o;
-;[o;4;@);i“o;5
-;["active;;6;@);i“;70;o;; { ;!0;@);i“;@);i“;i“;["a;o;;[o;;[o;
-;[o;)	;["a;" ;iœ;*0;o;; { ;!0;@-);iœ;@-);iœ;iœo;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"night-darkest;@;("night_darkest;i’;i’;["header;o;;[o;;[o;
-;[o;)	;["header;" ;i’;*0;o;; { ;!0;@D);i’;@D);i’;i’o;;T;@;i ;	[
-o;";["background-color;@;i ;	[ ;#;$;o;'	;"night-light;@;("night_light;iÿ;iÿo;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-shadow;@;("night_shadow;i⁄;i⁄;["li:hover a;o;;[o;;[o;
-;[o;)	;["li;" ;i⁄;*0o;5
-;["
-hover;;6;@d);i⁄;70;o;; { ;!0;@d);i⁄o;
-;[o;)	;["a;@d);i⁄;*0;o;; { ;!0;@d);i⁄;@d);i⁄;i⁄o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-visited-nav;@;("night_visited_nav;i‹;i‹;["a:link, a:visited;o;;[o;;[o;
-;[o;)	;["a;" ;i‹;*0o;5
-;["	link;;6;@Ö);i‹;70;o;; { ;!0;@Ö);i‹o;;[o;
-;[o;)	;["a;@Ö);i‹;*0o;5
-;["visited;;6;@Ö);i‹;70;o;; { ;!0;@Ö);i‹;@Ö);i‹;i‹o;;T;@;i ;	[ ;["a:active, a:hover;o;;[o;;[o;
-;[o;)	;["a;" ;i›;*0o;5
-;["active;;6;@§);i›;70;o;; { ;!0;@§);i›o;;[o;
-;[o;)	;["a;@§);i›;*0o;5
-;["
-hover;;6;@§);i›;70;o;; { ;!0;@§);i›;@§);i›;i›o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"night-highlight;@;("night_highlight;i‡;i‡o;;T;@;i ;	[o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-link;@;("night_link;i‚;i‚;["& > a:link, & > a:visited;o;;[o;;[o;
-;[o;4;" ;i‚;o;; { ;!0;@”);i‚">o;
-;[o;)	;["a;@”);i‚;*0o;5
-;["	link;;6;@”);i‚;70;o;; { ;!0;@”);i‚o;;[o;
-;[o;4;@”);i‚;o;; { ;!0;@”);i‚">o;
-;[o;)	;["a;@”);i‚;*0o;5
-;["visited;;6;@”);i‚;70;o;; { ;!0;@”);i‚;@”);i‚;i‚o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-active;@;("night_active;i„;i„;["+& > a:active, & > a:hover, &:hover > a;o;;[o;;[o;
-;[o;4;" ;i„;o;; { ;!0;@*;i„">o;
-;[o;)	;["a;@*;i„;*0o;5
-;["active;;6;@*;i„;70;o;; { ;!0;@*;i„o;;[o;
-;[o;4;@*;i„;o;; { ;!0;@*;i„">o;
-;[o;)	;["a;@*;i„;*0o;5
-;["
-hover;;6;@*;i„;70;o;; { ;!0;@*;i„o;;[o;
-;[o;4;@*;i„o;5
-;["
-hover;;6;@*;i„;70;o;; { ;!0;@*;i„">o;
-;[o;)	;["a;@*;i„;*0;o;; { ;!0;@*;i„;@*;i„;i„;["li;o;;[o;;[o;
-;[o;)	;["li;" ;i·;*0;o;; { ;!0;@B*;i·;@B*;i·;i·;["ul li ul;o;;[o;;[o;
-;[o;)	;["ul;" ;iﬂ;*0;o;; { ;!0;@P*;iﬂo;
-;[o;)	;["li;@P*;iﬂ;*0;o;; { ;!0;@P*;iﬂo;
-;[o;)	;["ul;@P*;iﬂ;*0;o;; { ;!0;@P*;iﬂ;@P*;iﬂ;iﬂ;["nav.top;o;;[o;;[o;
-;[o;)	;["nav;" ;i◊;*0o;;["top;@l*;i◊;o;; { ;!0;@l*;i◊;@l*;i◊;i◊o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-light;@;("night_light;iË;iË;["#intro;o;;[o;;[o;
-;[o;>;["
-intro;" ;iË;o;; { ;!0;@Ü*;iË;@Ü*;iË;iËo;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"night-content;@;("night_content;iÓ;iÓ;["o#content,
-    #secondary-nav .current a,
-    #secondary-nav a.current,
-    .exhibit-section-nav .current a;o;;[	o;;[o;
-;[o;>;["content;" ;iÌ;o;; { ;!0;@ù*;iÌo;;[	"
-o;
-;[o;>;["secondary-nav;@ù*;iÌ;o;; { ;!0;@ù*;iÌo;
-;[o;;["current;@ù*;iÌ;o;; { ;!0;@ù*;iÌo;
-;[o;)	;["a;@ù*;iÌ;*0;o;; { ;!0;@ù*;iÌo;;["
-o;
-;[o;>;["secondary-nav;@ù*;iÌ;o;; { ;!0;@ù*;iÌo;
-;[o;)	;["a;@ù*;iÌ;*0o;;["current;@ù*;iÌ;o;; { ;!0;@ù*;iÌo;;[	"
-o;
-;[o;;["exhibit-section-nav;@ù*;iÌ;o;; { ;!0;@ù*;iÌo;
-;[o;;["current;@ù*;iÌ;o;; { ;!0;@ù*;iÌo;
-;[o;)	;["a;@ù*;iÌ;*0;o;; { ;!0;@ù*;iÌ;@ù*;iÌ;iÌo;;T;@;i ;	[
-o;";["background-color;@;i ;	[ ;#;$;o;'	;"night-darker;@;("night_darker;iÚ;iÚo;";["
-color;@;i ;	[ ;#;$;o;'	;"night-text-on-darker;@;("night_text_on_darker;iÛ;iÛo;";["border-width;@;i ;	[ ;#;$;o;%;;&;@;"3px 3px 3px 3px;iÙo;";["border-style;@;i ;	[ ;#;$;o;%;;&;@;"
-solid;iıo;";["border-color;@;i ;	[ ;#;$;o;'	;"night-shadow;@;("night_shadow;iˆ;iˆ;["#advanced-form;o;;[o;;[o;
-;[o;>;["advanced-form;" ;iÒ;o;; { ;!0;@+;iÒ;@+;iÒ;iÒo;;T;@;i ;	[
-o;";["border-color;@;i ;	[ ;#;$;o;'	;"night-highlight;@;("night_highlight;i˙;i˙o;";["*border-width;@;i ;	[ ;#;$;o;%;;&;@;"3px 3px 3px 3px;i˚o;";["*border-style;@;i ;	[ ;#;$;o;%;;&;@;"
-solid;i¸o;";["*border-color;@;i ;	[ ;#;$;o;%;;&;@;"#e8e8e8;i˝o;";["*border-top-color;@;i ;	[ ;#;$;o;'	;"night-highlight;@;("night_highlight;i˛;i˛;["#home #content > div;o;;[o;;[	o;
-;[o;>;["	home;" ;i˘;o;; { ;!0;@B+;i˘o;
-;[o;>;["content;@B+;i˘;o;; { ;!0;@B+;i˘">o;
-;[o;)	;["div;@B+;i˘;*0;o;; { ;!0;@B+;i˘;@B+;i˘;i˘o;;T;@;i ;	[o;";["border-color;@;i ;	[ ;#;$;o;'	;"night-shadow;@;("night_shadow;i;i;["õ#home #content > div img, .item #itemfiles a,
-    #home #content .item, #home #content div .view-items-link,
-    .collections #content div .view-items-link;o;;[
-o;;[
-o;
-;[o;>;["	home;" ;i;o;; { ;!0;@h+;io;
-;[o;>;["content;@h+;i;o;; { ;!0;@h+;i">o;
-;[o;)	;["div;@h+;i;*0;o;; { ;!0;@h+;io;
-;[o;)	;["img;@h+;i;*0;o;; { ;!0;@h+;io;;[o;
-;[o;;["	item;@h+;i;o;; { ;!0;@h+;io;
-;[o;>;["itemfiles;@h+;i;o;; { ;!0;@h+;io;
-;[o;)	;["a;@h+;i;*0;o;; { ;!0;@h+;io;;[	"
-o;
-;[o;>;["	home;@h+;i;o;; { ;!0;@h+;io;
-;[o;>;["content;@h+;i;o;; { ;!0;@h+;io;
-;[o;;["	item;@h+;i;o;; { ;!0;@h+;io;;[	o;
-;[o;>;["	home;@h+;i;o;; { ;!0;@h+;io;
-;[o;>;["content;@h+;i;o;; { ;!0;@h+;io;
-;[o;)	;["div;@h+;i;*0;o;; { ;!0;@h+;io;
-;[o;;["view-items-link;@h+;i;o;; { ;!0;@h+;io;;[
-"
-o;
-;[o;;["collections;@h+;i;o;; { ;!0;@h+;io;
-;[o;>;["content;@h+;i;o;; { ;!0;@h+;io;
-;[o;)	;["div;@h+;i;*0;o;; { ;!0;@h+;io;
-;[o;;["view-items-link;@h+;i;o;; { ;!0;@h+;i;@h+;i;io;;T;@;i ;	[o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-light;@;("night_light;i;i;["h1;o;;[o;;[o;
-;[o;)	;["h1;" ;i;*0;o;; { ;!0;@,;i;@,;i;io;;T;@;i ;	[o;";["border-color;@;i ;	[ ;#;$;o;'	;"night-shadow;@;("night_shadow;i
-;i
-;["h2;o;;[o;;[o;
-;[o;)	;["h2;" ;i
-;*0;o;; { ;!0;@,;i
-;@,;i
-;i
-o;;T;@;i ;	[o;";["border-color;@;i ;	[ ;#;$;o;'	;"night-highlight;@;("night_highlight;i;io;";["*border-width;@;i ;	[ ;#;$;o;%;;&;@;"10px 3px 3px 3px;io;";["*border-style;@;i ;	[ ;#;$;o;%;;&;@;"
-solid;io;";["*border-color;@;i ;	[ ;#;$;o;%;;&;@;"#e8e8e8;io;";["*border-top-color;@;i ;	[ ;#;$;o;'	;"night-highlight;@;("night_highlight;i;io;";["background-color;@;i ;	[ ;#;$;o;'	;"night-darker;@;("night_darker;i;i;["{& > div, 
-        #primary > div,
-        #sidebar > div,
-        #advanced-search-form > div, 
-        #exhibit-pages;o;;[
-o;;[o;
-;[o;4;" ;i;o;; { ;!0;@O,;i">o;
-;[o;)	;["div;@O,;i;*0;o;; { ;!0;@O,;io;;[	"
-o;
-;[o;>;["primary;@O,;i;o;; { ;!0;@O,;i">o;
-;[o;)	;["div;@O,;i;*0;o;; { ;!0;@O,;io;;[	"
-o;
-;[o;>;["sidebar;@O,;i;o;; { ;!0;@O,;i">o;
-;[o;)	;["div;@O,;i;*0;o;; { ;!0;@O,;io;;[	"
-o;
-;[o;>;["advanced-search-form;@O,;i;o;; { ;!0;@O,;i">o;
-;[o;)	;["div;@O,;i;*0;o;; { ;!0;@O,;io;;["
-o;
-;[o;>;["exhibit-pages;@O,;i;o;; { ;!0;@O,;i;@O,;i;io;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"night-darker;@;("night_darker;i;io;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-highlight;@;("night_highlight;i;i;["a:link, a:visited;o;;[o;;[o;
-;[o;)	;["a;" ;i;*0o;5
-;["	link;;6;@∑,;i;70;o;; { ;!0;@∑,;io;;[o;
-;[o;)	;["a;@∑,;i;*0o;5
-;["visited;;6;@∑,;i;70;o;; { ;!0;@∑,;i;@∑,;i;io;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;%;;&;@;"	#fff;i;["a:hover, a:active;o;;[o;;[o;
-;[o;)	;["a;" ;i;*0o;5
-;["
-hover;;6;@‹,;i;70;o;; { ;!0;@‹,;io;;[o;
-;[o;)	;["a;@‹,;i;*0o;5
-;["active;;6;@‹,;i;70;o;; { ;!0;@‹,;i;@‹,;i;i;[".pagination_list;o;;[o;;[o;
-;[o;;["pagination_list;" ;i;o;; { ;!0;@˘,;i;@˘,;i;io;;T;@;i ;	[o;";["border-color;@;i ;	[ ;#;$;o;'	;"night-shadow;@;("night_shadow;i ;i ;[".item-img;o;;[o;;[o;
-;[o;;["item-img;" ;i ;o;; { ;!0;@-;i ;@-;i ;i o;;T;@;i ;	[o;";["border;@;i ;	[ ;#;$;o;%;;&;@;"0;i#o;";["background-color;@;i ;	[ ;#;$;o;%;;&;@;"transparent;i$o;;"box-shadow;@;	[ ;0;i%;{ ;[o;8	;@;9;:;[	o;%	;;&;@;"transparent;i%o;0;1[ ;@;2"0;i ;3@•;i%o;0;1[ ;@;2"0;i ;3@•;i%o;0;1[ ;@;2"0;i ;3@•;i%;i%;["div.hTagcloud;o;;[o;;[o;
-;[o;)	;["div;" ;i";*0o;;["hTagcloud;@>-;i";o;; { ;!0;@>-;i";@>-;i";i"o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"night-darker;@;("night_darker;i);i);["@#primary > div, #sidebar > div,
-        .item-pagination li;o;;[o;;[o;
-;[o;>;["primary;" ;i);o;; { ;!0;@X-;i)">o;
-;[o;)	;["div;@X-;i);*0;o;; { ;!0;@X-;i)o;;[o;
-;[o;>;["sidebar;@X-;i);o;; { ;!0;@X-;i)">o;
-;[o;)	;["div;@X-;i);*0;o;; { ;!0;@X-;i)o;;["
-o;
-;[o;;["item-pagination;@X-;i);o;; { ;!0;@X-;i)o;
-;[o;)	;["li;@X-;i);*0;o;; { ;!0;@X-;i);@X-;i);i);["#content;o;;[o;;[o;
-;[o;>;["content;" ;i;o;; { ;!0;@ê-;i;@ê-;i;io;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"night-highlight;@;("night_highlight;i-;i-o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-light;@;("night_light;i.;i.;["#search-results th;o;;[o;;[o;
-;[o;>;["search-results;" ;i,;o;; { ;!0;@Æ-;i,o;
-;[o;)	;["th;@Æ-;i,;*0;o;; { ;!0;@Æ-;i,;@Æ-;i,;i,o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"night-darker;@;("night_darker;i1;i1;["#search-results td;o;;[o;;[o;
-;[o;>;["search-results;" ;i1;o;; { ;!0;@Ã-;i1o;
-;[o;)	;["td;@Ã-;i1;*0;o;; { ;!0;@Ã-;i1;@Ã-;i1;i1o;;T;@;i ;	[o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"night-highlight;@;("night_highlight;i4;i4;["li;o;;[o;;[o;
-;[o;)	;["li;" ;i4;*0;o;; { ;!0;@Ï-;i4;@Ï-;i4;i4;["##search-filters, #item-filters;o;;[o;;[o;
-;[o;>;["search-filters;" ;i3;o;; { ;!0;@˙-;i3o;;[o;
-;[o;>;["item-filters;@˙-;i3;o;; { ;!0;@˙-;i3;@˙-;i3;i3o;;T;@;i ;	[
-o;";["border-color;@;i ;	[ ;#;$;o;'	;"night-highlight;@;("night_highlight;i8;i8o;";["*border-width;@;i ;	[ ;#;$;o;%;;&;@;"10px 1px 1px 1px;i9o;";["*border-style;@;i ;	[ ;#;$;o;%;;&;@;"
-solid;i:o;";["*border-color;@;i ;	[ ;#;$;o;%;;&;@;"#e8e8e8;i;o;";["*border-top-color;@;i ;	[ ;#;$;o;'	;"night-highlight;@;("night_highlight;i<;i<;[".page #content;o;;[o;;[o;
-;[o;;["	page;" ;i7;o;; { ;!0;@3.;i7o;
-;[o;>;["content;@3.;i7;o;; { ;!0;@3.;i7;@3.;i7;i7o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"night-darker;@;("night_darker;i?;i?;[".page #content #primary;o;;[o;;[o;
-;[o;;["	page;" ;i?;o;; { ;!0;@Q.;i?o;
-;[o;>;["content;@Q.;i?;o;; { ;!0;@Q.;i?o;
-;[o;>;["primary;@Q.;i?;o;; { ;!0;@Q.;i?;@Q.;i?;i?o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;%;;&;@;"transparent;iB;["footer;o;;[o;;[o;
-;[o;)	;["footer;" ;iA;*0;o;; { ;!0;@u.;iA;@u.;iA;iAo;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-text-on-darker;@;("night_text_on_darker;iF;iF;["footer p;o;;[o;;[o;
-;[o;)	;["footer;" ;iE;*0;o;; { ;!0;@å.;iEo;
-;[o;)	;["p;@å.;iE;*0;o;; { ;!0;@å.;iE;@å.;iE;iEo;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"night-darker;@;("night_darker;iI;iI;[".exhibit-page-nav;o;;[o;;[o;
-;[o;;["exhibit-page-nav;" ;iI;o;; { ;!0;@™.;iI;@™.;iI;iIo;;T;@;i ;	[o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"night-darkest;@;("night_darkest;iL;iL;["a:link, a:visited;o;;[o;;[o;
-;[o;)	;["a;" ;iL;*0o;5
-;["	link;;6;@√.;iL;70;o;; { ;!0;@√.;iLo;;[o;
-;[o;)	;["a;@√.;iL;*0o;5
-;["visited;;6;@√.;iL;70;o;; { ;!0;@√.;iL;@√.;iL;iLo;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;%;;&;@;"	#fff;iM;["a:hover, a:active;o;;[o;;[o;
-;[o;)	;["a;" ;iM;*0o;5
-;["
-hover;;6;@Ë.;iM;70;o;; { ;!0;@Ë.;iMo;;[o;
-;[o;)	;["a;@Ë.;iM;*0o;5
-;["active;;6;@Ë.;iM;70;o;; { ;!0;@Ë.;iM;@Ë.;iM;iM;[".exhibit-page-nav;o;;[o;;[o;
-;[o;;["exhibit-page-nav;" ;iK;o;; { ;!0;@/;iK;@/;iK;iK;[".night;o;;[o;;[o;
-;[o;;["
-night;" ;iπ;o;; { ;!0;@/;iπ;@/;iπ;iπo;
-
 ;;;@;	[ ;["®/* 
 ######################################################################
 VERHALENBANK Styles
 ######################################################################
-*/;iTo;;T;@;i ;	[ o;;T;@;i ;	[o;
+*/;i∑o;;T;@;i ;	[ o;;T;@;i ;	[o;
 
-;;;@;	[ ;["/*ADDED BY IWE*/;i\o;";["background-color;@;i ;	[ ;#;$;o;'	;" verhalenbank_grey_admin_bar;@;(" verhalenbank_grey_admin_bar;i];i]o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i^;i^o;";["position;@;i ;	[ ;#;$;o;%;;&;@;"
-fixed;i_o;";["opacity;@;i ;	[ ;#;$;o;%;;&;@;"0.8;i`o;";["height;@;i ;	[ ;#;$;o;%;;&;@;"	27px;iao;";["padding-top;@;i ;	[ ;#;$;o;%;;&;@;"1px;ibo;";["z-index;@;i ;	[ ;#;$;o;%;;&;@;"1;ic;["#admin-bar;o;;[o;;[o;
-;[o;>;["admin-bar;" ;i\;o;; { ;!0;@Y/;i\;@Y/;i\;i\o;;T;@;i ;	[o;";["background;@;i ;	[ ;#;$;o;8	;@;9;:;[o;;;"url;@;0;ig;{ ;[o;%	;:string;@;"'../images/background_maps_TEMP.jpg;igo;%	;;&;@;"
-fixed;ig;ig;igo;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;ih;iho;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_text_on_bg;@;("verhalenbank_text_on_bg;ii;ii;["	body;o;;[o;;[o;
-;[o;)	;["	body;" ;if;*0;o;; { ;!0;@Ö/;if;@Ö/;if;ifo;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_h_colors;@;("verhalenbank_h_colors;il;il;["h1;o;;[o;;[o;
-;[o;)	;["h1;" ;il;*0;o;; { ;!0;@ú/;il;@ú/;il;ilo;;T;@;i ;	[o;;T;@;i ;	[o;";["font-family;@;i ;	[ ;#;$;o;%;;&;@;"-Georgia, Times, "Times New Roman", serif;ipo;";["line-height;@;i ;	[ ;#;$;o;%;;&;@;"1.3;iqo;";["margin-top;@;i ;	[ ;#;$;o;%;;&;@;"0;iro;";["font-weight;@;i ;	[ ;#;$;o;%;;&;@;"normal;iso;";["margin-bottom;@;i ;	[ ;#;$;o;%;;&;@;"
-0.3em;ito;";["padding-left;@;i ;	[ ;#;$;o;%;;&;@;"	16px;iuo;";["
-color;@;i ;	[ ;#;$;o;'	;" verhalenbank_super_h_colors;@;(" verhalenbank_super_h_colors;iv;iv;["a;o;;[o;;[o;
-;[o;)	;["a;" ;io;*0;o;; { ;!0;@Ÿ/;io;@Ÿ/;io;io;["#site-title;o;;[o;;[o;
-;[o;>;["site-title;" ;in;o;; { ;!0;@Á/;in;@Á/;in;ino;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_grey_buttons;@;("verhalenbank_grey_buttons;i{;i{o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_darker;@;("verhalenbank_darker;i|;i|;[":input[type=submit], button, .button, #advanced-search;o;;[	o;;[o;
+;;;@;	[ ;["/*ADDED BY IWE*/;iøo;";["background-color;@;i ;	[ ;#;$;o;'	;" verhalenbank_grey_admin_bar;@;(" verhalenbank_grey_admin_bar;i¿;i¿o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i¡;i¡o;";["position;@;i ;	[ ;#;$;o;%;;&;@;"
+fixed;i¬o;";["opacity;@;i ;	[ ;#;$;o;%;;&;@;"0.8;i√o;";["height;@;i ;	[ ;#;$;o;%;;&;@;"	27px;iƒo;";["padding-top;@;i ;	[ ;#;$;o;%;;&;@;"1px;i≈o;";["z-index;@;i ;	[ ;#;$;o;%;;&;@;"1;i∆;["#admin-bar;o;;[o;;[o;
+;[o;>;["admin-bar;" ;iø;o;; { ;!0;@-(;iø;@-(;iø;iøo;;T;@;i ;	[o;";["background;@;i ;	[ ;#;$;o;8	;@;9;:;[o;;;"url;@;0;i ;{ ;[o;%	;:string;@;"'../images/background_maps_TEMP.jpg;i o;%	;;&;@;"
+fixed;i ;i ;i o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;iÀ;iÀo;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_text_on_bg;@;("verhalenbank_text_on_bg;iÃ;iÃ;["	body;o;;[o;;[o;
+;[o;)	;["	body;" ;i…;*0;o;; { ;!0;@Y(;i…;@Y(;i…;i…o;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_h_colors;@;("verhalenbank_h_colors;iœ;iœ;["h1;o;;[o;;[o;
+;[o;)	;["h1;" ;iœ;*0;o;; { ;!0;@p(;iœ;@p(;iœ;iœo;;T;@;i ;	[o;;T;@;i ;	[o;";["font-family;@;i ;	[ ;#;$;o;%;;&;@;"-Georgia, Times, "Times New Roman", serif;i”o;";["line-height;@;i ;	[ ;#;$;o;%;;&;@;"1.3;i‘o;";["margin-top;@;i ;	[ ;#;$;o;%;;&;@;"0;i’o;";["font-weight;@;i ;	[ ;#;$;o;%;;&;@;"normal;i÷o;";["margin-bottom;@;i ;	[ ;#;$;o;%;;&;@;"
+0.3em;i◊o;";["padding-left;@;i ;	[ ;#;$;o;%;;&;@;"	16px;iÿo;";["
+color;@;i ;	[ ;#;$;o;'	;" verhalenbank_super_h_colors;@;(" verhalenbank_super_h_colors;iŸ;iŸ;["a;o;;[o;;[o;
+;[o;)	;["a;" ;i“;*0;o;; { ;!0;@≠(;i“;@≠(;i“;i“;["#site-title;o;;[o;;[o;
+;[o;>;["site-title;" ;i—;o;; { ;!0;@ª(;i—;@ª(;i—;i—o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_grey_buttons;@;("verhalenbank_grey_buttons;iﬁ;iﬁo;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_darker;@;("verhalenbank_darker;iﬂ;iﬂ;[":input[type=submit], button, .button, #advanced-search;o;;[	o;;[o;
 ;[o;)	;["
-input;" ;iz;*0o;<;,"=;["	type;["submit;@0;=0;iz;*0;o;; { ;!0;@0;izo;;[o;
-;[o;)	;["button;@0;iz;*0;o;; { ;!0;@0;izo;;[o;
-;[o;;["button;@0;iz;o;; { ;!0;@0;izo;;[o;
-;[o;>;["advanced-search;@0;iz;o;; { ;!0;@0;iz;@0;iz;izo;;T;@;i ;	[	o;";["display;@;i ;	[ ;#;$;o;%;;&;@;"inline;iÄo;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_hyperlight;@;("verhalenbank_hyperlight;iÅ;iÅo;";["border;@;i ;	[ ;#;$;o;8	;@;9;:;[o;0;1["px;@;2"1px;i;3[ ;iÇo;%	;;&;@;"
-solid;iÇo;'	;"verhalenbank_shadow;@;("verhalenbank_shadow;iÇ;iÇ;iÇo;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_text_on_bg;@;("verhalenbank_text_on_bg;iÉ;iÉ;["5input[type=text], input[type=password], textarea;o;;[o;;[o;
+input;" ;i›;*0o;<;,"=;["	type;["submit;@Ÿ(;=0;i›;*0;o;; { ;!0;@Ÿ(;i›o;;[o;
+;[o;)	;["button;@Ÿ(;i›;*0;o;; { ;!0;@Ÿ(;i›o;;[o;
+;[o;;["button;@Ÿ(;i›;o;; { ;!0;@Ÿ(;i›o;;[o;
+;[o;>;["advanced-search;@Ÿ(;i›;o;; { ;!0;@Ÿ(;i›;@Ÿ(;i›;i›o;;T;@;i ;	[	o;";["display;@;i ;	[ ;#;$;o;%;;&;@;"inline;i„o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_hyperlight;@;("verhalenbank_hyperlight;i‰;i‰o;";["border;@;i ;	[ ;#;$;o;8	;@;9;:;[o;0;1["px;@;2"1px;i;3[ ;iÂo;%	;;&;@;"
+solid;iÂo;'	;"verhalenbank_shadow;@;("verhalenbank_shadow;iÂ;iÂ;iÂo;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_text_on_bg;@;("verhalenbank_text_on_bg;iÊ;iÊ;["5input[type=text], input[type=password], textarea;o;;[o;;[o;
 ;[o;)	;["
-input;" ;i;*0o;<;,"=;["	type;["	text;@Z0;=0;i;*0;o;; { ;!0;@Z0;io;;[o;
+input;" ;i‚;*0o;<;,"=;["	type;["	text;@.);=0;i‚;*0;o;; { ;!0;@.);i‚o;;[o;
 ;[o;)	;["
-input;@Z0;i;*0o;<;,"=;["	type;["password;@Z0;=0;i;*0;o;; { ;!0;@Z0;io;;[o;
-;[o;)	;["textarea;@Z0;i;*0;o;; { ;!0;@Z0;i;@Z0;i;io;;T;@;i ;	[o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_link;@;("verhalenbank_link;iá;iá;["&:link;o;;[o;;[o;
-;[o;4;" ;iáo;5
-;["	link;;6;@è0;iá;70;o;; { ;!0;@è0;iá;@è0;iá;iáo;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_visited;@;("verhalenbank_visited;ià;ià;["&:visited;o;;[o;;[o;
-;[o;4;" ;iào;5
-;["visited;;6;@ß0;ià;70;o;; { ;!0;@ß0;ià;@ß0;ià;iào;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_active;@;("verhalenbank_active;iä;iäo;";["text-decoration;@;i ;	[ ;#;$;o;%;;&;@;"underline;iã;["&:hover, &:active;o;;[o;;[o;
-;[o;4;" ;iâo;5
+input;@.);i‚;*0o;<;,"=;["	type;["password;@.);=0;i‚;*0;o;; { ;!0;@.);i‚o;;[o;
+;[o;)	;["textarea;@.);i‚;*0;o;; { ;!0;@.);i‚;@.);i‚;i‚o;;T;@;i ;	[o;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_link;@;("verhalenbank_link;iÍ;iÍ;["&:link;o;;[o;;[o;
+;[o;4;" ;iÍo;5
+;["	link;;6;@c);iÍ;70;o;; { ;!0;@c);iÍ;@c);iÍ;iÍo;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_visited;@;("verhalenbank_visited;iÎ;iÎ;["&:visited;o;;[o;;[o;
+;[o;4;" ;iÎo;5
+;["visited;;6;@{);iÎ;70;o;; { ;!0;@{);iÎ;@{);iÎ;iÎo;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_active;@;("verhalenbank_active;iÌ;iÌo;";["text-decoration;@;i ;	[ ;#;$;o;%;;&;@;"underline;iÓ;["&:hover, &:active;o;;[o;;[o;
+;[o;4;" ;iÏo;5
 ;["
-hover;;6;@≈0;iâ;70;o;; { ;!0;@≈0;iâo;;[o;
-;[o;4;@≈0;iâo;5
-;["active;;6;@≈0;iâ;70;o;; { ;!0;@≈0;iâ;@≈0;iâ;iâ;["a;o;;[o;;[o;
-;[o;)	;["a;" ;iÜ;*0;o;; { ;!0;@‡0;iÜ;@‡0;iÜ;iÜo;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;iè;iè;["header;o;;[o;;[o;
-;[o;)	;["header;" ;iè;*0;o;; { ;!0;@˜0;iè;@˜0;iè;ièo;;T;@;i ;	[o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_hyperlight;@;("verhalenbank_hyperlight;iì;iì;[".navigation_current;o;;[o;;[o;
-;[o;;["navigation_current;" ;ií;o;; { ;!0;@1;ií;@1;ií;ií;["nav;o;;[o;;[o;
-;[o;)	;["nav;" ;ië;*0;o;; { ;!0;@1;ië;@1;ië;iëo;;T;@;i ;	[
-o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_red;@;("verhalenbank_bg_red;ió;ióo;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;iô;iô;["li:hover a;o;;[o;;[o;
-;[o;)	;["li;" ;iô;*0o;5
+hover;;6;@ô);iÏ;70;o;; { ;!0;@ô);iÏo;;[o;
+;[o;4;@ô);iÏo;5
+;["active;;6;@ô);iÏ;70;o;; { ;!0;@ô);iÏ;@ô);iÏ;iÏ;["a;o;;[o;;[o;
+;[o;)	;["a;" ;iÈ;*0;o;; { ;!0;@¥);iÈ;@¥);iÈ;iÈo;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;iÚ;iÚ;["header;o;;[o;;[o;
+;[o;)	;["header;" ;iÚ;*0;o;; { ;!0;@À);iÚ;@À);iÚ;iÚo;;T;@;i ;	[o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_hyperlight;@;("verhalenbank_hyperlight;iˆ;iˆ;[".navigation_current;o;;[o;;[o;
+;[o;;["navigation_current;" ;iı;o;; { ;!0;@‰);iı;@‰);iı;iı;["nav;o;;[o;;[o;
+;[o;)	;["nav;" ;iÙ;*0;o;; { ;!0;@Ú);iÙ;@Ú);iÙ;iÙo;;T;@;i ;	[
+o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_red;@;("verhalenbank_bg_red;i˙;i˙o;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i¸;i¸;["li:hover a;o;;[o;;[o;
+;[o;)	;["li;" ;i¸;*0o;5
 ;["
-hover;;6;@>1;iô;70;o;; { ;!0;@>1;iôo;
-;[o;)	;["a;@>1;iô;*0;o;; { ;!0;@>1;iô;@>1;iô;iôo;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_nav_visited;@;("verhalenbank_nav_visited;iõ;iõ;["a:link, a:visited;o;;[o;;[o;
-;[o;)	;["a;" ;iõ;*0o;5
-;["	link;;6;@_1;iõ;70;o;; { ;!0;@_1;iõo;;[o;
-;[o;)	;["a;@_1;iõ;*0o;5
-;["visited;;6;@_1;iõ;70;o;; { ;!0;@_1;iõ;@_1;iõ;iõo;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;iù;iùo;";["text-decoration;@;i ;	[ ;#;$;o;%;;&;@;"underline;iû;["a:active, a:hover;o;;[o;;[o;
-;[o;)	;["a;" ;iú;*0o;5
-;["active;;6;@ã1;iú;70;o;; { ;!0;@ã1;iúo;;[o;
-;[o;)	;["a;@ã1;iú;*0o;5
+hover;;6;@*;i¸;70;o;; { ;!0;@*;i¸o;
+;[o;)	;["a;@*;i¸;*0;o;; { ;!0;@*;i¸;@*;i¸;i¸o;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_nav_visited;@;("verhalenbank_nav_visited;i˛;i˛;["a:link, a:visited;o;;[o;;[o;
+;[o;)	;["a;" ;i˛;*0o;5
+;["	link;;6;@3*;i˛;70;o;; { ;!0;@3*;i˛o;;[o;
+;[o;)	;["a;@3*;i˛;*0o;5
+;["visited;;6;@3*;i˛;70;o;; { ;!0;@3*;i˛;@3*;i˛;i˛o;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i ;i o;";["text-decoration;@;i ;	[ ;#;$;o;%;;&;@;"underline;i;["a:active, a:hover;o;;[o;;[o;
+;[o;)	;["a;" ;iˇ;*0o;5
+;["active;;6;@_*;iˇ;70;o;; { ;!0;@_*;iˇo;;[o;
+;[o;)	;["a;@_*;iˇ;*0o;5
 ;["
-hover;;6;@ã1;iú;70;o;; { ;!0;@ã1;iú;@ã1;iú;iúo;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_red;@;("verhalenbank_bg_red;i°;i°o;;T;@;i ;	[o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_link;@;("verhalenbank_link;i£;i£;["& > a:link, & > a:visited;o;;[o;;[o;
-;[o;4;" ;i£;o;; { ;!0;@∫1;i£">o;
-;[o;)	;["a;@∫1;i£;*0o;5
-;["	link;;6;@∫1;i£;70;o;; { ;!0;@∫1;i£o;;[o;
-;[o;4;@∫1;i£;o;; { ;!0;@∫1;i£">o;
-;[o;)	;["a;@∫1;i£;*0o;5
-;["visited;;6;@∫1;i£;70;o;; { ;!0;@∫1;i£;@∫1;i£;i£o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i•;i•o;";["text-decoration;@;i ;	[ ;#;$;o;%;;&;@;"underline;i¶;["+& > a:active, & > a:hover, &:hover > a;o;;[o;;[o;
-;[o;4;" ;i§;o;; { ;!0;@Ú1;i§">o;
-;[o;)	;["a;@Ú1;i§;*0o;5
-;["active;;6;@Ú1;i§;70;o;; { ;!0;@Ú1;i§o;;[o;
-;[o;4;@Ú1;i§;o;; { ;!0;@Ú1;i§">o;
-;[o;)	;["a;@Ú1;i§;*0o;5
+hover;;6;@_*;iˇ;70;o;; { ;!0;@_*;iˇ;@_*;iˇ;iˇo;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_red;@;("verhalenbank_bg_red;i;io;;T;@;i ;	[o;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_link;@;("verhalenbank_link;i;i;["& > a:link, & > a:visited;o;;[o;;[o;
+;[o;4;" ;i;o;; { ;!0;@é*;i">o;
+;[o;)	;["a;@é*;i;*0o;5
+;["	link;;6;@é*;i;70;o;; { ;!0;@é*;io;;[o;
+;[o;4;@é*;i;o;; { ;!0;@é*;i">o;
+;[o;)	;["a;@é*;i;*0o;5
+;["visited;;6;@é*;i;70;o;; { ;!0;@é*;i;@é*;i;io;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i;io;";["text-decoration;@;i ;	[ ;#;$;o;%;;&;@;"underline;i	;["+& > a:active, & > a:hover, &:hover > a;o;;[o;;[o;
+;[o;4;" ;i;o;; { ;!0;@∆*;i">o;
+;[o;)	;["a;@∆*;i;*0o;5
+;["active;;6;@∆*;i;70;o;; { ;!0;@∆*;io;;[o;
+;[o;4;@∆*;i;o;; { ;!0;@∆*;i">o;
+;[o;)	;["a;@∆*;i;*0o;5
 ;["
-hover;;6;@Ú1;i§;70;o;; { ;!0;@Ú1;i§o;;[o;
-;[o;4;@Ú1;i§o;5
+hover;;6;@∆*;i;70;o;; { ;!0;@∆*;io;;[o;
+;[o;4;@∆*;io;5
 ;["
-hover;;6;@Ú1;i§;70;o;; { ;!0;@Ú1;i§">o;
-;[o;)	;["a;@Ú1;i§;*0;o;; { ;!0;@Ú1;i§;@Ú1;i§;i§;["li;o;;[o;;[o;
-;[o;)	;["li;" ;i¢;*0;o;; { ;!0;@/2;i¢;@/2;i¢;i¢;["ul li ul;o;;[o;;[o;
-;[o;)	;["ul;" ;i†;*0;o;; { ;!0;@=2;i†o;
-;[o;)	;["li;@=2;i†;*0;o;; { ;!0;@=2;i†o;
-;[o;)	;["ul;@=2;i†;*0;o;; { ;!0;@=2;i†;@=2;i†;i†;["nav.top;o;;[o;;[o;
-;[o;)	;["nav;" ;iñ;*0o;;["top;@Y2;iñ;o;; { ;!0;@Y2;iñ;@Y2;iñ;iño;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_blackness;@;("verhalenbank_blackness;i≠;i≠o;";["padding-top;@;i ;	[ ;#;$;o;%;;&;@;"	40px;iÆo;";["padding;@;i ;	[ ;#;$;o;%;;&;@;"12px 12px 12px 12px;iØ;["#intro;o;;[o;;[o;
+hover;;6;@∆*;i;70;o;; { ;!0;@∆*;i">o;
+;[o;)	;["a;@∆*;i;*0;o;; { ;!0;@∆*;i;@∆*;i;i;["li;o;;[o;;[o;
+;[o;)	;["li;" ;i;*0;o;; { ;!0;@+;i;@+;i;i;["ul li ul;o;;[o;;[o;
+;[o;)	;["ul;" ;i;*0;o;; { ;!0;@+;io;
+;[o;)	;["li;@+;i;*0;o;; { ;!0;@+;io;
+;[o;)	;["ul;@+;i;*0;o;; { ;!0;@+;i;@+;i;i;["nav.top;o;;[o;;[o;
+;[o;)	;["nav;" ;i˘;*0o;;["top;@-+;i˘;o;; { ;!0;@-+;i˘;@-+;i˘;i˘o;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_blackness;@;("verhalenbank_blackness;i;io;";["padding-top;@;i ;	[ ;#;$;o;%;;&;@;"	40px;io;";["padding;@;i ;	[ ;#;$;o;%;;&;@;"12px 12px 12px 12px;i;["#intro;o;;[o;;[o;
 ;[o;>;["
-intro;" ;i¨;o;; { ;!0;@2;i¨;@2;i¨;i¨o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i≥;i≥;["#content;o;;[o;;[o;
-;[o;>;["content;" ;i≤;o;; { ;!0;@ñ2;i≤;@ñ2;i≤;i≤o;;T;@;i ;	[o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_h_colors;@;("verhalenbank_h_colors;i∏;i∏o;";["font-family;@;i ;	[ ;#;$;o;%;;&;@;"-Georgia, Times, "Times New Roman", serif;iπo;";["font-size;@;i ;	[ ;#;$;o;%;;&;@;"
-1.3em;i∫;["h1, h2, h3, h4;o;;[	o;;[o;
-;[o;)	;["h1;" ;i∑;*0;o;; { ;!0;@ª2;i∑o;;[o;
-;[o;)	;["h2;@ª2;i∑;*0;o;; { ;!0;@ª2;i∑o;;[o;
-;[o;)	;["h3;@ª2;i∑;*0;o;; { ;!0;@ª2;i∑o;;[o;
-;[o;)	;["h4;@ª2;i∑;*0;o;; { ;!0;@ª2;i∑;@ª2;i∑;i∑;["div;o;;[o;;[o;
-;[o;)	;["div;" ;i∂;*0;o;; { ;!0;@‰2;i∂;@‰2;i∂;i∂o;;T;@;i ;	[ ;["a#secondary-nav .current a,
+intro;" ;i;o;; { ;!0;@S+;i;@S+;i;io;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i;i;["#content;o;;[o;;[o;
+;[o;>;["content;" ;i;o;; { ;!0;@j+;i;@j+;i;io;;T;@;i ;	[o;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_h_colors;@;("verhalenbank_h_colors;i;io;";["font-family;@;i ;	[ ;#;$;o;%;;&;@;"-Georgia, Times, "Times New Roman", serif;io;";["font-size;@;i ;	[ ;#;$;o;%;;&;@;"
+1.3em;i;["h1, h2, h3, h4;o;;[	o;;[o;
+;[o;)	;["h1;" ;i;*0;o;; { ;!0;@è+;io;;[o;
+;[o;)	;["h2;@è+;i;*0;o;; { ;!0;@è+;io;;[o;
+;[o;)	;["h3;@è+;i;*0;o;; { ;!0;@è+;io;;[o;
+;[o;)	;["h4;@è+;i;*0;o;; { ;!0;@è+;i;@è+;i;i;["div;o;;[o;;[o;
+;[o;)	;["div;" ;i;*0;o;; { ;!0;@∏+;i;@∏+;i;io;;T;@;i ;	[ ;["a#secondary-nav .current a,
     #secondary-nav a.current,
     .exhibit-section-nav .current a;o;;[o;;[o;
-;[o;>;["secondary-nav;" ;i¿;o;; { ;!0;@Ù2;i¿o;
-;[o;;["current;@Ù2;i¿;o;; { ;!0;@Ù2;i¿o;
-;[o;)	;["a;@Ù2;i¿;*0;o;; { ;!0;@Ù2;i¿o;;["
+;[o;>;["secondary-nav;" ;i#;o;; { ;!0;@»+;i#o;
+;[o;;["current;@»+;i#;o;; { ;!0;@»+;i#o;
+;[o;)	;["a;@»+;i#;*0;o;; { ;!0;@»+;i#o;;["
 o;
-;[o;>;["secondary-nav;@Ù2;i¿;o;; { ;!0;@Ù2;i¿o;
-;[o;)	;["a;@Ù2;i¿;*0o;;["current;@Ù2;i¿;o;; { ;!0;@Ù2;i¿o;;[	"
+;[o;>;["secondary-nav;@»+;i#;o;; { ;!0;@»+;i#o;
+;[o;)	;["a;@»+;i#;*0o;;["current;@»+;i#;o;; { ;!0;@»+;i#o;;[	"
 o;
-;[o;;["exhibit-section-nav;@Ù2;i¿;o;; { ;!0;@Ù2;i¿o;
-;[o;;["current;@Ù2;i¿;o;; { ;!0;@Ù2;i¿o;
-;[o;)	;["a;@Ù2;i¿;*0;o;; { ;!0;@Ù2;i¿;@Ù2;i¿;i¿o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_red;@;("verhalenbank_bg_red;iƒ;iƒo;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_cccccc;@;("verhalenbank_cccccc;i≈;i≈o;";["border-width;@;i ;	[ ;#;$;o;%;;&;@;"3px 3px 3px 3px;i∆o;";["border-style;@;i ;	[ ;#;$;o;%;;&;@;"
-solid;i«o;";["border-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_shadow;@;("verhalenbank_shadow;i»;i»o;;T;@;i ;	[o;";["
+;[o;;["exhibit-section-nav;@»+;i#;o;; { ;!0;@»+;i#o;
+;[o;;["current;@»+;i#;o;; { ;!0;@»+;i#o;
+;[o;)	;["a;@»+;i#;*0;o;; { ;!0;@»+;i#;@»+;i#;i#o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_red;@;("verhalenbank_bg_red;i';i'o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_cccccc;@;("verhalenbank_cccccc;i(;i(o;";["border-width;@;i ;	[ ;#;$;o;%;;&;@;"3px 3px 3px 3px;i)o;";["border-style;@;i ;	[ ;#;$;o;%;;&;@;"
+solid;i*o;";["border-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_shadow;@;("verhalenbank_shadow;i+;i+o;;T;@;i ;	[o;";["
 color;@;i ;	[ ;#;$;o;%;;&;@;"
-white;i ;["a;o;;[o;;[o;
-;[o;)	;["a;" ;i…;*0;o;; { ;!0;@g3;i…;@g3;i…;i…;["#advanced-form;o;;[o;;[o;
-;[o;>;["advanced-form;" ;i√;o;; { ;!0;@u3;i√;@u3;i√;i√o;;T;@;i ;	[
-o;";["border-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_border_colors;@;("verhalenbank_border_colors;iœ;iœo;
+white;i-;["a;o;;[o;;[o;
+;[o;)	;["a;" ;i,;*0;o;; { ;!0;@;,;i,;@;,;i,;i,;["#advanced-form;o;;[o;;[o;
+;[o;>;["advanced-form;" ;i&;o;; { ;!0;@I,;i&;@I,;i&;i&o;;T;@;i ;	[
+o;";["border-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_border_colors;@;("verhalenbank_border_colors;i2;i2o;
 
-;;@;@;	[ ;["0/*        border-width: 3px 3px 3px 3px; */;i–o;";["*border-style;@;i ;	[ ;#;$;o;%;;&;@;"
-solid;i—o;";["*border-color;@;i ;	[ ;#;$;o;%;;&;@;"#e8e8e8;i“o;";["*border-top-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_border_colors;@;("verhalenbank_border_colors;i”;i”;["#home #content > div;o;;[o;;[	o;
-;[o;>;["	home;" ;iŒ;o;; { ;!0;@£3;iŒo;
-;[o;>;["content;@£3;iŒ;o;; { ;!0;@£3;iŒ">o;
-;[o;)	;["div;@£3;iŒ;*0;o;; { ;!0;@£3;iŒ;@£3;iŒ;iŒo;;T;@;i ;	[o;";["border-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_border_colors;@;("verhalenbank_border_colors;i€;i€;["•#home #content > div img, 
+;;@;@;	[ ;["0/*        border-width: 3px 3px 3px 3px; */;i3o;";["*border-style;@;i ;	[ ;#;$;o;%;;&;@;"
+solid;i4o;";["*border-color;@;i ;	[ ;#;$;o;%;;&;@;"#e8e8e8;i5o;";["*border-top-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_border_colors;@;("verhalenbank_border_colors;i6;i6;["#home #content > div;o;;[o;;[	o;
+;[o;>;["	home;" ;i1;o;; { ;!0;@w,;i1o;
+;[o;>;["content;@w,;i1;o;; { ;!0;@w,;i1">o;
+;[o;)	;["div;@w,;i1;*0;o;; { ;!0;@w,;i1;@w,;i1;i1o;;T;@;i ;	[o;";["border-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_border_colors;@;("verhalenbank_border_colors;i>;i>;["•#home #content > div img, 
     #home #content .item, 
     #home #content div .view-items-link,
     .item #itemfiles a,
     .collections #content div .view-items-link;o;;[
 o;;[
 o;
-;[o;>;["	home;" ;i⁄;o;; { ;!0;@…3;i⁄o;
-;[o;>;["content;@…3;i⁄;o;; { ;!0;@…3;i⁄">o;
-;[o;)	;["div;@…3;i⁄;*0;o;; { ;!0;@…3;i⁄o;
-;[o;)	;["img;@…3;i⁄;*0;o;; { ;!0;@…3;i⁄o;;[	"
+;[o;>;["	home;" ;i=;o;; { ;!0;@ù,;i=o;
+;[o;>;["content;@ù,;i=;o;; { ;!0;@ù,;i=">o;
+;[o;)	;["div;@ù,;i=;*0;o;; { ;!0;@ù,;i=o;
+;[o;)	;["img;@ù,;i=;*0;o;; { ;!0;@ù,;i=o;;[	"
 o;
-;[o;>;["	home;@…3;i⁄;o;; { ;!0;@…3;i⁄o;
-;[o;>;["content;@…3;i⁄;o;; { ;!0;@…3;i⁄o;
-;[o;;["	item;@…3;i⁄;o;; { ;!0;@…3;i⁄o;;[
+;[o;>;["	home;@ù,;i=;o;; { ;!0;@ù,;i=o;
+;[o;>;["content;@ù,;i=;o;; { ;!0;@ù,;i=o;
+;[o;;["	item;@ù,;i=;o;; { ;!0;@ù,;i=o;;[
 "
 o;
-;[o;>;["	home;@…3;i⁄;o;; { ;!0;@…3;i⁄o;
-;[o;>;["content;@…3;i⁄;o;; { ;!0;@…3;i⁄o;
-;[o;)	;["div;@…3;i⁄;*0;o;; { ;!0;@…3;i⁄o;
-;[o;;["view-items-link;@…3;i⁄;o;; { ;!0;@…3;i⁄o;;[	"
+;[o;>;["	home;@ù,;i=;o;; { ;!0;@ù,;i=o;
+;[o;>;["content;@ù,;i=;o;; { ;!0;@ù,;i=o;
+;[o;)	;["div;@ù,;i=;*0;o;; { ;!0;@ù,;i=o;
+;[o;;["view-items-link;@ù,;i=;o;; { ;!0;@ù,;i=o;;[	"
 o;
-;[o;;["	item;@…3;i⁄;o;; { ;!0;@…3;i⁄o;
-;[o;>;["itemfiles;@…3;i⁄;o;; { ;!0;@…3;i⁄o;
-;[o;)	;["a;@…3;i⁄;*0;o;; { ;!0;@…3;i⁄o;;[
+;[o;;["	item;@ù,;i=;o;; { ;!0;@ù,;i=o;
+;[o;>;["itemfiles;@ù,;i=;o;; { ;!0;@ù,;i=o;
+;[o;)	;["a;@ù,;i=;*0;o;; { ;!0;@ù,;i=o;;[
 "
 o;
-;[o;;["collections;@…3;i⁄;o;; { ;!0;@…3;i⁄o;
-;[o;>;["content;@…3;i⁄;o;; { ;!0;@…3;i⁄o;
-;[o;)	;["div;@…3;i⁄;*0;o;; { ;!0;@…3;i⁄o;
-;[o;;["view-items-link;@…3;i⁄;o;; { ;!0;@…3;i⁄;@…3;i⁄;i⁄o;;T;@;i ;	[o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;" verhalenbank_super_h_colors;@;(" verhalenbank_super_h_colors;i·;i·o;";["background-color;@;i ;	[ ;#;$;o;%;;&;@;"
-white;i‚;["h1;o;;[o;;[o;
-;[o;)	;["h1;" ;i‡;*0;o;; { ;!0;@l4;i‡;@l4;i‡;i‡o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;" verhalenbank_super_h_colors;@;(" verhalenbank_super_h_colors;iÊ;iÊo;";["padding-left;@;i ;	[ ;#;$;o;%;;&;@;"9px;iÁ;["h2;o;;[o;;[o;
-;[o;)	;["h2;" ;iÂ;*0;o;; { ;!0;@â4;iÂ;@â4;iÂ;iÂo;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;iÎ;iÎ;["$& h2 > a:link, & h2 > a:visited;o;;[o;;[	o;
-;[o;4;" ;iÍ;o;; { ;!0;@û4;iÍo;
-;[o;)	;["h2;@û4;iÍ;*0;o;; { ;!0;@û4;iÍ">o;
-;[o;)	;["a;@û4;iÍ;*0o;5
-;["	link;;6;@û4;iÍ;70;o;; { ;!0;@û4;iÍo;;[	o;
-;[o;4;@û4;iÍ;o;; { ;!0;@û4;iÍo;
-;[o;)	;["h2;@û4;iÍ;*0;o;; { ;!0;@û4;iÍ">o;
-;[o;)	;["a;@û4;iÍ;*0o;5
-;["visited;;6;@û4;iÍ;70;o;; { ;!0;@û4;iÍ;@û4;iÍ;iÍo;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_superlight;@;("verhalenbank_superlight;iÓ;iÓo;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_active;@;("verhalenbank_active;iÔ;iÔo;";["text-decoration;@;i ;	[ ;#;$;o;%;;&;@;"underline;i;["$& h2 > a:hover, & h2 > a:active;o;;[o;;[	o;
-;[o;4;" ;iÌ;o;; { ;!0;@Î4;iÌo;
-;[o;)	;["h2;@Î4;iÌ;*0;o;; { ;!0;@Î4;iÌ">o;
-;[o;)	;["a;@Î4;iÌ;*0o;5
+;[o;;["collections;@ù,;i=;o;; { ;!0;@ù,;i=o;
+;[o;>;["content;@ù,;i=;o;; { ;!0;@ù,;i=o;
+;[o;)	;["div;@ù,;i=;*0;o;; { ;!0;@ù,;i=o;
+;[o;;["view-items-link;@ù,;i=;o;; { ;!0;@ù,;i=;@ù,;i=;i=o;;T;@;i ;	[o;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;" verhalenbank_super_h_colors;@;(" verhalenbank_super_h_colors;iD;iDo;";["background-color;@;i ;	[ ;#;$;o;%;;&;@;"
+white;iE;["h1;o;;[o;;[o;
+;[o;)	;["h1;" ;iC;*0;o;; { ;!0;@@-;iC;@@-;iC;iCo;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;" verhalenbank_super_h_colors;@;(" verhalenbank_super_h_colors;iI;iIo;";["padding-left;@;i ;	[ ;#;$;o;%;;&;@;"9px;iJ;["h2;o;;[o;;[o;
+;[o;)	;["h2;" ;iH;*0;o;; { ;!0;@]-;iH;@]-;iH;iHo;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;iN;iN;["$& h2 > a:link, & h2 > a:visited;o;;[o;;[	o;
+;[o;4;" ;iM;o;; { ;!0;@r-;iMo;
+;[o;)	;["h2;@r-;iM;*0;o;; { ;!0;@r-;iM">o;
+;[o;)	;["a;@r-;iM;*0o;5
+;["	link;;6;@r-;iM;70;o;; { ;!0;@r-;iMo;;[	o;
+;[o;4;@r-;iM;o;; { ;!0;@r-;iMo;
+;[o;)	;["h2;@r-;iM;*0;o;; { ;!0;@r-;iM">o;
+;[o;)	;["a;@r-;iM;*0o;5
+;["visited;;6;@r-;iM;70;o;; { ;!0;@r-;iM;@r-;iM;iMo;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_superlight;@;("verhalenbank_superlight;iQ;iQo;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_active;@;("verhalenbank_active;iR;iRo;";["text-decoration;@;i ;	[ ;#;$;o;%;;&;@;"underline;iS;["$& h2 > a:hover, & h2 > a:active;o;;[o;;[	o;
+;[o;4;" ;iP;o;; { ;!0;@ø-;iPo;
+;[o;)	;["h2;@ø-;iP;*0;o;; { ;!0;@ø-;iP">o;
+;[o;)	;["a;@ø-;iP;*0o;5
 ;["
-hover;;6;@Î4;iÌ;70;o;; { ;!0;@Î4;iÌo;;[	o;
-;[o;4;@Î4;iÌ;o;; { ;!0;@Î4;iÌo;
-;[o;)	;["h2;@Î4;iÌ;*0;o;; { ;!0;@Î4;iÌ">o;
-;[o;)	;["a;@Î4;iÌ;*0o;5
-;["active;;6;@Î4;iÌ;70;o;; { ;!0;@Î4;iÌ;@Î4;iÌ;iÌo;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i˘;i˘o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_shadow;@;("verhalenbank_shadow;i˙;i˙;["â& > h2, 
+hover;;6;@ø-;iP;70;o;; { ;!0;@ø-;iPo;;[	o;
+;[o;4;@ø-;iP;o;; { ;!0;@ø-;iPo;
+;[o;)	;["h2;@ø-;iP;*0;o;; { ;!0;@ø-;iP">o;
+;[o;)	;["a;@ø-;iP;*0o;5
+;["active;;6;@ø-;iP;70;o;; { ;!0;@ø-;iP;@ø-;iP;iPo;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i\;i\o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_shadow;@;("verhalenbank_shadow;i];i];["â& > h2, 
         & > div > h2, 
         #primary > h2,  
         #primary > div > h2,
         #sidebar > h2, 
         #sidebar > div > h2;o;;[o;;[o;
-;[o;4;" ;i¯;o;; { ;!0;@25;i¯">o;
-;[o;)	;["h2;@25;i¯;*0;o;; { ;!0;@25;i¯o;;["
+;[o;4;" ;i[;o;; { ;!0;@.;i[">o;
+;[o;)	;["h2;@.;i[;*0;o;; { ;!0;@.;i[o;;["
 o;
-;[o;4;@25;i¯;o;; { ;!0;@25;i¯">o;
-;[o;)	;["div;@25;i¯;*0;o;; { ;!0;@25;i¯">o;
-;[o;)	;["h2;@25;i¯;*0;o;; { ;!0;@25;i¯o;;[	"
+;[o;4;@.;i[;o;; { ;!0;@.;i[">o;
+;[o;)	;["div;@.;i[;*0;o;; { ;!0;@.;i[">o;
+;[o;)	;["h2;@.;i[;*0;o;; { ;!0;@.;i[o;;[	"
 o;
-;[o;>;["primary;@25;i¯;o;; { ;!0;@25;i¯">o;
-;[o;)	;["h2;@25;i¯;*0;o;; { ;!0;@25;i¯o;;["
+;[o;>;["primary;@.;i[;o;; { ;!0;@.;i[">o;
+;[o;)	;["h2;@.;i[;*0;o;; { ;!0;@.;i[o;;["
 o;
-;[o;>;["primary;@25;i¯;o;; { ;!0;@25;i¯">o;
-;[o;)	;["div;@25;i¯;*0;o;; { ;!0;@25;i¯">o;
-;[o;)	;["h2;@25;i¯;*0;o;; { ;!0;@25;i¯o;;[	"
+;[o;>;["primary;@.;i[;o;; { ;!0;@.;i[">o;
+;[o;)	;["div;@.;i[;*0;o;; { ;!0;@.;i[">o;
+;[o;)	;["h2;@.;i[;*0;o;; { ;!0;@.;i[o;;[	"
 o;
-;[o;>;["sidebar;@25;i¯;o;; { ;!0;@25;i¯">o;
-;[o;)	;["h2;@25;i¯;*0;o;; { ;!0;@25;i¯o;;["
+;[o;>;["sidebar;@.;i[;o;; { ;!0;@.;i[">o;
+;[o;)	;["h2;@.;i[;*0;o;; { ;!0;@.;i[o;;["
 o;
-;[o;>;["sidebar;@25;i¯;o;; { ;!0;@25;i¯">o;
-;[o;)	;["div;@25;i¯;*0;o;; { ;!0;@25;i¯">o;
-;[o;)	;["h2;@25;i¯;*0;o;; { ;!0;@25;i¯;@25;i¯;i¯o;;T;@;i ;	[o;";["padding-top;@;i ;	[ ;#;$;o;%;;&;@;"0;io;";["border-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_border_colors;@;("verhalenbank_border_colors;i;io;";["border-width;@;i ;	[ ;#;$;o;%;;&;@;"3px 3px 3px 3px;io;";["border-style;@;i ;	[ ;#;$;o;%;;&;@;"
-solid;io;";["*border-top-color;@;i ;	[ ;#;$;o;'	;"#verhalenbank_border_top_colors;@;("#verhalenbank_border_top_colors;i;io;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i;i;["b& > div,
+;[o;>;["sidebar;@.;i[;o;; { ;!0;@.;i[">o;
+;[o;)	;["div;@.;i[;*0;o;; { ;!0;@.;i[">o;
+;[o;)	;["h2;@.;i[;*0;o;; { ;!0;@.;i[;@.;i[;i[o;;T;@;i ;	[o;";["padding-top;@;i ;	[ ;#;$;o;%;;&;@;"0;ieo;";["border-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_border_colors;@;("verhalenbank_border_colors;if;ifo;";["border-width;@;i ;	[ ;#;$;o;%;;&;@;"3px 3px 3px 3px;igo;";["border-style;@;i ;	[ ;#;$;o;%;;&;@;"
+solid;iho;";["*border-top-color;@;i ;	[ ;#;$;o;'	;"#verhalenbank_border_top_colors;@;("#verhalenbank_border_top_colors;ii;iio;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;ij;ij;["c& > div,
         #sidebar > div,
         #advanced-search-form > div, 
-        #exhibit-pages;o;;[	o;;[o;
-;[o;4;" ;i ;o;; { ;!0;@ﬂ5;i ">o;
-;[o;)	;["div;@ﬂ5;i ;*0;o;; { ;!0;@ﬂ5;i o;;[	"
-o;
-;[o;>;["sidebar;@ﬂ5;i ;o;; { ;!0;@ﬂ5;i ">o;
-;[o;)	;["div;@ﬂ5;i ;*0;o;; { ;!0;@ﬂ5;i o;;[	"
-o;
-;[o;>;["advanced-search-form;@ﬂ5;i ;o;; { ;!0;@ﬂ5;i ">o;
-;[o;)	;["div;@ﬂ5;i ;*0;o;; { ;!0;@ﬂ5;i o;;["
-o;
-;[o;>;["exhibit-pages;@ﬂ5;i ;o;; { ;!0;@ﬂ5;i ;@ﬂ5;i ;i o;;T;@;i ;	[o;
 
-;;;@;	[ ;["/*ADDED BY IWE: */;i	o;";["border-width;@;i ;	[ ;#;$;o;%;;&;@;"0 0 0 0;i
-o;";["box-shadow;@;i ;	[ ;#;$;o;%;;&;@;"
-0 0 0;i;["#primary > div;o;;[o;;[o;
-;[o;>;["primary;" ;i	;o;; { ;!0;@56;i	">o;
-;[o;)	;["div;@56;i	;*0;o;; { ;!0;@56;i	;@56;i	;i	o;;T;@;i ;	[
-o;";["border;@;i ;	[ ;#;$;o;%;;&;@;"0;io;";["padding;@;i ;	[ ;#;$;o;%;;&;@;"0;io;";["margin;@;i ;	[ ;#;$;o;%;;&;@;"0;io;";["border-width;@;i ;	[ ;#;$;o;%;;&;@;"0 0 0 0;io;";["border-color;@;i ;	[ ;#;$;o;%;;&;@;"
-green;i;[".toggler;o;;[o;;[o;
-;[o;;["toggler;" ;i;o;; { ;!0;@k6;i;@k6;i;io;;T;@;i ;	[	o;";["border-width;@;i ;	[ ;#;$;o;%;;&;@;"3px 3px 3px 3px;io;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i;io;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_link;@;("verhalenbank_link;i;i;["a:link, a:visited;o;;[o;;[o;
-;[o;)	;["a;" ;i;*0o;5
-;["	link;;6;@ë6;i;70;o;; { ;!0;@ë6;io;;[o;
-;[o;)	;["a;@ë6;i;*0o;5
-;["visited;;6;@ë6;i;70;o;; { ;!0;@ë6;i;@ë6;i;io;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_superlight;@;("verhalenbank_superlight;i;io;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_active;@;("verhalenbank_active;i;io;";["text-decoration;@;i ;	[ ;#;$;o;%;;&;@;"underline;i ;["a:hover, a:active;o;;[o;;[o;
-;[o;)	;["a;" ;i;*0o;5
-;["
-hover;;6;@ƒ6;i;70;o;; { ;!0;@ƒ6;io;;[o;
-;[o;)	;["a;@ƒ6;i;*0o;5
-;["active;;6;@ƒ6;i;70;o;; { ;!0;@ƒ6;i;@ƒ6;i;i;[".pagination;o;;[o;;[o;
-;[o;;["pagination;" ;i;o;; { ;!0;@·6;i;@·6;i;io;;T;@;i ;	[o;";["border-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_border_colors;@;("verhalenbank_border_colors;i$;i$;[".item-img;o;;[o;;[o;
-;[o;;["item-img;" ;i$;o;; { ;!0;@¯6;i$;@¯6;i$;i$o;;T;@;i ;	[o;";["border;@;i ;	[ ;#;$;o;%;;&;@;"0;i'o;";["background-color;@;i ;	[ ;#;$;o;%;;&;@;"transparent;i(o;;"box-shadow;@;	[ ;0;i);{ ;[o;8	;@;9;:;[	o;%	;;&;@;"transparent;i)o;0;1[ ;@;2"0;i ;3@•;i)o;0;1[ ;@;2"0;i ;3@•;i)o;0;1[ ;@;2"0;i ;3@•;i);i);["div.hTagcloud;o;;[o;;[o;
-;[o;)	;["div;" ;i&;*0o;;["hTagcloud;@&7;i&;o;; { ;!0;@&7;i&;@&7;i&;i&o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i-;i-;["@#primary > div, #sidebar > div,
-        .item-pagination li;o;;[o;;[o;
-;[o;>;["primary;" ;i-;o;; { ;!0;@@7;i-">o;
-;[o;)	;["div;@@7;i-;*0;o;; { ;!0;@@7;i-o;;[o;
-;[o;>;["sidebar;@@7;i-;o;; { ;!0;@@7;i-">o;
-;[o;)	;["div;@@7;i-;*0;o;; { ;!0;@@7;i-o;;["
+        #exhibit-pages;o;;[	o;;[o;
+;[o;4;" ;id;o;; { ;!0;@≥.;id">o;
+;[o;)	;["div;@≥.;id;*0;o;; { ;!0;@≥.;ido;;[	"
 o;
-;[o;;["item-pagination;@@7;i-;o;; { ;!0;@@7;i-o;
-;[o;)	;["li;@@7;i-;*0;o;; { ;!0;@@7;i-;@@7;i-;i-;["#content;o;;[o;;[o;
-;[o;>;["content;" ;iﬁ;o;; { ;!0;@x7;iﬁ;@x7;iﬁ;iﬁo;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_border_colors;@;("verhalenbank_border_colors;i1;i1o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i2;i2;["#search-results th;o;;[o;;[o;
-;[o;>;["search-results;" ;i0;o;; { ;!0;@ñ7;i0o;
-;[o;)	;["th;@ñ7;i0;*0;o;; { ;!0;@ñ7;i0;@ñ7;i0;i0o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i5;i5;["#search-results td;o;;[o;;[o;
-;[o;>;["search-results;" ;i5;o;; { ;!0;@¥7;i5o;
-;[o;)	;["td;@¥7;i5;*0;o;; { ;!0;@¥7;i5;@¥7;i5;i5o;;T;@;i ;	[o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_superlight;@;("verhalenbank_superlight;i8;i8;["li;o;;[o;;[o;
-;[o;)	;["li;" ;i8;*0;o;; { ;!0;@‘7;i8;@‘7;i8;i8;["##search-filters, #item-filters;o;;[o;;[o;
-;[o;>;["search-filters;" ;i7;o;; { ;!0;@‚7;i7o;;[o;
-;[o;>;["item-filters;@‚7;i7;o;; { ;!0;@‚7;i7;@‚7;i7;i7o;;T;@;i ;	[
-o;";["border-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_border_colors;@;("verhalenbank_border_colors;i<;i<o;";["*border-width;@;i ;	[ ;#;$;o;%;;&;@;"0 3px 3px 3px;i=o;";["*border-style;@;i ;	[ ;#;$;o;%;;&;@;"
-solid;i>o;";["*border-color;@;i ;	[ ;#;$;o;%;;&;@;"#e8e8e8;i?o;";["*border-top-color;@;i ;	[ ;#;$;o;'	;"#verhalenbank_border_top_colors;@;("#verhalenbank_border_top_colors;i@;i@;[".page #content;o;;[o;;[o;
-;[o;;["	page;" ;i;;o;; { ;!0;@8;i;o;
-;[o;>;["content;@8;i;;o;; { ;!0;@8;i;;@8;i;;i;o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;iC;iC;[".page #content #primary;o;;[o;;[o;
-;[o;;["	page;" ;iC;o;; { ;!0;@98;iCo;
-;[o;>;["content;@98;iC;o;; { ;!0;@98;iCo;
-;[o;>;["primary;@98;iC;o;; { ;!0;@98;iC;@98;iC;iCo;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;%;;&;@;"transparent;iF;["footer;o;;[o;;[o;
-;[o;)	;["footer;" ;iE;*0;o;; { ;!0;@]8;iE;@]8;iE;iEo;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_text_on_bg;@;("verhalenbank_text_on_bg;iJ;iJ;["footer p;o;;[o;;[o;
-;[o;)	;["footer;" ;iI;*0;o;; { ;!0;@t8;iIo;
-;[o;)	;["p;@t8;iI;*0;o;; { ;!0;@t8;iI;@t8;iI;iIo;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;iM;iM;[".exhibit-page-nav;o;;[o;;[o;
-;[o;;["exhibit-page-nav;" ;iM;o;; { ;!0;@í8;iM;@í8;iM;iMo;;T;@;i ;	[o;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_link;@;("verhalenbank_link;iP;iP;["a:link, a:visited;o;;[o;;[o;
-;[o;)	;["a;" ;iP;*0o;5
-;["	link;;6;@´8;iP;70;o;; { ;!0;@´8;iPo;;[o;
-;[o;)	;["a;@´8;iP;*0o;5
-;["visited;;6;@´8;iP;70;o;; { ;!0;@´8;iP;@´8;iP;iPo;;T;@;i ;	[o;";["
-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_active;@;("verhalenbank_active;iR;iRo;";["text-decoration;@;i ;	[ ;#;$;o;%;;&;@;"underline;iS;["a:hover, a:active;o;;[o;;[o;
-;[o;)	;["a;" ;iQ;*0o;5
+;[o;>;["sidebar;@≥.;id;o;; { ;!0;@≥.;id">o;
+;[o;)	;["div;@≥.;id;*0;o;; { ;!0;@≥.;ido;;[	"
+o;
+;[o;>;["advanced-search-form;@≥.;id;o;; { ;!0;@≥.;id">o;
+;[o;)	;["div;@≥.;id;*0;o;; { ;!0;@≥.;ido;;["
+o;
+;[o;>;["exhibit-pages;@≥.;id;o;; { ;!0;@≥.;id;@≥.;id;ido;;T;@;i ;	[o;
+
+;;;@;	[ ;["/*ADDED BY IWE: */;imo;";["border-width;@;i ;	[ ;#;$;o;%;;&;@;"0 0 0 0;ino;";["box-shadow;@;i ;	[ ;#;$;o;%;;&;@;"
+0 0 0;io;["#primary > div;o;;[o;;[o;
+;[o;>;["primary;" ;im;o;; { ;!0;@	/;im">o;
+;[o;)	;["div;@	/;im;*0;o;; { ;!0;@	/;im;@	/;im;imo;;T;@;i ;	[
+o;";["border;@;i ;	[ ;#;$;o;%;;&;@;"0;iso;";["padding;@;i ;	[ ;#;$;o;%;;&;@;"0;ito;";["margin;@;i ;	[ ;#;$;o;%;;&;@;"0;iuo;";["border-width;@;i ;	[ ;#;$;o;%;;&;@;"0 0 0 0;ivo;";["border-color;@;i ;	[ ;#;$;o;%;;&;@;"
+green;iw;[".toggler;o;;[o;;[o;
+;[o;;["toggler;" ;ir;o;; { ;!0;@?/;ir;@?/;ir;iro;;T;@;i ;	[	o;";["border-width;@;i ;	[ ;#;$;o;%;;&;@;"3px 3px 3px 3px;i{o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i|;i|o;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_link;@;("verhalenbank_link;i;i;["a:link, a:visited;o;;[o;;[o;
+;[o;)	;["a;" ;i~;*0o;5
+;["	link;;6;@e/;i~;70;o;; { ;!0;@e/;i~o;;[o;
+;[o;)	;["a;@e/;i~;*0o;5
+;["visited;;6;@e/;i~;70;o;; { ;!0;@e/;i~;@e/;i~;i~o;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_superlight;@;("verhalenbank_superlight;iÇ;iÇo;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_active;@;("verhalenbank_active;iÉ;iÉo;";["text-decoration;@;i ;	[ ;#;$;o;%;;&;@;"underline;iÑ;["a:hover, a:active;o;;[o;;[o;
+;[o;)	;["a;" ;iÅ;*0o;5
 ;["
-hover;;6;@◊8;iQ;70;o;; { ;!0;@◊8;iQo;;[o;
-;[o;)	;["a;@◊8;iQ;*0o;5
-;["active;;6;@◊8;iQ;70;o;; { ;!0;@◊8;iQ;@◊8;iQ;iQ;[".exhibit-page-nav;o;;[o;;[o;
-;[o;;["exhibit-page-nav;" ;iO;o;; { ;!0;@Ù8;iO;@Ù8;iO;iO;[".verhalenbank;o;;[o;;[o;
-;[o;;["verhalenbank;" ;iZ;o;; { ;!0;@9;iZ;@9;iZ;iZ;i
+hover;;6;@ò/;iÅ;70;o;; { ;!0;@ò/;iÅo;;[o;
+;[o;)	;["a;@ò/;iÅ;*0o;5
+;["active;;6;@ò/;iÅ;70;o;; { ;!0;@ò/;iÅ;@ò/;iÅ;iÅ;[".pagination;o;;[o;;[o;
+;[o;;["pagination;" ;iz;o;; { ;!0;@µ/;iz;@µ/;iz;izo;;T;@;i ;	[o;";["border-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_border_colors;@;("verhalenbank_border_colors;ià;ià;[".item-img;o;;[o;;[o;
+;[o;;["item-img;" ;ià;o;; { ;!0;@Ã/;ià;@Ã/;ià;iào;;T;@;i ;	[o;";["border;@;i ;	[ ;#;$;o;%;;&;@;"0;ião;";["background-color;@;i ;	[ ;#;$;o;%;;&;@;"transparent;iåo;;"box-shadow;@;	[ ;0;iç;{ ;[o;8	;@;9;:;[	o;%	;;&;@;"transparent;iço;0;1[ ;@;2"0;i ;3@•;iço;0;1[ ;@;2"0;i ;3@•;iço;0;1[ ;@;2"0;i ;3@•;iç;iç;["div.hTagcloud;o;;[o;;[o;
+;[o;)	;["div;" ;iä;*0o;;["hTagcloud;@˙/;iä;o;; { ;!0;@˙/;iä;@˙/;iä;iäo;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;ië;ië;["@#primary > div, #sidebar > div,
+        .item-pagination li;o;;[o;;[o;
+;[o;>;["primary;" ;ië;o;; { ;!0;@0;ië">o;
+;[o;)	;["div;@0;ië;*0;o;; { ;!0;@0;iëo;;[o;
+;[o;>;["sidebar;@0;ië;o;; { ;!0;@0;ië">o;
+;[o;)	;["div;@0;ië;*0;o;; { ;!0;@0;iëo;;["
+o;
+;[o;;["item-pagination;@0;ië;o;; { ;!0;@0;iëo;
+;[o;)	;["li;@0;ië;*0;o;; { ;!0;@0;ië;@0;ië;ië;["#content;o;;[o;;[o;
+;[o;>;["content;" ;iA;o;; { ;!0;@L0;iA;@L0;iA;iAo;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_border_colors;@;("verhalenbank_border_colors;iï;iïo;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;iñ;iñ;["#search-results th;o;;[o;;[o;
+;[o;>;["search-results;" ;iî;o;; { ;!0;@j0;iîo;
+;[o;)	;["th;@j0;iî;*0;o;; { ;!0;@j0;iî;@j0;iî;iîo;;T;@;i ;	[o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;iú;iú;["tr;o;;[o;;[o;
+;[o;)	;["tr;" ;iõ;*0;o;; { ;!0;@ä0;iõ;@ä0;iõ;iõo;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"$verhalenbank_volksverhaal_color;@;("$verhalenbank_volksverhaal_color;iü;iüo;";["font-weight;@;i ;	[ ;#;$;o;%;;&;@;"	bold;i†;[".Volksverhaal;o;;[o;;[o;
+;[o;;["Volksverhaal;" ;iû;o;; { ;!0;@ß0;iû;@ß0;iû;iûo;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"(verhalenbank_volksverhaaltype_color;@;("(verhalenbank_volksverhaaltype_color;i£;i£;[".Volksverhaaltype;o;;[o;;[o;
+;[o;;["Volksverhaaltype;" ;i¢;o;; { ;!0;@æ0;i¢;@æ0;i¢;i¢o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_file_color;@;("verhalenbank_file_color;i¶;i¶;["
+.File;o;;[o;;[o;
+;[o;;["	File;" ;i•;o;; { ;!0;@’0;i•;@’0;i•;i•o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"#verhalenbank_textedition_color;@;("#verhalenbank_textedition_color;i©;i©;["
+.Text;o;;[o;;[o;
+;[o;;["	Text;" ;i®;o;; { ;!0;@Ï0;i®;@Ï0;i®;i®o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_lexicon_color;@;("verhalenbank_lexicon_color;i¨;i¨;[".Lexicon;o;;[o;;[o;
+;[o;;["Lexicon;" ;i´;o;; { ;!0;@1;i´;@1;i´;i´o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_persoon_color;@;("verhalenbank_persoon_color;iØ;iØ;[".Persoon;o;;[o;;[o;
+;[o;;["Persoon;" ;iÆ;o;; { ;!0;@1;iÆ;@1;iÆ;iÆ;["#search-results;o;;[o;;[o;
+;[o;>;["search-results;" ;iô;o;; { ;!0;@(1;iô;@(1;iô;iôo;;T;@;i ;	[o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_superlight;@;("verhalenbank_superlight;iµ;iµ;["li;o;;[o;;[o;
+;[o;)	;["li;" ;iµ;*0;o;; { ;!0;@A1;iµ;@A1;iµ;iµ;["##search-filters, #item-filters;o;;[o;;[o;
+;[o;>;["search-filters;" ;i¥;o;; { ;!0;@O1;i¥o;;[o;
+;[o;>;["item-filters;@O1;i¥;o;; { ;!0;@O1;i¥;@O1;i¥;i¥o;;T;@;i ;	[
+o;";["border-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_border_colors;@;("verhalenbank_border_colors;iπ;iπo;";["*border-width;@;i ;	[ ;#;$;o;%;;&;@;"0 3px 3px 3px;i∫o;";["*border-style;@;i ;	[ ;#;$;o;%;;&;@;"
+solid;iªo;";["*border-color;@;i ;	[ ;#;$;o;%;;&;@;"#e8e8e8;iºo;";["*border-top-color;@;i ;	[ ;#;$;o;'	;"#verhalenbank_border_top_colors;@;("#verhalenbank_border_top_colors;iΩ;iΩ;[".page #content;o;;[o;;[o;
+;[o;;["	page;" ;i∏;o;; { ;!0;@à1;i∏o;
+;[o;>;["content;@à1;i∏;o;; { ;!0;@à1;i∏;@à1;i∏;i∏o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i¿;i¿;[".page #content #primary;o;;[o;;[o;
+;[o;;["	page;" ;i¿;o;; { ;!0;@¶1;i¿o;
+;[o;>;["content;@¶1;i¿;o;; { ;!0;@¶1;i¿o;
+;[o;>;["primary;@¶1;i¿;o;; { ;!0;@¶1;i¿;@¶1;i¿;i¿o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;%;;&;@;"transparent;i√;["footer;o;;[o;;[o;
+;[o;)	;["footer;" ;i¬;*0;o;; { ;!0;@ 1;i¬;@ 1;i¬;i¬o;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_text_on_bg;@;("verhalenbank_text_on_bg;i«;i«;["footer p;o;;[o;;[o;
+;[o;)	;["footer;" ;i∆;*0;o;; { ;!0;@·1;i∆o;
+;[o;)	;["p;@·1;i∆;*0;o;; { ;!0;@·1;i∆;@·1;i∆;i∆o;;T;@;i ;	[o;";["background-color;@;i ;	[ ;#;$;o;'	;"verhalenbank_bg_white;@;("verhalenbank_bg_white;i ;i ;[".exhibit-page-nav;o;;[o;;[o;
+;[o;;["exhibit-page-nav;" ;i ;o;; { ;!0;@ˇ1;i ;@ˇ1;i ;i o;;T;@;i ;	[o;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_link;@;("verhalenbank_link;iÕ;iÕ;["a:link, a:visited;o;;[o;;[o;
+;[o;)	;["a;" ;iÕ;*0o;5
+;["	link;;6;@2;iÕ;70;o;; { ;!0;@2;iÕo;;[o;
+;[o;)	;["a;@2;iÕ;*0o;5
+;["visited;;6;@2;iÕ;70;o;; { ;!0;@2;iÕ;@2;iÕ;iÕo;;T;@;i ;	[o;";["
+color;@;i ;	[ ;#;$;o;'	;"verhalenbank_active;@;("verhalenbank_active;iœ;iœo;";["text-decoration;@;i ;	[ ;#;$;o;%;;&;@;"underline;i–;["a:hover, a:active;o;;[o;;[o;
+;[o;)	;["a;" ;iŒ;*0o;5
+;["
+hover;;6;@D2;iŒ;70;o;; { ;!0;@D2;iŒo;;[o;
+;[o;)	;["a;@D2;iŒ;*0o;5
+;["active;;6;@D2;iŒ;70;o;; { ;!0;@D2;iŒ;@D2;iŒ;iŒ;[".exhibit-page-nav;o;;[o;;[o;
+;[o;;["exhibit-page-nav;" ;iÃ;o;; { ;!0;@a2;iÃ;@a2;iÃ;iÃ;[".verhalenbank;o;;[o;;[o;
+;[o;;["verhalenbank;" ;iΩ;o;; { ;!0;@o2;iΩ;@o2;iΩ;iΩ;i

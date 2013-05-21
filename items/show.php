@@ -15,11 +15,6 @@
 
     <?php Null;# echo some_element_texts('item', array("Identifier", "Title", "Description", "Text")); ?>
 
-
-
-
-
-
 </div><!-- end primary -->
 
 <aside id="sidebar">

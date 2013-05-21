@@ -14,7 +14,6 @@ if (!empty($_GET['style'])) {
 }
 ?>
 
-
 <nav class="items-nav navigation secondary-nav">
     <ul id="section-nav" class="navigation">
         <li class="<?php if (isset($_GET['style']) &&  $_GET['style'] == 'advanced') {echo 'navigation_current';} ?>">
@@ -28,11 +27,11 @@ if (!empty($_GET['style'])) {
 
 <?php 
 if ($search_style == "advanced"){
-    echo $this->partial('items/search-form-medium.php', array('formAttributes' =>
+    echo $this->partial('items/search-form.php', array('formAttributes' =>
                         array('id'=>'advanced-search-form')));
 }
 elseif ($search_style == "veryadvanced"){
-    echo $this->partial('items/search-form.php', array('formAttributes' =>
+    echo $this->partial('items/search-form-hard.php', array('formAttributes' =>
                         array('id'=>'advanced-search-form')));
 }?>
 

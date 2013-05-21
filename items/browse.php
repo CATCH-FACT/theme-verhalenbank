@@ -9,7 +9,8 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
     <?php echo public_nav_items(); ?>
 </nav>
 
-<?php echo pagination_links(); ?>
+<?php echo pagination_links();
+#echo pagination_links(); ?>
 
 <?php if ($total_results > 0): ?>
 

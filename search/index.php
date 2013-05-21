@@ -13,13 +13,14 @@ $searchRecordTypes = get_search_record_types();
 
 <?php echo pagination_links(); ?>
 
+<!-- ############################# TEST PLACE -->
 <?php foreach (loop('search_texts') as $searchText): ?>
 <?php endforeach; ?>
+<!-- ################################### -->
 
 <table id="search-results">
     <thead>
         <tr>
-            <th><?php echo __('Record Type');?></th>
             <th><?php echo __('Item Type');?></th>
             <th><?php echo __('Identifier');?></th>
             <th><?php echo __('Subgenre');?></th>
@@ -29,12 +30,16 @@ $searchRecordTypes = get_search_record_types();
     <tbody>
         <?php foreach (loop('search_texts') as $searchText): ?>
         <?php $record = get_record_by_id($searchText['record_type'], $searchText['record_id']); ?>
-        <tr>
-            <td><?php echo $searchRecordTypes[$searchText['record_type']]; ?></td>
-
-            <td><?php if ($searchRecordTypes[$searchText['record_type']] == "Item"): ?>
-            <?php echo metadata($record, 'Item Type Name') ? metadata($record, 'Item Type Name') : ""; ?>
-            <?php endif; ?></td>
+        
+        <?php if ($searchRecordTypes[$searchText['record_type']] == "Item"):?>
+            <?php $itemtypename = metadata($record, 'Item Type Name') ? metadata($record, 'Item Type Name') : "";?>
+        <?php elseif ($searchRecordTypes[$searchText['record_type']] == __("File")):?>
+            <?php $itemtypename = "File"; ?>
+        <?php endif; ?>
+        <tr class="<?php echo $itemtypename; ?>">
+            <td>
+                <?php echo __($itemtypename); ?>
+            </td>
             
             <td><a href="<?php echo record_url($record, 'show'); ?>"><?php echo metadata($record, array('Dublin Core', 'Identifier')); ?></a></td>
             
@@ -42,7 +47,7 @@ $searchRecordTypes = get_search_record_types();
             <?php echo metadata($record, array('Item Type Metadata', 'Subgenre')) ? metadata($record, array('Item Type Metadata', 'Subgenre')) : ""; ?>
             <?php endif; ?></td>
 
-            <td><a href="<?php echo record_url($record, 'show'); ?>"><?php echo $searchText['title'] ? $searchText['title'] : ''; ?></a></td>
+            <td><a href="<?php echo record_url($record, 'show'); ?>"><?php echo $searchText['title'] ? $searchText['title'] : __("Untitled"); ?></a></td>
         </tr>
         <?php endforeach; ?>
     </tbody>

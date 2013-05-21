@@ -1,4 +1,20 @@
 <?php
+//"Identifier", "Title", "Subject", "Description"
+// Settings from the verhalenbank plugin
+$medium_commonly_searched_fields = explode(",", get_option('mediumsearchablefields'));
+#$medium_commonly_searched_fields = array(43, 50, 49); #TEMPORARY
+
+$collections_search_options = array(1 => "Nederlandse volksverhalen", null => __("Complete website"));
+
+$selected_collection = @$_REQUEST['collection'] ? @$_REQUEST['collection'] : 1; 
+
+$all_table_options = get_table_options('Element', null, array(
+    'record_types' => array('Item', 'All'),
+    'sort' => 'alphaBySet')
+);
+
+$merged_table_options = $all_table_options["Dublin Core"] + $all_table_options["Itemtype metadata"];
+
 if (!empty($formActionUri)):
     $formAttributes['action'] = $formActionUri;
 else:
@@ -8,29 +24,26 @@ endif;
 $formAttributes['method'] = 'GET';
 ?>
 
-<form <?php echo tag_attributes($formAttributes); ?>>
-    
+<form <?php echo tag_attributes($formAttributes);?>>
     <ul>
         <input type="submit" class="submit" name="submit_search" id="submit_search_advanced" value="<?php echo __('Search'); ?>" />
         <INPUT TYPE="button" onClick="parent.location='<?php echo url('items/search')?>'"value="<?php echo __('Reset form'); ?>" />
     </ul>
-        
     <div class="field">
         <?php echo $this->formLabel('collection-search', __('Search By Collection')); ?>
         <div class="inputs">
         <?php
-            echo $this->formSelect(
+            echo $this->formRadio(
                 'collection',
-                @$_REQUEST['collection'],
+                $selected_collection,
                 array('id' => 'collection-search'),
-                get_table_options('Collection')
+                $collections_search_options
             );
         ?>
         </div>
     </div>
-    
     <div id="search-keywords" class="field">
-        <?php echo $this->formLabel('keyword-search', __('Search for Keywords')); ?>
+        <?php echo $this->formLabel('keyword-search', __('All metadata fields')); ?>
         <div class="inputs">
         <?php
             echo $this->formText(
@@ -40,87 +53,67 @@ $formAttributes['method'] = 'GET';
             );
         ?>
         </div>
-    </div>
-    <div id="search-narrow-by-fields" class="field">
-        <div class="label"><?php echo __('Narrow by Specific Fields'); ?></div>
+        <?php echo $this->formLabel('tag-search', __('Search By Tags')); ?>
         <div class="inputs">
         <?php
-        // If the form has been submitted, retain the number of search
-        // fields used and rebuild the form
+            echo $this->formText('tags', @$_REQUEST['tags'],
+                array('size' => '40', 'id' => 'tag-search')
+            );
+        ?>
+        </div>
+    </div>
+    
+<!-- This is where the alternative search form starts -->
+    <div id="search-by-certain-fields" class="field">
+        <?php
         if (!empty($_GET['advanced'])) {
             $search = $_GET['advanced'];
+/*            print "<pre>";
+            print_r($search);
+            print "</pre>";*/
         } else {
-            $search = array(array('field'=>'','type'=>'','value'=>''));
+            $search = array();
         }
-
-        //Here is where we actually build the search form
-        foreach ($search as $i => $rows): ?>
-            <div class="search-entry">
-                <?php
-                //The POST looks like =>
-                // advanced[0] =>
-                //[field] = 'description'
-                //[type] = 'contains'
-                //[terms] = 'foobar'
-                //etc
-                echo $this->formSelect(
-                    "advanced[$i][element_id]",
-                    @$rows['element_id'],
-                    array(),
-                    get_table_options('Element', null, array(
-                        'record_types' => array('Item', 'All'),
-                        'sort' => 'alphaBySet')
-                    )
-                );
-                echo $this->formSelect(
-                    "advanced[$i][type]",
-                    @$rows['type'],
-                    array(),
-                    label_table_options(array(
-                        'contains' => __('contains'),
-                        'does not contain' => __('does not contain'),
-                        'is exactly' => __('is exactly'),
-                        'is empty' => __('is empty'),
-                        'is not empty' => __('is not empty'))
-                    )
-                );
-                echo $this->formText(
-                    "advanced[$i][terms]",
-                    @$rows['terms'],
-                    array('size' => '20')
-                );
-                ?>
-                <button type="button" class="remove_search" disabled="disabled" style="display: none;">-</button>
-            </div>
-        <?php endforeach; ?>
-        </div>
-        <button type="button" class="add_search"><?php echo __('Add a Field'); ?></button>
-    </div>
-
-    <div id="search-by-range" class="field">
-        <?php echo $this->formLabel('range', __('Search by a range of ID#s (example: 1-4, 156, 79)')); ?>
-        <div class="inputs">
-        <?php
-            echo $this->formText('range', @$_GET['range'],
-                array('size' => '40')
-            );
         ?>
-        </div>
-    </div>
-
-    <div class="field">
-        <?php echo $this->formLabel('item-type-search', __('Search By Type')); ?>
-        <div class="inputs">
+        <div class="label"><?php echo __('Commonly used fields search'); ?></div>
+        <center>
+        <table width=90%>
         <?php
+        foreach ($medium_commonly_searched_fields as $i => $table_option):?>
+            <tr>
+            <td>
+                <div><?php echo $merged_table_options[$table_option];?></div>
+            </td>
+            <?php 
+            echo $this->formHidden(
+                "advanced[$i][element_id]",
+                $table_option,
+                array('hidden' => true)
+            );?>
+            <td><?php
             echo $this->formSelect(
-                'type',
-                @$_REQUEST['item-type-search'],
-                array('id' => 'item-type-search'),
-                get_table_options('ItemType')
-            );
-        ?>
-        </div>
+                "advanced[$i][type]",
+                array_key_exists($i, $search) ? $search[$i]["type"] : "",#get_option('mediumsearchstyle'),
+                array("style" => "margin-bottom:0;"),
+                label_table_options(array(
+                    'contains' => __('contains'),
+                    'does not contain' => __('does not contain'),
+                    'is exactly' => __('is exactly'),
+                    'is empty' => __('is empty'),
+                    'is not empty' => __('is not empty'))
+                )
+            );?></td>
+            <td><?php
+            echo $this->formText(
+                "advanced[$i][terms]",
+                array_key_exists($i, $search) ? $search[$i]["terms"] : "",
+                array("style" => "margin-bottom:0;")
+            );?></td>
+            </tr>
+        <?php endforeach; ?>
+        </table>
     </div>
+
 
     <?php if(is_allowed('Users', 'browse')): ?>
     <div class="field">
@@ -139,55 +132,8 @@ $formAttributes['method'] = 'GET';
     </div>
     <?php endif; ?>
 
-    <div class="field">
-        <?php echo $this->formLabel('tag-search', __('Search By Tags')); ?>
-        <div class="inputs">
-        <?php
-            echo $this->formText('tags', @$_REQUEST['tags'],
-                array('size' => '40', 'id' => 'tag-search')
-            );
-        ?>
-        </div>
-    </div>
-
-
-    <?php if (is_allowed('Items','showNotPublic')): ?>
-    <div class="field">
-        <?php echo $this->formLabel('public', __('Public/Non-Public')); ?>
-        <div class="inputs">
-        <?php
-            echo $this->formSelect(
-                'public',
-                @$_REQUEST['public'],
-                array(),
-                label_table_options(array(
-                    '1' => __('Only Public Items'),
-                    '0' => __('Only Non-Public Items')
-                ))
-            );
-        ?>
-        </div>
-    </div>
-    <?php endif; ?>
-
-    <div class="field">
-        <?php echo $this->formLabel('featured', __('Featured/Non-Featured')); ?>
-        <div class="inputs">
-        <?php
-            echo $this->formSelect(
-                'featured',
-                @$_REQUEST['featured'],
-                array(),
-                label_table_options(array(
-                    '1' => __('Only Featured Items'),
-                    '0' => __('Only Non-Featured Items')
-                ))
-            );
-        ?>
-        </div>
-    </div>
-
     <?php fire_plugin_hook('public_items_search', array('view' => $this)); ?>
+    
     <div>
         <input type="submit" class="submit" name="submit_search" id="submit_search_advanced" value="<?php echo __('Search'); ?>" />
         <INPUT TYPE="button" onClick="parent.location='<?php echo url('items/search')?>'"value="<?php echo __('Reset form'); ?>" />
