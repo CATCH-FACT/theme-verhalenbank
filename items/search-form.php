@@ -66,8 +66,8 @@ $formAttributes['method'] = 'GET';
 <!-- This is where the alternative search form starts -->
     <div id="search-by-certain-fields" class="field">
         <?php
-        if (!empty($_GET['advanced'])) {
-            $search = $_GET['advanced'];
+        if (!empty($_GET['keywordsearch'])) {
+            $search = $_GET['keywordsearch'];
 /*            print "<pre>";
             print_r($search);
             print "</pre>";*/
@@ -86,11 +86,11 @@ $formAttributes['method'] = 'GET';
             </td>
             <?php 
             echo $this->formHidden(
-                "advanced[$i][element_id]",
+                "keywordsearch[$i][element_id]",
                 $table_option,
                 array('hidden' => true)
             );?>
-            <td><?php
+<!--            <td><?php
             echo $this->formSelect(
                 "advanced[$i][type]",
                 array_key_exists($i, $search) ? $search[$i]["type"] : "",#get_option('mediumsearchstyle'),
@@ -102,10 +102,10 @@ $formAttributes['method'] = 'GET';
                     'is empty' => __('is empty'),
                     'is not empty' => __('is not empty'))
                 )
-            );?></td>
+            );?></td>-->
             <td><?php
             echo $this->formText(
-                "advanced[$i][terms]",
+                "keywordsearch[$i][terms]",
                 array_key_exists($i, $search) ? $search[$i]["terms"] : "",
                 array("style" => "margin-bottom:0;")
             );?></td>
