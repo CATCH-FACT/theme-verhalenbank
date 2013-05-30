@@ -6,6 +6,8 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 <h1><?php echo $pageTitle; ?></h1>
 <?php echo pagination_links(); ?>
 
+<?php #print loop('collections'); ?>
+
 <?php foreach (loop('collections') as $collection): ?>
 
 <div class="collection">

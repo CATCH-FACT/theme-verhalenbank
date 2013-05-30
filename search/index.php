@@ -47,7 +47,7 @@ $searchRecordTypes = get_search_record_types();
             <?php echo metadata($record, array('Item Type Metadata', 'Subgenre')) ? metadata($record, array('Item Type Metadata', 'Subgenre')) : ""; ?>
             <?php endif; ?></td>
 
-            <td><a href="<?php echo record_url($record, 'show'); ?>"><?php echo $searchText['title'] ? $searchText['title'] : __("Untitled"); ?></a></td>
+            <td><a href="<?php echo record_url($record, 'show'); ?>"><?php echo $searchText['title'] ? $searchText['title'] : __("[Untitled]"); ?></a></td>
         </tr>
         <?php endforeach; ?>
     </tbody>
