@@ -17,7 +17,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
     <?php if (metadata('collection', array('Dublin Core', 'Description'))): ?>
     <div class="element">
         <h3><?php echo __('Description'); ?></h3>
-        <div class="element-text"><?php echo text_to_paragraphs(metadata('collection', array('Dublin Core', 'Description'), array('snippet'=>250))); ?></div>
+        <div class="element-text"><?php echo text_to_paragraphs(metadata('collection', array('Dublin Core', 'Description'), array('snippet'=>1000))); ?></div>
     </div>
     <?php endif; ?>
     
