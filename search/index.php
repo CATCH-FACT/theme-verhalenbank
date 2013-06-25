@@ -6,7 +6,6 @@ $searchRecordTypes = get_search_record_types();
 <?php echo search_filters(); ?>
 
 <?php if ($total_results): ?>
-
 <div id="search-filters" style="display:inline; float:none;">
 <ul><li><?php echo __('Total results: ');?> <?php echo $total_results; ?></li></ul>
 </div>

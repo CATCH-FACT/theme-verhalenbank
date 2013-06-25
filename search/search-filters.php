@@ -8,6 +8,6 @@
             <li><?php echo $record_type; ?></li>
             <?php endforeach; ?>
         </ul>
-    </li>
+    </li>    
 </ul>
 </div>
