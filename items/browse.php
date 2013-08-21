@@ -31,7 +31,8 @@ $wrapper_tags = array('link_tag' => 'option value="col"', 'list_tag' => 'select'
 <?php foreach (loop('items') as $item): ?>
 <div class="item hentry">
     <h2><?php echo link_to_item(metadata('item', array('Dublin Core', 'Identifier')) . 
-                    (metadata('item', array('Dublin Core', 'Title')) ? " - " . metadata('item', array('Dublin Core', 'Title')) : " - " . __("[Untitled]")), array('class'=>'permalink')); ?></h2>
+                    (metadata('item', array('Dublin Core', 'Title')) ? " - " . metadata('item', array('Dublin Core', 'Title')) : " - " . __("[Untitled]")), array('class'=>'permalink')); ?>
+    </h2>
     
     <div class="item-meta">
     <?php if (metadata('item', 'has thumbnail')): ?>
@@ -51,6 +52,9 @@ $wrapper_tags = array('link_tag' => 'option value="col"', 'list_tag' => 'select'
         <?php endif; ?>
         
     </div>
+    
+    <!-- -->
+    
     <?php endif; ?>
 
 
