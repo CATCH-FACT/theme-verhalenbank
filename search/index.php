@@ -64,7 +64,10 @@ $bg_colors["Persoon"] = "#FFFFDC";
                 </div>
             <?php endif; ?>
             
-            <?php if ($subgenre = metadata('item', array('Item Type Metadata', 'Subgenre'))): ?>
+            <?php 
+                //TEMPORARY FIX FOR DATES
+                add_filter(array('Display', 'Item', 'Dublin Core', 'Date'),                         'present_dates_as_language', 20); 
+                if ($subgenre = metadata('item', array('Item Type Metadata', 'Subgenre'))): ?>
                 <div class="item-description">
                 <h4 style = "display:inline;"><?php echo $subgenre; ?></h4>
                 <?php if ($date = metadata('item', array('Dublin Core', 'Date'))): ?>
