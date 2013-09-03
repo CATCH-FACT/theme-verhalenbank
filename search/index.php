@@ -4,7 +4,7 @@ echo head(array('title' => $pageTitle, 'bodyclass' => 'search'));
 $searchRecordTypes = get_search_record_types();
 
 $bg_colors["File"] = "#DAFCFF";
-$bg_colors["Lexicon"] = "#DAFFDF";
+$bg_colors["Lexicon item"] = "#DAFFDF";
 $bg_colors["Volksverhaaltype"] = "#FFDCDC";
 $bg_colors["Textedition"] = "#EBEBEB";
 $bg_colors["Volksverhaal"] = "white";
