@@ -27,7 +27,7 @@ $searchRecordTypes = get_search_record_types();
         </tr>
     </thead>
     <tbody>
-        <?php foreach (loop('search_texts') as $searchText): ?>
+    <?php foreach (loop('search_texts') as $searchText): ?>
         <?php $record = get_record_by_id($searchText['record_type'], $searchText['record_id']); ?>
         
         <?php if ($searchRecordTypes[$searchText['record_type']] == "Item"):?>
@@ -35,6 +35,7 @@ $searchRecordTypes = get_search_record_types();
         <?php elseif ($searchRecordTypes[$searchText['record_type']] == __("File")):?>
             <?php $itemtypename = "File"; ?>
         <?php endif; ?>
+        
         <tr class="<?php echo $itemtypename; ?>">
             <td>
                 <?php echo __($itemtypename); ?>
@@ -48,7 +49,7 @@ $searchRecordTypes = get_search_record_types();
 
             <td><a href="<?php echo record_url($record, 'show'); ?>"><?php echo $searchText['title'] ? $searchText['title'] : __("[Untitled]"); ?></a></td>
         </tr>
-        <?php endforeach; ?>
+    <?php endforeach; ?>
     </tbody>
 </table>
 <?php echo pagination_links(); ?>
