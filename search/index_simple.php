@@ -27,7 +27,7 @@ $searchRecordTypes = get_search_record_types();
         </tr>
     </thead>
     <tbody>
-        <?php foreach (loop('search_texts') as $searchText): ?>
+    <?php foreach (loop('search_texts') as $searchText): ?>
         <?php $record = get_record_by_id($searchText['record_type'], $searchText['record_id']); ?>
         
         <?php if ($searchRecordTypes[$searchText['record_type']] == "Item"):?>
