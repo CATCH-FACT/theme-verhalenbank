@@ -1,6 +1,13 @@
 <?php
 $pageTitle = __('Browse Items');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
+
+$bg_colors["File"] = "#DAFCFF";
+$bg_colors["Lexicon item"] = "#DAFFDF";
+$bg_colors["Volksverhaaltype"] = "#FFDCDC";
+$bg_colors["Textedition"] = "#EBEBEB";
+$bg_colors["Volksverhaal"] = "white";
+$bg_colors["Persoon"] = "#FFFFDC";
 ?>
 
 <h1><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></h1>
@@ -29,9 +36,10 @@ $wrapper_tags = array('link_tag' => 'option value="col"', 'list_tag' => 'select'
 <?php endif; ?>
 
 <?php foreach (loop('items') as $item): ?>
-<div class="item hentry">
-    <h2><?php echo link_to_item(metadata('item', array('Dublin Core', 'Identifier')) . 
-                    (metadata('item', array('Dublin Core', 'Title')) ? " - " . metadata('item', array('Dublin Core', 'Title')) : " - " . __("[Untitled]")), array('class'=>'permalink')); ?>
+<?php $itemtypename = metadata('item', 'Item Type Name') ? metadata('item', 'Item Type Name') : "";?>
+<div class="item hentry" style = "background-color:<?php echo $bg_colors[$itemtypename] ?>">
+    <h2><a href="<?php echo record_url('item', 'show'); ?>"><?php echo __($itemtypename) . ((metadata('item', array('Dublin Core', 'Identifier'))) ? " - " . metadata('item', array('Dublin Core', 'Identifier')) : "")
+                            . (metadata('item', array('Dublin Core', 'Title')) ? " - " . metadata('item', array('Dublin Core', 'Title')) : " - " . __("[Untitled]")); ?></a>
     </h2>
     
     <div class="item-meta">

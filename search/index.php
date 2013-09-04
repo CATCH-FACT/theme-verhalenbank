@@ -35,7 +35,9 @@ $bg_colors["Persoon"] = "#FFFFDC";
         <?php if ($searchRecordTypes[$searchText['record_type']] == __("File")):?>
             <?php $itemtypename = "File"; ?>
             <div class="item hentry" style = "background-color:<?php echo $bg_colors[$itemtypename] ?>">
-            <h2><a href="<?php echo record_url($record, 'show'); ?>"><i style = "color:<?php echo $verhalenbank_file_color?>"><?php echo __($itemtypename) . "</i> - " . metadata($record, array('Dublin Core', 'Identifier')) ?></a></h2>
+            <h2><a href="<?php echo record_url($record, 'show'); ?>">
+                <i style = "color:<?php echo $verhalenbank_file_color?>"><?php echo __($itemtypename) . "</i> - " . metadata($record, array('Dublin Core', 'Identifier')) ?></a>
+            </h2>
             
             <div class="item-meta">            
                 <div class="item-img">
@@ -55,7 +57,8 @@ $bg_colors["Persoon"] = "#FFFFDC";
             <div class="item hentry" style = "background-color:<?php echo $bg_colors[$itemtypename] ?>">
         
             <h2><a href="<?php echo record_url($record, 'show'); ?>"><?php echo __($itemtypename) . ((metadata($record, array('Dublin Core', 'Identifier'))) ? " - " . metadata($record, array('Dublin Core', 'Identifier')) : "")
-                                    . ($searchText['title'] ? " - " . $searchText['title'] : " - " . __("[Untitled]")); ?></a></h2>
+                                    . ($searchText['title'] ? " - " . $searchText['title'] : " - " . __("[Untitled]")); ?></a>
+            </h2>
 
             <div class="item-meta">            
             <?php if (metadata('item', 'has thumbnail')): ?>
