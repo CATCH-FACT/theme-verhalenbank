@@ -40,7 +40,7 @@
     <div id="itemfiles" class="element">
         <h2><?php echo __('Files'); ?></h2>
         <?php if (get_theme_option('Item FileGallery') == 1): ?>
-        <?php echo item_image_gallery($attrs = array(), $imageType = 'square_thumbnail', $filesShow = true, $item = null); ?>
+        <?php echo item_image_gallery($attrs = array(), $imageType = 'square_thumbnail', $filesShow = true); ?>
         <?php else: ?>
         <?php echo files_for_item(); ?>
         <?php endif; ?>
