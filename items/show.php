@@ -39,11 +39,15 @@
     <?php if (metadata('item', 'has files')): ?>
     <div id="itemfiles" class="element">
         <h2><?php echo __('Files'); ?></h2>
-        <?php if (get_theme_option('Item FileGallery') == 1): ?>
-        <?php echo item_image_gallery($attrs = array(), $imageType = 'square_thumbnail', $filesShow = true); ?>
-        <?php else: ?>
-        <?php echo files_for_item(); ?>
-        <?php endif; ?>
+        <div id="item-images">
+        <?php   echo files_for_item(array('showFilename' => false, 
+                                            'linkToMetadata' => true,
+                                            'linkAttributes' => array('rel'=>'lightbox'), 
+                                            'filenameAttributes'=>array('class'=>'error'),
+                                            'imageSize'=>'square_thumbnail',
+                                            'icons' => array('application/pdf'=>img('pdf-icon.png'), 
+                                                            'audio/mpeg'=>img('audio-file-xxl.png'))));?>
+        </div>
     </div>
     <?php endif; ?>
 
