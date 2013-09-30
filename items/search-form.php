@@ -43,7 +43,7 @@ $formAttributes['method'] = 'GET';
         </div>
     </div>
     <div id="search-keywords" class="field">
-        <?php echo $this->formLabel('keyword-search', __('All metadata fields')); ?>
+        <?php echo $this->formLabel('keyword-search', __('Search for Keywords')); ?>
         <div class="inputs">
         <?php
             echo $this->formText(
@@ -75,7 +75,7 @@ $formAttributes['method'] = 'GET';
             $search = array();
         }
         ?>
-        <div class="label"><?php echo __('Commonly used fields search'); ?></div>
+        <div class="label"><?php echo __('Narrow by Specific Fields'); ?></div>
         <center>
         <table width=90%>
         <?php
