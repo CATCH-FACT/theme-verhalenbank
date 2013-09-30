@@ -49,23 +49,19 @@ $wrapper_tags = array('link_tag' => 'option value="col"', 'list_tag' => 'select'
     </div>
     <?php endif; ?>
 
-    <?php if ($subgenre = metadata('item', array('Item Type Metadata', 'Subgenre'))): ?>
-    <div class="item-description">
+    <div class="item-description" style = "display:inline;">
+        <?php if ($subgenre = metadata('item', array('Item Type Metadata', 'Subgenre'))): ?>
         <h4 style = "display:inline;"><?php echo $subgenre; ?></h4>
-        
+        <?php endif; ?>
+
         <?php if ($date = metadata('item', array('Dublin Core', 'Date'))): ?>
-        <div style = "display:inline-block; float:right;" class="item-date">
+        <div style = "display:inline; float:right;" class="item-date">
             <?php echo $date; ?>
         </div>
         <?php endif; ?>
         
     </div>
     
-    <!-- -->
-    
-    <?php endif; ?>
-
-
     <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
     <div class="item-description">
         <?php echo $description; ?>
