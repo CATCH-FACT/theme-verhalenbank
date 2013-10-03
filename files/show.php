@@ -22,7 +22,7 @@
     
     <div id="item-metadata" class="panel">
         <h2><?php echo __('Item'); ?></h2>
-        <p><?php echo link_to_item(null, array(), 'show', $file->getItem()); ?></p>
+        <p><?php echo link_to_item(metadata($file->getItem(), array('Dublin Core', 'Identifier')), array(), 'show', $file->getItem()); ?></p>
     </div>
     
     <div id="format-metadata">
