@@ -40,13 +40,15 @@
     <div id="itemfiles" class="element">
         <h2><?php echo __('Files'); ?></h2>
         <div id="item-images">
-        <?php   echo files_for_item(array('showFilename' => false, 
-                                            'linkToMetadata' => true,
-                                            'linkAttributes' => array('rel'=>'lightbox'), 
-                                            'filenameAttributes'=>array('class'=>'error'),
-                                            'imageSize'=>'square_thumbnail',
-                                            'icons' => array('application/pdf'=>img('pdf-icon.png'), 
-                                                            'audio/mpeg'=>img('audio-file-xxl.png'))));?>
+        
+        <?php echo files_for_item(array('showFilename' => false, 
+                                         'linkToMetadata' => true,
+                                         'linkAttributes' => array('rel'=>'lightbox'),
+                                         'imageSize'=>'square_thumbnail',
+                                         'icons' => array('application/pdf'=>img('pdf-icon.png'),
+                                                         'audio/mpeg'=>img('audio-file-xxl.png'),
+                                                         'video/quicktime'=>img('video-file-xxl.png'))
+                                 ));?>
         </div>
     </div>
     <?php endif; ?>
