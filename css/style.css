@@ -5,7 +5,6 @@
 @media screen {
   /* -------------------------------------------------------------------------*/
   /* Layout */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000034}}
   .container {
     *zoom: 1;
     max-width: 34em;
@@ -15,7 +14,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
   .container:after {
     content: "";
     display: table;
@@ -24,7 +22,6 @@
 
   /* -------------------------------------------------------------------------*/
   /* == Generic == */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000311}}
   body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
     font-weight: 300;
@@ -39,67 +36,56 @@
     height: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000325}}
   a {
     text-decoration: none;
   }
 
   /* -- Headings -- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000329}}
   h1 {
     font-size: 28px;
     line-height: 48px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000334}}
   h2 {
     font-size: 21px;
     line-height: 36px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000339}}
   h3 {
     font-size: 17.5px;
     line-height: 30px;
     font-weight: 500;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000345}}
   h4 {
     font-size: 15.75px;
     line-height: 27px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000350}}
   h5, h6 {
     font-size: 14px;
     line-height: 24px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000355}}
   p, ol, ul {
     margin-bottom: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000358}}
   p:only-child, p:last-child, ol:only-child, ol:last-child, ul:only-child, ul:last-child {
     margin-bottom: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000361}}
   ul {
     list-style-type: disc;
     padding-left: 0em;
   }
 
   /* -- Form Elements -- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000368}}
   label {
     padding-top: 0.85714em;
     padding-bottom: 0.85714em;
     display: inline-block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000375}}
   input[type=text], input[type=password], textarea,
   input[type=submit], input[type=button], button, .button {
     display: inline;
@@ -113,31 +99,26 @@
     *behavior: url("../javascripts/boxsizing.htc");
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000384}}
   input[type=text], input[type=password], textarea {
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000386}}
   input[type=radio] {
     margin-right: 5px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000388}}
   select {
     width: 100%;
     margin-top: 0;
     margin-bottom: 1.71429em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\0000394}}
   input[type=submit], button, .button {
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003100}}
   fieldset {
     border: 0;
     margin: 0;
@@ -145,19 +126,16 @@
   }
 
   /* -- Misc Classes -- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003107}}
   .center-div {
     margin: 0 auto;
     overflow: auto;
   }
 
   /* Pagination Classes */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003114}}
   .item-pagination {
     clear: both;
     padding-bottom: 0.85714em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003118}}
   .item-pagination li {
     display: inline-block;
     background-color: #fff;
@@ -167,26 +145,21 @@
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003125}}
   .item-pagination li:empty {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003128}}
   .item-pagination .next {
     float: right;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003129}}
   .item-pagination .previous {
     float: left;
   }
 
   /* == Header == */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003134}}
   header {
     padding: 0 16px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003139}}
   #site-title {
     font-size: 35px;
     line-height: 48px;
@@ -197,11 +170,9 @@
     padding-bottom: 0.85714em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003149}}
   #search-container {
     padding-bottom: 0.34286em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003152}}
   #search-container:after {
     content: "";
     display: block;
@@ -209,19 +180,16 @@
     width: 100px;
     clear: both;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003160}}
   #search-container > div {
     margin: 12px;
     position: relative;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003167}}
   #search-form {
     text-align: center;
     position: relative;
     overflow: visible;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003172}}
   #search-form input[type=text] {
     display: inline;
     width: 60%;
@@ -229,7 +197,6 @@
     line-height: 1.71429em;
     float: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003180}}
   #search-form input[type=submit] {
     width: 30%;
     padding: 0;
@@ -238,7 +205,6 @@
     left: 60%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003189}}
   #advanced-search {
     width: 10%;
     height: 35px;
@@ -259,15 +225,12 @@
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '+');
     *text-indent: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003206}}
   #advanced-search:hover {
     text-decoration: underline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003211}}
   #advanced-search:link, #advanced-search:active, #advanced-search:visited {
     color: #fff;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003215}}
   #advanced-search:after {
     content: "+";
     display: block;
@@ -276,7 +239,6 @@
     margin-top: -1.75em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003224}}
   #advanced-form {
     display: none;
     background-color: #fff;
@@ -298,39 +260,32 @@
     -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 5px 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0 5px 10px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003240}}
   #advanced-form #query-types *:first-child {
     margin-top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003244}}
   #advanced-form label {
     margin: 0;
     padding: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003249}}
   #advanced-form p {
     margin-top: 0.85714em;
     margin-bottom: 0.85714em;
   }
 
   /* == Footer == */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003256}}
   footer {
     margin-top: 1.71429em;
     padding: 0 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003261}}
   footer p {
     padding-bottom: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003265}}
   footer:empty {
     display: none;
   }
 
   /* == Content == */
   /* -- Structure -- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003271}}
   #content {
     clear: both;
     overflow: visible;
@@ -338,45 +293,36 @@
   }
 
   /* -- General -- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003282}}
   #home #content div .item {
     border-top: 1px solid #dfe2e2;
     overflow: auto;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003286}}
   #home #content div .item:first-of-type {
     border-top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003289}}
   #home #content div .item:first-of-type h3 {
     margin-top: 0.42857em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003292}}
   #home #content div .item h3 {
     margin-top: 0.85714em;
     padding-left: 16px;
     padding-right: 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003299}}
   #home #content div .items-list {
     margin-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003301}}
   #home #content div .items-list .item-description {
     margin: 0.85714em 16px 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003307}}
   #home #content div h3, #home #content div h4, #home #content div h5, #home #content div h6,
   #home #content div p, #home #content div input, #home #content div textarea {
     margin: 0.85714em 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003311}}
   #home #content div h3 {
     margin-top: 0;
     font-weight: 300;
     text-transform: uppercase;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003317}}
   #home #content div img {
     margin: 0 16px 0.85714em;
     border: 1px solid #dfe2e2;
@@ -388,109 +334,87 @@
     box-sizing: border-box;
     *behavior: url("../javascripts/boxsizing.htc");
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003326}}
   #home #content div .show {
     display: block;
     text-transform: capitalize;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003329}}
   #home #content div .show:before {
     content: "(";
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003330}}
   #home #content div .show:after {
     content: "...)";
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003333}}
   #home #content div .view-items-link {
     margin: 0;
     padding: 0.85714em 16px 0;
     border-top: 1px solid #dfe2e2;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003339}}
   #home #content div .item-img {
     display: inline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003343}}
   #home #content div .item-description {
     margin-top: 0;
     padding-top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003350}}
   #home #intro {
     margin-bottom: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003354}}
   #home #featured-item p {
     clear: both;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003356}}
   #home #recent-items h2 {
     padding-bottom: 0.85714em;
   }
 
   /* -- Navigation -- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003362}}
   nav ul {
     list-style: none;
     margin: 0 auto;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003367}}
   nav li {
     display: block;
     font-family: Georgia, Times, "Times New Roman", serif;
     font-style: italic;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003371}}
   nav li ul li {
     padding-left: 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003376}}
   nav a {
     display: inline-block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003379}}
   .top {
     padding: 0 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003382}}
   .top ul {
     display: none;
     padding: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003387}}
   .top a {
     padding-top: 0.85714em;
     padding-bottom: 0.85714em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003392}}
   .top .mobile {
     margin: 1.71429em auto;
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003398}}
   .navigation ul, ul.navigation {
     padding-left: 0;
   }
 
   /* == Items Pages == */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003405}}
   .item h3 {
     margin-bottom: 0.85714em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003409}}
   .item #itemfiles #item-images > div {
     width: 22.5%;
     display: inline-block;
     margin-right: 3%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003414}}
   .item #itemfiles #item-images > div:nth-of-type(4n) {
     margin-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003417}}
   .item #itemfiles a {
     border: 1px solid #dfe2e2;
     display: inline-block;
@@ -505,21 +429,17 @@
     box-sizing: border-box;
     *behavior: url("../javascripts/boxsizing.htc");
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003428}}
   .item #itemfiles a img {
     width: 100%;
     height: auto;
     vertical-align: bottom;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003435}}
   .item #itemfiles .element-text div:first-of-type {
     border-top: 1px solid #dfe2e2;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003441}}
   .item #content #primary .element:last-of-type {
     padding-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003443}}
   .item #primary {
     background-color: transparent;
     border-top: 0;
@@ -529,7 +449,6 @@
     box-shadow: transparent 0 0 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003453}}
   .advanced-search #content > * > div {
     background-color: #fff;
     border-style: solid;
@@ -546,25 +465,20 @@
     margin-bottom: 1.28571em;
     *zoom: 1;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003463}}
   .advanced-search #content > * > div:last-of-type {
     padding: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003465}}
   .advanced-search #content > * > div > * {
     padding-left: 16px;
     padding-right: 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003470}}
   .advanced-search #content > * > div input {
     margin-bottom: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003472}}
   .advanced-search #content > * > div div.label {
     margin-bottom: 0.85714em;
     margin-top: 0.85714em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003477}}
   .advanced-search #content > * > div > div {
     -webkit-box-shadow: transparent 0 0 0;
     -moz-box-shadow: transparent 0 0 0;
@@ -573,83 +487,66 @@
     margin-bottom: 0;
     padding: 0 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003483}}
   .advanced-search #content > * > div > div:only-of-type, .advanced-search #content > * > div > div:last-of-type {
     margin-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003489}}
   .advanced-search #content > * > div > div div:first-of-type, .advanced-search #content > * > div > div h1:first-of-type, .advanced-search #content > * > div > div h2:first-of-type, .advanced-search #content > * > div > div h3:first-of-type, .advanced-search #content > * > div > div h4:first-of-type, .advanced-search #content > * > div > div h5:first-of-type, .advanced-search #content > * > div > div h6:first-of-type, .advanced-search #content > * > div > div p:first-of-type {
     border-top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
   .advanced-search #content > * > div:after {
     content: "";
     display: table;
     clear: both;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003497}}
   .advanced-search #content .remove_search {
     margin-bottom: 1.71429em;
     margin-left: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003502}}
   .advanced-search #content select {
     float: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003504}}
   .advanced-search #content button {
     display: inline-block;
     margin: 0 16px 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003508}}
   .advanced-search #content button:last-of-type {
     margin-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003511}}
   .advanced-search #content .search-entry {
     margin-bottom: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003514}}
   .advanced-search #content .search-entry:first-of-type {
     padding-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003516}}
   .advanced-search #content .search-entry:last-of-type {
     margin-bottom: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003518}}
   .advanced-search #content .search-entry:only-of-type {
     margin-bottom: 0em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003521}}
   .advanced-search #content #advanced-search-form {
     margin-top: 0.85714em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003523}}
   .advanced-search #content #advanced-search-form > div:last-of-type {
     border: 0;
     background-color: transparent;
     float: left;
     *zoom: 1;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
   .advanced-search #content #advanced-search-form > div:last-of-type:after {
     content: "";
     display: table;
     clear: both;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003530}}
   .advanced-search #content #submit_search_advanced {
     *height: 50px;
     margin-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003535}}
   .advanced-search #content .view-items-link {
     padding: 0.42857em 16px 1.28571em;
   }
 
   /* == File Pages == */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003542}}
   .files #content #primary {
     background-color: transparent;
     border-top: 0;
@@ -658,15 +555,12 @@
     box-shadow: transparent 0 0 0;
     padding-top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003546}}
   .files #content #primary:first-child {
     margin-top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003549}}
   .files #content #sidebar h3 {
     padding-left: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003551}}
   .files .download-file {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -676,28 +570,23 @@
     padding: 0.42857em;
     display: inline-block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003557}}
   .files .download-file img {
     max-width: 100%;
     vertical-align: bottom;
     float: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003564}}
   .files .item-file {
     text-align: center;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003568}}
   #content {
     *zoom: 1;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
   #content:after {
     content: "";
     display: table;
     clear: both;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003572}}
   #content h1 {
     font-size: 21px;
     line-height: 36px;
@@ -706,7 +595,6 @@
     padding: 0 0 0.85714em 0;
     margin-bottom: 0.42857em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003586}}
   #content > h2, #content > div > h2,
   #content #primary > h2,
   #content #primary > div > h2,
@@ -718,12 +606,10 @@
     margin-top: 0em;
     margin-bottom: 0.85714em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003597}}
   #content #primary > div > * {
     padding-left: 16px;
     padding-right: 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003603}}
   #content > div, #content section {
     background-color: #fff;
     border-style: solid;
@@ -741,28 +627,22 @@
     margin-bottom: 1.28571em;
     *zoom: 1;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003616}}
   #content > div .view-items-link, #content section .view-items-link {
     padding: 0.42857em 16px 1.28571em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003618}}
   #content > div > div, #content > div > h3, #content > div > h4, #content > div > h5, #content > div > h6, #content > div > p, #content section > div, #content section > h3, #content section > h4, #content section > h5, #content section > h6, #content section > p {
     padding-left: 16px;
     padding-right: 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003622}}
   #content > div > div > *:last-child, #content > div > h3 > *:last-child, #content > div > h4 > *:last-child, #content > div > h5 > *:last-child, #content > div > h6 > *:last-child, #content > div > p > *:last-child, #content section > div > *:last-child, #content section > h3 > *:last-child, #content section > h4 > *:last-child, #content section > h5 > *:last-child, #content section > h6 > *:last-child, #content section > p > *:last-child {
     padding-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003628}}
   #content > div div:first-of-type, #content section div:first-of-type {
     padding-top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003630}}
   #content > div div:only-of-type, #content > div div:last-of-type, #content section div:only-of-type, #content section div:last-of-type {
     margin-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003634}}
   #content > div div div, #content > div div h3, #content > div div h4, #content > div div h5, #content > div div h6, #content > div div p, #content section div div, #content section div h3, #content section div h4, #content section div h5, #content section div h6, #content section div p {
     -webkit-box-shadow: transparent 0 0 0;
     -moz-box-shadow: transparent 0 0 0;
@@ -770,75 +650,59 @@
     border-top: 0;
     margin-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003639}}
   #content > div div div:first-of-type, #content > div div h3:first-of-type, #content > div div h4:first-of-type, #content > div div h5:first-of-type, #content > div div h6:first-of-type, #content > div div p:first-of-type, #content section div div:first-of-type, #content section div h3:first-of-type, #content section div h4:first-of-type, #content section div h5:first-of-type, #content section div h6:first-of-type, #content section div p:first-of-type {
     border-top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
   #content > div:after, #content section:after {
     content: "";
     display: table;
     clear: both;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003648}}
   #content .field div:only-of-type {
     margin-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003651}}
   #content .inputs {
     padding: 0.85714em 16px 1.71429em;
     clear: both;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003655}}
   #content .inputs div:last-of-type, #content .inputs div:only-of-type, #content .inputs *:only-child, #content .inputs *:last-child {
     margin-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003660}}
   #content > .element {
     border-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003662}}
   #content > * > .element {
     margin-bottom: 0.85714em;
     border-bottom: 1px solid #dfe2e2;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003666}}
   #content > * > .element div {
     padding-bottom: 0.85714em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003669}}
   #content > * > .element div:only-of-type, #content > * > .element div:last-of-type {
     border-bottom: 0;
     padding-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003677}}
   #content .element-set {
     border-width: 0 0 0 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003679}}
   #content .element-set div {
     padding-bottom: 0.85714em;
     margin-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003683}}
   #content .element-set div:only-of-type, #content .element-set div:last-of-type {
     border-bottom: 0;
     padding-bottom: 0.42857em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003690}}
   #content .item-meta {
     padding-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003694}}
   #content .item-meta div {
     padding-left: 16px;
     padding-right: 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003699}}
   #content .item-meta .item-description {
     padding-top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003701}}
   #content .item-meta .item-img {
     max-width: 100%;
     display: inline-block;
@@ -852,14 +716,12 @@
     -moz-box-shadow: border-box;
     box-shadow: border-box;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003712}}
   #content .item-meta .item-img img {
     width: 100%;
     height: auto;
     margin: 0;
     vertical-align: bottom;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003722}}
   #content #primary > div,
   #content #sidebar > div {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
@@ -877,23 +739,19 @@
     -moz-box-shadow: gray 2px 2px 6px;
     box-shadow: gray 2px 2px 6px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003736}}
   #content #primary > div > div,
   #content #sidebar > div > div {
     border-width: 0 0 0 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003740}}
   #content #primary > div > *:first-child,
   #content #sidebar > div > *:first-child {
     margin-top: 0em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003742}}
   #content #primary > div > *,
   #content #sidebar > div > * {
     padding-left: 16px;
     padding-right: 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003747}}
   #content #primary > div > ul, #content #primary > div ol,
   #content #sidebar > div > ul,
   #content #sidebar > div ol {
@@ -901,15 +759,12 @@
     margin-right: 16px;
     padding-left: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003754}}
   #content .pagination {
     display: inline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003757}}
   #content .pagination > *:last-child {
     padding-bottom: 0.42857em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003760}}
   #content .pagination_list {
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
@@ -919,7 +774,6 @@
     padding: 0.42857em 16px;
     text-align: center;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003767}}
   #content .pagination_list li {
     display: inline-block;
     width: auto;
@@ -928,61 +782,48 @@
     zoom: 1;
     *display: inline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003776}}
   #content .pagination_list a {
     padding: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003778}}
   #content .pagination_list .pagination_current {
     font-weight: 700;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003782}}
   #content .pagination_list .pagination_first a, #content .pagination_list .pagination_last a,
   #content .pagination_list .pagination_previous a, #content .pagination_list .pagination_next a {
     display: inline-block;
     text-indent: -9999px;
     *text-indent: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003787}}
   #content .pagination_list .pagination_first a:after, #content .pagination_list .pagination_last a:after,
   #content .pagination_list .pagination_previous a:after, #content .pagination_list .pagination_next a:after {
     text-indent: 0;
     display: block;
     margin-top: -2em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003795}}
   #content .pagination_list .pagination_first a {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '<<');
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003796}}
   #content .pagination_list .pagination_last a {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '>>');
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003797}}
   #content .pagination_list .pagination_previous a {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '<');
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003798}}
   #content .pagination_list .pagination_next a {
     *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '>');
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003800}}
   #content .pagination_list .pagination_first a:after {
     content: "<<";
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003801}}
   #content .pagination_list .pagination_last a:after {
     content: ">>";
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003802}}
   #content .pagination_list .pagination_previous a:after {
     content: "<";
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003803}}
   #content .pagination_list .pagination_next a:after {
     content: ">";
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003812}}
   #content #search-filters, #content #item-filters {
     float: left;
     border: 0;
@@ -992,13 +833,11 @@
     box-shadow: transparent 0 0 0;
     margin-bottom: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003819}}
   #content #search-filters > ul, #content #item-filters > ul {
     float: left;
     padding-left: 0;
     *border: 1px solid #e8e8e8;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003825}}
   #content #search-filters li, #content #item-filters li {
     overflow: auto;
     padding: 0.42857em 8px;
@@ -1006,7 +845,6 @@
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003830}}
   #content #search-filters li li, #content #item-filters li li {
     display: inline;
     padding: 0.42857em 0;
@@ -1015,15 +853,12 @@
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003835}}
   #content #search-filters li li:last-of-type:after, #content #item-filters li li:last-of-type:after {
     content: "";
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003838}}
   #content #search-filters li li:after, #content #item-filters li li:after {
     content: ", ";
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003845}}
   #content div.hTagcloud {
     border: 0;
     background-color: transparent;
@@ -1031,13 +866,11 @@
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003849}}
   #content div.hTagcloud ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003853}}
   #content div.hTagcloud ul li {
     display: inline-block;
     *display: inline;
@@ -1051,38 +884,31 @@
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003869}}
   .items h1 {
     margin-bottom: 0;
     padding-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003874}}
   .items .items-nav {
     margin-bottom: 0.42857em;
     *zoom: 1;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
   .items .items-nav:after {
     content: "";
     display: table;
     clear: both;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003878}}
   .items .items-nav .active {
     font-weight: 500;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003880}}
   .items .items-nav ul {
     padding-left: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003882}}
   .items .items-nav li {
     display: inline-block;
     float: left;
     width: auto;
     margin-right: 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003890}}
   .items #sort-links {
     padding-top: 4px;
     padding: 0.42857em 12px;
@@ -1090,7 +916,6 @@
     margin-top: 0.42857em;
     margin-bottom: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003896}}
   .items #sort-links span, .items #sort-links ul, .items #sort-links li {
     display: inline-block;
     margin: 0 4px;
@@ -1098,12 +923,10 @@
     display: inline;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003908}}
   .collections:only-of-type, .collections:last-of-type {
     border-bottom: 0;
     margin-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003913}}
   .collections #content > div > div, .collections #content > div > p {
     background: transparent;
     border: 0;
@@ -1112,29 +935,23 @@
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003920}}
   .collections #content .element-set .element {
     margin-bottom: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003923}}
   .collections #content .element-set .element:last-of-type {
     margin-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003930}}
   .collections #collection-items > div:first-of-type {
     border-top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003934}}
   .collections #collection-items > div div:only-of-type {
     margin-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003940}}
   .collections #content .view-items-link {
     padding: 0.85714em 16px 0;
     margin: 1.71429em 0 0 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003948}}
   .search #search-results {
     background-color: #fff;
     margin-bottom: 1.71429em;
@@ -1142,62 +959,50 @@
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003953}}
   .search #search-results th {
     color: #fff;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003957}}
   .search #search-results th, .search #search-results td {
     padding: 0.42857em 4px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003959}}
   .search #search-results th:last-of-type, .search #search-results td:last-of-type {
     border-right: 1;
   }
 
   /* == Exhibit Pages == */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003969}}
   #exhibit h1 {
     margin-bottom: 0;
     padding-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003974}}
   #exhibit #content .navigation {
     padding-left: 0;
     margin-bottom: 0.42857em;
     *zoom: 1;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
   #exhibit #content .navigation:after {
     content: "";
     display: table;
     clear: both;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003979}}
   #exhibit #content .navigation .active {
     font-weight: 500;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003981}}
   #exhibit #content .navigation li {
     display: inline-block;
     float: left;
     width: auto;
     margin-right: 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003989}}
   #exhibit #content .primary {
     padding-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003992}}
   #exhibit .exhibit > div {
     padding-left: 16px;
     padding-right: 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\00003998}}
   #exhibit .exhibit-page {
     font-weight: bold;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031000}}
   #exhibit.tags #content p:only-of-type {
     background-color: #fff;
     border-style: solid;
@@ -1214,11 +1019,9 @@
     padding-bottom: 1.71429em;
     margin-bottom: 1.28571em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031013}}
   #exhibit.summary #content h1 {
     margin-bottom: 0.85714em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031016}}
   #exhibit.summary #content #primary > div {
     background-color: transparent;
     border-top: 0;
@@ -1226,11 +1029,9 @@
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031019}}
   #exhibit.summary #content #primary > div:last-child {
     margin-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031022}}
   #exhibit.summary #content #exhibit-pages {
     background-color: #fff;
     border-style: solid;
@@ -1242,33 +1043,26 @@
     padding-top: 1.71429em;
     padding-bottom: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031031}}
   #exhibit.summary #content #exhibit-pages ul {
     margin-left: 6px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031033}}
   #exhibit.summary #content #exhibit-pages ul ul {
     padding-left: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031039}}
   #exhibit.show #content h1 {
     margin-top: 0.21429em;
     margin-bottom: 0.21429em;
     font-size: 35px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031047}}
   #exhibit.show #content .primary:first-child {
     margin-top: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031049}}
   #exhibit.show #content .primary p, #exhibit.show #content .primary ol, #exhibit.show #content .primary ul {
     margin-bottom: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031054}}
   #exhibit.show #content .exhibit-item {
     padding-top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031056}}
   #exhibit.show #content #exhibit-page-navigation {
     background-color: transparent;
     border-top: 0;
@@ -1276,7 +1070,6 @@
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031059}}
   #exhibit.show #content #exhibit-page-navigation a, #exhibit.show #content #exhibit-page-navigation span {
     background-color: #fff;
     padding: 0.42857em 16px;
@@ -1290,92 +1083,74 @@
     box-sizing: border-box;
     *behavior: url("../javascripts/boxsizing.htc");
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031068}}
   #exhibit.show #content #exhibit-page-navigation > div {
     padding: 0;
     width: 100%;
     text-align: center;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031074}}
   #exhibit.show #content #exhibit-page-navigation #exhibit-nav-next {
     margin-bottom: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031077}}
   #exhibit.show #content #exhibit-pages ul {
     margin-left: 0 !important;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031079}}
   #exhibit.show #content .exhibit-page-nav, #exhibit.show #content .exhibit-child-nav {
     margin-left: 0;
     padding-left: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031083}}
   #exhibit.show #content .exhibit-page-nav .current, #exhibit.show #content .exhibit-child-nav .current {
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.1);
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031090}}
   #exhibit.show #content .exhibit-page-nav {
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 0 10px;
     margin-bottom: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031095}}
   #exhibit.show #content .exhibit-page-nav a {
     padding: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031097}}
   #exhibit.show #content .exhibit-page-nav > li:nth-child(2) {
     background-color: rgba(0, 0, 0, 0.1);
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031101}}
   #exhibit.show #content .exhibit-page-nav > li:nth-child(3) {
     background-color: rgba(0, 0, 0, 0.2);
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031105}}
   #exhibit.show #content .exhibit-page-nav > li:nth-child(4) {
     background-color: rgba(0, 0, 0, 0.3);
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031109}}
   #exhibit.show #content .exhibit-page-nav > li {
     display: block;
     float: none;
     overflow: auto;
     margin-right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031115}}
   #exhibit.show #content .exhibit-page-nav > li:first-of-type {
     text-transform: uppercase;
     margin-right: 0;
     padding: 0.42857em 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031120}}
   #exhibit.show #content .exhibit-page-nav > li:first-of-type a:after {
     content: ":";
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031123}}
   #exhibit.show #content .exhibit-page-nav > li ul {
     padding-left: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031126}}
   #exhibit.show #content .exhibit-page-nav > li ul li {
     display: inline-block;
     margin-right: 16px;
     padding: 0.42857em 8px;
     width: auto;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031132}}
   #exhibit.show #content .exhibit-page-nav > li ul li:first-of-type {
     padding-left: 16px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031143}}
   #content .exhibit-item:empty {
     padding: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031148}}
   .gallery-full-left, .gallery-full-right, .gallery-thumbnails,
   .gallery-thumbnails-text-bottom, .gallery-thumbnails-text-top, .image-list-left,
   .image-list-left-thumbs, .image-list-right, .image-list-right-thumbs,
@@ -1383,7 +1158,6 @@
     padding: 1.71429em 16px;
     margin-top: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031152}}
   .gallery-full-left div:empty, .gallery-full-right div:empty, .gallery-thumbnails div:empty,
   .gallery-thumbnails-text-bottom div:empty, .gallery-thumbnails-text-top div:empty, .image-list-left div:empty,
   .image-list-left-thumbs div:empty, .image-list-right div:empty, .image-list-right-thumbs div:empty,
@@ -1392,7 +1166,6 @@
   }
 
   /* == Simple Pages styles == */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031157}}
   .page #content #primary {
     background-color: #fff;
     border-style: solid;
@@ -1414,38 +1187,31 @@
     *border-left: 1px solid #ccc;
     *border-bottom: 1px solid #ccc;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031173}}
   .page #content #primary div {
     border-top: 0;
     -webkit-box-shadow: transparent 0 0 0;
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031178}}
   .page #content #primary > * {
     padding: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031180}}
   .page #content #primary > ul, .page #content #primary > ol {
     padding-left: 0em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031183}}
   .simple-pages-navigation {
     list-style: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031186}}
   .simple-pages-navigation ul {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031189}}
   .simple-pages-navigation .current ul {
     display: block;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031193}}
   .simple-pages-navigation a {
     text-decoration: none;
     border-bottom: 1px solid #ddd;
@@ -1454,7 +1220,6 @@
     padding: 4px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031201}}
   #simple-pages-breadcrumbs {
     font-weight: bold;
     margin-bottom: 1.71429em;
@@ -1465,7 +1230,6 @@
   VERHALENBANK Styles
   ######################################################################
   */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031215}}
   .verhalenbank #admin-bar {
     /*ADDED BY IWE*/
     background-color: #444444;
@@ -1476,17 +1240,14 @@
     padding-top: 1px;
     z-index: 1;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031225}}
   .verhalenbank body {
     background: url("../images/background_maps_TEMP.jpg") fixed;
     background-color: #fffffe;
     color: #272727;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031231}}
   .verhalenbank h1 {
     color: #ab2929;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031234}}
   .verhalenbank #site-title a {
     font-family: Georgia, Times, "Times New Roman", serif;
     line-height: 1.3;
@@ -1496,86 +1257,68 @@
     padding-left: 16px;
     color: #555555;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031245}}
   .verhalenbank input[type=submit], .verhalenbank button, .verhalenbank .button, .verhalenbank #advanced-search {
     background-color: #888888;
     color: #252525;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031250}}
   .verhalenbank input[type=text], .verhalenbank input[type=password], .verhalenbank textarea {
     display: inline;
     background-color: #e8e8e8;
     border: 1px solid #ab2929;
     color: #272727;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031258}}
   .verhalenbank a:link {
     color: #ab2929;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031259}}
   .verhalenbank a:visited {
     color: #bc5454;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031260}}
   .verhalenbank a:hover, .verhalenbank a:active {
     color: #ab2929;
     text-decoration: underline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031266}}
   .verhalenbank header {
     background-color: #fffffe;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031269}}
   .verhalenbank nav .navigation_current {
     background-color: #e8e8e8;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031273}}
   .verhalenbank nav.top {
     background-color: #bc5454;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031276}}
   .verhalenbank nav.top li:hover a {
     color: #fffffe;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031278}}
   .verhalenbank nav.top a:link, .verhalenbank nav.top a:visited {
     color: white;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031279}}
   .verhalenbank nav.top a:active, .verhalenbank nav.top a:hover {
     color: #fffffe;
     text-decoration: underline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031283}}
   .verhalenbank nav.top ul li ul {
     background-color: #bc5454;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031286}}
   .verhalenbank nav.top ul li ul li > a:link, .verhalenbank nav.top ul li ul li > a:visited {
     color: #ab2929;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031287}}
   .verhalenbank nav.top ul li ul li > a:active, .verhalenbank nav.top ul li ul li > a:hover, .verhalenbank nav.top ul li ul li:hover > a {
     color: #fffffe;
     text-decoration: underline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031295}}
   .verhalenbank #intro {
     color: black;
     padding-top: 40px;
     padding: 12px 12px 12px 12px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031301}}
   .verhalenbank #content {
     background-color: #fffffe;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031306}}
   .verhalenbank div h1, .verhalenbank div h2, .verhalenbank div h3, .verhalenbank div h4 {
     color: #ab2929;
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 1.3em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031318}}
   .verhalenbank #advanced-form {
     background-color: #bc5454;
     color: #cccccc;
@@ -1583,18 +1326,15 @@
     border-style: solid;
     border-color: #ab2929;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031324}}
   .verhalenbank #advanced-form a {
     color: white;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031329}}
   .verhalenbank #home #content > div {
     border-color: #ab2929;
     *border-style: solid;
     *border-color: #e8e8e8;
     *border-top-color: #ab2929;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031341}}
   .verhalenbank #home #content > div img,
   .verhalenbank #home #content .item,
   .verhalenbank #home #content div .view-items-link,
@@ -1602,27 +1342,25 @@
   .verhalenbank .collections #content div .view-items-link {
     border-color: #ab2929;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031347}}
+  .verhalenbank #content {
+    /* Tag Clouds */
+  }
   .verhalenbank #content h1 {
     color: #555555;
     background-color: white;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031352}}
   .verhalenbank #content h2 {
     color: #555555;
     padding-left: 9px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031357}}
   .verhalenbank #content h2 > a:link, .verhalenbank #content h2 > a:visited {
     color: #fffffe;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031360}}
   .verhalenbank #content h2 > a:hover, .verhalenbank #content h2 > a:active {
     color: #cd7f7f;
     background-color: #ab2929;
     text-decoration: underline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031371}}
   .verhalenbank #content > h2, .verhalenbank #content > div > h2,
   .verhalenbank #content #primary > h2,
   .verhalenbank #content #primary > div > h2,
@@ -1631,7 +1369,6 @@
     color: #fffffe;
     background-color: #ab2929;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031380}}
   .verhalenbank #content > div,
   .verhalenbank #content #sidebar > div,
   .verhalenbank #content #advanced-search-form > div,
@@ -1643,13 +1380,11 @@
     *border-top-color: #ab2929;
     background-color: #fffffe;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031389}}
   .verhalenbank #content #primary > div {
     /*ADDED BY IWE: */
     border-width: 0 0 0 0;
     box-shadow: 0 0 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031394}}
   .verhalenbank #content .toggler {
     border: 0;
     padding: 0;
@@ -1657,26 +1392,21 @@
     border-width: 0 0 0 0;
     border-color: green;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031402}}
   .verhalenbank #content .pagination {
     border-width: 3px 3px 3px 3px;
     background-color: #fffffe;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031406}}
   .verhalenbank #content .pagination a:link, .verhalenbank #content .pagination a:visited {
     color: #ab2929;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031409}}
   .verhalenbank #content .pagination a:hover, .verhalenbank #content .pagination a:active {
     color: #cd7f7f;
     background-color: #ab2929;
     text-decoration: underline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031416}}
   .verhalenbank #content .item-img {
     border-color: #ab2929;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031418}}
   .verhalenbank #content div.hTagcloud {
     border: 0;
     background-color: transparent;
@@ -1684,50 +1414,93 @@
     -moz-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031425}}
+  .verhalenbank #content .hTagcloud ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .verhalenbank #content .hTagcloud li {
+    display: inline;
+    margin-right: 3px;
+  }
+  .verhalenbank #content .popular a {
+    font-size: 120%;
+  }
+  .verhalenbank #content .v-popular a {
+    font-size: 140%;
+  }
+  .verhalenbank #content .vv-popular a {
+    font-size: 160%;
+  }
+  .verhalenbank #content .vvv-popular a {
+    font-size: 180%;
+  }
+  .verhalenbank #content .vvvv-popular a {
+    font-size: 200%;
+  }
+  .verhalenbank #content .vvvvv-popular a {
+    font-size: 220%;
+  }
+  .verhalenbank #content .vvvvvv-popular a {
+    font-size: 240%;
+  }
+  .verhalenbank #content .vvvvvvv-popular a {
+    font-size: 260%;
+  }
+  .verhalenbank #content .vvvvvvvv-popular a {
+    font-size: 280%;
+  }
+  .verhalenbank #content .vvvvvvvvv-popular a {
+    font-size: 300%;
+  }
+  .verhalenbank #content .vvvvvvvvvv-popular a {
+    font-size: 320%;
+  }
+  .verhalenbank #content .vvvvvvvvvvv-popular a {
+    font-size: 340%;
+  }
+  .verhalenbank #content .vvvvvvvvvvvv-popular a {
+    font-size: 360%;
+  }
+  .verhalenbank #content .vvvvvvvvvvvvv-popular a {
+    font-size: 380%;
+  }
+  .verhalenbank #content .vvvvvvvvvvvvvv-popular a {
+    font-size: 400%;
+  }
   .verhalenbank #content #primary > div, .verhalenbank #content #sidebar > div,
   .verhalenbank #content .item-pagination li {
     background-color: #fffffe;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031428}}
   .verhalenbank #search-results th {
     background-color: #ab2929;
     color: #fffffe;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031435}}
   .verhalenbank #search-results tr {
     background-color: #fffffe;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031438}}
   .verhalenbank #search-results .Volksverhaal {
     background-color: white;
     font-weight: bold;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031442}}
   .verhalenbank #search-results .Volksverhaaltype {
     background-color: #ffdcdc;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031445}}
   .verhalenbank #search-results .File {
     background-color: #dafcff;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031448}}
   .verhalenbank #search-results .Text {
     background-color: #ebebeb;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031451}}
   .verhalenbank #search-results .Lexicon {
     background-color: #daffdf;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031454}}
   .verhalenbank #search-results .Persoon {
     background-color: #ffffdc;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031461}}
   .verhalenbank #search-filters li, .verhalenbank #item-filters li {
     background-color: #cd7f7f;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031464}}
   .verhalenbank .page #content {
     border-color: #ab2929;
     *border-width: 0 3px 3px 3px;
@@ -1735,46 +1508,37 @@
     *border-color: #e8e8e8;
     *border-top-color: #ab2929;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031472}}
   .verhalenbank .page #content #primary {
     background-color: #fffffe;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031474}}
   .verhalenbank footer {
     background-color: transparent;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031478}}
   .verhalenbank footer p {
     color: #272727;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031482}}
   .verhalenbank .exhibit-page-nav {
     background-color: #fffffe;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031485}}
   .verhalenbank .exhibit-page-nav a:link, .verhalenbank .exhibit-page-nav a:visited {
     color: #ab2929;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen\.scss}line{font-family:\000031486}}
   .verhalenbank .exhibit-page-nav a:hover, .verhalenbank .exhibit-page-nav a:active {
     color: #ab2929;
     text-decoration: underline;
   }
 }
 @media screen and (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\000031}}
   header {
     *zoom: 1;
     margin-top: 1.71429em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
   header:after {
     content: "";
     display: table;
     clear: both;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\000036}}
   #site-title {
     width: 66.10169%;
     float: left;
@@ -1783,7 +1547,6 @@
     text-align: left;
     float: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000311}}
   #site-title:after {
     content: "";
     display: block;
@@ -1791,7 +1554,6 @@
     clear: both;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000319}}
   #search-container {
     width: 23.72881%;
     float: left;
@@ -1799,36 +1561,29 @@
     display: inline;
     margin-top: 2.57143em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000322}}
   #search-container input {
     padding: 0.53571em 8px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000326}}
   nav.top ul {
     display: block;
     position: relative;
     z-index: 1000;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000330}}
   nav.top ul li {
     float: left;
     width: auto;
     position: relative;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000335}}
   nav.top ul li a {
     padding: 0.85714em 16px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000337}}
   nav.top ul li:hover {
     background-color: rgba(0, 0, 0, 0.05);
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000339}}
   nav.top ul li:hover > ul {
     display: block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000342}}
   nav.top ul li ul {
     min-width: 200px;
     display: none;
@@ -1837,7 +1592,6 @@
     top: 3.42857em;
     left: 0px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000350}}
   nav.top ul li ul li {
     width: 100%;
     clear: both;
@@ -1846,18 +1600,15 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000356}}
   nav.top ul li ul li ul {
     position: absolute;
     left: 100%;
     top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000365}}
   nav.top .mobile {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000368}}
   header, nav.top, #content, footer {
     *zoom: 1;
     margin-left: 14.70588%;
@@ -1865,19 +1616,16 @@
     /*    @include prefix(1);
         @include suffix(1);*/
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
   header:after, nav.top:after, #content:after, footer:after {
     content: "";
     display: table;
     clear: both;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000376}}
   #content .pagination_list {
     float: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000382}}
   #home #content #intro {
     border-top: 20px;
     background-color: transparent;
@@ -1890,11 +1638,9 @@
     box-shadow: transparent 0 0 0;
     margin-bottom: 0.85714em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000392}}
   #home #content #intro p {
     margin: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\0000395}}
   #home #content #featured-item {
     float: left;
     clear: left;
@@ -1905,19 +1651,16 @@
     display: inline;
     *margin-left: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003102}}
   #home #content #featured-item .image {
     display: inline-block;
     width: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003107}}
   #home #content #featured-item .image img {
     width: 100%;
     max-width: 100%;
     height: auto;
     margin: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003115}}
   #home #content > div {
     width: 66.10169%;
     float: right;
@@ -1925,27 +1668,22 @@
     *margin-left: -1em;
     display: inline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003118}}
   #home #content > div img {
     width: 20%;
     float: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003129}}
   .items #content div#sort-links {
     float: right;
     text-align: center;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003134}}
   .items .item {
     clear: both;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003136}}
   .items .item-img {
     width: 10%;
     float: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003143}}
   .items #advanced-search-form > div {
     width: 61.53846%;
     float: left;
@@ -1953,12 +1691,10 @@
     display: inline;
     clear: both;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003148}}
   .items #advanced-search-form > div:last-of-type {
     width: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003155}}
   .item #primary, #exhibit.exhibit-item-show #primary, .files #primary {
     *margin-left: 0;
     width: 61.53846%;
@@ -1966,7 +1702,6 @@
     margin-right: 2.5641%;
     display: inline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003161}}
   .item #sidebar, #exhibit.exhibit-item-show #sidebar, .files #sidebar {
     display: inline-block;
     float: right;
@@ -1978,7 +1713,6 @@
     display: inline;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003171}}
   .collections.show #primary .element-set {
     width: 61.53846%;
     float: left;
@@ -1986,7 +1720,6 @@
     display: inline;
     *margin-left: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003176}}
   .collections.show #primary > div {
     width: 35.89744%;
     float: right;
@@ -1995,23 +1728,19 @@
     display: inline;
     clear: right;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003181}}
   .collections.show .item-img {
     margin-left: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003185}}
   #search-filters li, #item-filters li {
     float: left;
     vertical-align: top;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003188}}
   #search-filters li ul, #item-filters li ul {
     display: inline;
     margin: 0;
     padding: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003192}}
   #search-filters li ul li, #item-filters li ul li {
     display: inline;
     padding: 0;
@@ -2019,26 +1748,22 @@
     float: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003202}}
   #search-results {
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003206}}
   .page #content #primary {
     padding-top: 3.42857em;
     padding-bottom: 3.42857em;
   }
 
   /* Exhibits */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003220}}
   #exhibit.summary #primary {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
     display: inline;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003224}}
   #exhibit.summary #exhibit-pages {
     display: inline-block;
     float: right;
@@ -2049,29 +1774,23 @@
     display: inline;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003233}}
   #exhibit.show #content .exhibit-page-nav > li:first-child {
     background-color: rgba(0, 0, 0, 0.1);
     float: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003238}}
   #exhibit.show #content .exhibit-page-nav > li:nth-child(2) li:first-of-type {
     padding-left: 8px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003242}}
   #exhibit.show #content #exhibit-page-navigation #exhibit-nav-prev {
     text-align: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003244}}
   #exhibit.show #content #exhibit-page-navigation #exhibit-nav-next {
     text-align: right;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003246}}
   #exhibit.show #content #exhibit-page-navigation > div {
     padding: 0;
     width: 33%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_screen_768\.scss}line{font-family:\00003251}}
   #exhibit.show #content #exhibit-page-navigation a, #exhibit.show #content #exhibit-page-navigation span {
     width: auto;
   }
@@ -2081,55 +1800,46 @@
   /*end @media print*/
 }
 @media print {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_print\.scss}line{font-family:\000033}}
   body {
     font: 12px Georgia, "Palatino Linotype", "Book Antiqua", "Times New Roman", Times, serif;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_print\.scss}line{font-family:\000036}}
   #content {
     width: 100%;
     margin: 0;
     float: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_print\.scss}line{font-family:\0000312}}
   h1,
   #site-title {
     font-size: 16pt;
     font-weight: bold;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_print\.scss}line{font-family:\0000316}}
   h2 {
     font-size: 14pt;
     font-style: italic;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_print\.scss}line{font-family:\0000320}}
   h3 {
     font-size: 14pt;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_print\.scss}line{font-family:\0000323}}
   h4 {
     font-weight: bold;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_print\.scss}line{font-family:\0000326}}
   h5 {
     font-weight: bold;
     font-style: italic;
     text-transform: uppercase;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_print\.scss}line{font-family:\0000331}}
   a:link:after {
     content: " (" attr(href) ") ";
     font-size: 80%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_print\.scss}line{font-family:\0000342}}
   #search-container,
   #primary-nav,
   #header-image,
@@ -2141,7 +1851,6 @@
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/vb\/themes\/verhalenbank\/css\/sass\/_print\.scss}line{font-family:\0000345}}
   blockquote {
     margin: 10pt 0 0 0;
     font-style: italic;
