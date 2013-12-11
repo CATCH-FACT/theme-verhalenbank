@@ -86,7 +86,8 @@
     display: inline-block;
   }
 
-  input[type=text], input[type=password], textarea,
+  /*textarea, */
+  input[type=text], input[type=password],
   input[type=submit], input[type=button], button, .button {
     display: inline;
     height: 35px;
