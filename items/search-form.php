@@ -56,7 +56,7 @@ $formAttributes['method'] = 'GET';
         <?php echo $this->formLabel('tag-search', __('Search By Tags')); ?>
         <div class="inputs">
         <?php
-            echo $this->formText('tags', @$_REQUEST['tags'],
+            echo $this->formText('tag', @$_REQUEST['tag'],
                 array('size' => '40', 'id' => 'tag-search')
             );
         ?>
@@ -66,8 +66,8 @@ $formAttributes['method'] = 'GET';
 <!-- This is where the alternative search form starts -->
     <div id="search-by-certain-fields" class="field">
         <?php
-        if (!empty($_GET['keywordsearch'])) {
-            $search = $_GET['keywordsearch'];
+        if (!empty($_GET['advanced'])) {
+            $search = $_GET['advanced'];
 /*            print "<pre>";
             print_r($search);
             print "</pre>";*/
@@ -85,14 +85,21 @@ $formAttributes['method'] = 'GET';
                 <div><?php echo $merged_table_options[$table_option];?></div>
             </td>
             <?php 
-            echo $this->formHidden(
-                "keywordsearch[$i][element_id]",
+            $basename = "advanced[$i]";
+            $basenameC = "advanced\\\\[$i\\\\]";
+            $hidden_element_id = $this->formHidden(
+                $basename . "[element_id]",
                 $table_option,
-                array('hidden' => true)
-            );?>
+                array('hidden' => true));
+                
+            $hidden_type = $this->formHidden( ################### BIG PROBLEM! NEEDS TO BE ADDED BY JS CODE TO BE NOT SEEN
+                $basename . "[type]",
+                "contains",
+                array('hidden' => true));
+            ?>
 <!--            <td><?php
             echo $this->formSelect(
-                "advanced[$i][type]",
+                $basename . "[type]",
                 array_key_exists($i, $search) ? $search[$i]["type"] : "",#get_option('mediumsearchstyle'),
                 array("style" => "margin-bottom:0;"),
                 label_table_options(array(
@@ -103,13 +110,24 @@ $formAttributes['method'] = 'GET';
                     'is not empty' => __('is not empty'))
                 )
             );?></td>-->
+            <td name="<?php echo $basename ?>"></td>
             <td><?php
             echo $this->formText(
-                "keywordsearch[$i][terms]",
+                $basename . "[terms]",
                 array_key_exists($i, $search) ? $search[$i]["terms"] : "",
                 array("style" => "margin-bottom:0;")
             );?></td>
             </tr>
+            <script> 
+                jQuery('input[name^= <?php echo $basenameC; ?>').change(function(){
+                    jQuery( 'input[name=<?php echo $basenameC; ?>\\[element_id\\]' ).remove();
+                    jQuery( 'input[name=<?php echo $basenameC; ?>\\[type\\]' ).remove();
+                    if (jQuery('input[name^= <?php echo $basenameC; ?>').val()){
+                        jQuery( 'td[name=<?php echo $basenameC; ?>' ).append( '<?php echo $hidden_element_id; ?>' );
+                        jQuery( 'td[name=<?php echo $basenameC; ?>' ).append( '<?php echo $hidden_type; ?>' );
+                    }
+                });
+            </script>
         <?php endforeach; ?>
         </table>
     </div>
