@@ -43,7 +43,7 @@ $formAttributes['method'] = 'GET';
         </div>
     </div>
     <div id="search-keywords" class="field">
-        <?php echo $this->formLabel('keyword-search', __('Search for Keywords')); ?>
+<!--        <?php echo $this->formLabel('keyword-search', __('Search for Keywords')); ?>
         <div class="inputs">
         <?php
             echo $this->formText(
@@ -52,7 +52,7 @@ $formAttributes['method'] = 'GET';
                 array('id' => 'keyword-search', 'size' => '40')
             );
         ?>
-        </div>
+        </div>-->
         <?php echo $this->formLabel('tag-search', __('Search By Tags')); ?>
         <div class="inputs">
         <?php
@@ -87,29 +87,19 @@ $formAttributes['method'] = 'GET';
             <?php 
             $basename = "advanced[$i]";
             $basenameC = "advanced\\\\[$i\\\\]";
+            
             $hidden_element_id = $this->formHidden(
                 $basename . "[element_id]",
                 $table_option,
                 array('hidden' => true));
-                
-            $hidden_type = $this->formHidden( ################### BIG PROBLEM! NEEDS TO BE ADDED BY JS CODE TO BE NOT SEEN
+//            echo $hidden_element_id; ############ TEMP
+            
+            $hidden_type = $this->formHidden(
                 $basename . "[type]",
                 "contains",
                 array('hidden' => true));
+            echo $hidden_type;
             ?>
-<!--            <td><?php
-            echo $this->formSelect(
-                $basename . "[type]",
-                array_key_exists($i, $search) ? $search[$i]["type"] : "",#get_option('mediumsearchstyle'),
-                array("style" => "margin-bottom:0;"),
-                label_table_options(array(
-                    'contains' => __('contains'),
-                    'does not contain' => __('does not contain'),
-                    'is exactly' => __('is exactly'),
-                    'is empty' => __('is empty'),
-                    'is not empty' => __('is not empty'))
-                )
-            );?></td>-->
             <td name="<?php echo $basename ?>"></td>
             <td><?php
             echo $this->formText(
@@ -118,15 +108,19 @@ $formAttributes['method'] = 'GET';
                 array("style" => "margin-bottom:0;")
             );?></td>
             </tr>
-            <script> 
-                jQuery('input[name^= <?php echo $basenameC; ?>').change(function(){
+            <script>
+                function addRestFields() {
                     jQuery( 'input[name=<?php echo $basenameC; ?>\\[element_id\\]' ).remove();
                     jQuery( 'input[name=<?php echo $basenameC; ?>\\[type\\]' ).remove();
                     if (jQuery('input[name^= <?php echo $basenameC; ?>').val()){
                         jQuery( 'td[name=<?php echo $basenameC; ?>' ).append( '<?php echo $hidden_element_id; ?>' );
                         jQuery( 'td[name=<?php echo $basenameC; ?>' ).append( '<?php echo $hidden_type; ?>' );
                     }
-                });
+                }
+                jQuery('input[name^= <?php echo $basenameC; ?>').change(addRestFields);
+                if (jQuery('input[name^= <?php echo $basenameC; ?>').val().length > 0) {
+                    addRestFields();
+                }
             </script>
         <?php endforeach; ?>
         </table>
