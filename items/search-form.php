@@ -156,5 +156,9 @@ $formAttributes['method'] = 'GET';
 <script type="text/javascript">
     jQuery(document).ready(function () {
         Omeka.Search.activateSearchButtons();
+        jQuery(window).bind("pageshow", function() {
+            console.log(jQuery('#advanced-search-form'));
+            jQuery('#advanced-search-form')[0].reset();
+        });
     });
 </script>
