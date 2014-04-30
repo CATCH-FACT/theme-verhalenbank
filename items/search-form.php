@@ -87,6 +87,7 @@ $formAttributes['method'] = 'GET';
             <?php 
             $basename = "advanced[$i]";
             $basenameC = "advanced\\\\[$i\\\\]";
+            $basenameID = "advanced-$i";
             
             $hidden_element_id = $this->formHidden(
                 $basename . "[element_id]",
@@ -98,9 +99,9 @@ $formAttributes['method'] = 'GET';
                 $basename . "[type]",
                 "contains",
                 array('hidden' => true));
-            echo $hidden_type;
+//            echo $hidden_type;
             ?>
-            <td name="<?php echo $basename ?>"></td>
+            <td name="<?php echo $basename ?>" id="<?php echo $basenameID ?>"></td>
             <td><?php
             echo $this->formText(
                 $basename . "[terms]",
@@ -110,15 +111,15 @@ $formAttributes['method'] = 'GET';
             </tr>
             <script>
                 function addRestFields() {
-                    jQuery( 'input[name=<?php echo $basenameC; ?>\\[element_id\\]' ).remove();
-                    jQuery( 'input[name=<?php echo $basenameC; ?>\\[type\\]' ).remove();
-                    if (jQuery('input[name^= <?php echo $basenameC; ?>').val()){
-                        jQuery( 'td[name=<?php echo $basenameC; ?>' ).append( '<?php echo $hidden_element_id; ?>' );
-                        jQuery( 'td[name=<?php echo $basenameC; ?>' ).append( '<?php echo $hidden_type; ?>' );
+                    jQuery( 'input#<?php echo $basenameID; ?>-element_id' ).remove();
+                    jQuery( 'input#<?php echo $basenameID; ?>-type' ).remove();
+                    if (jQuery('input#<?php echo $basenameID; ?>-terms').val()){
+                        jQuery('td#<?php echo $basenameID; ?>').append( '<?php echo $hidden_element_id; ?>' );
+                        jQuery('td#<?php echo $basenameID; ?>').append( '<?php echo $hidden_type; ?>' );
                     }
                 }
-                jQuery('input[name^= <?php echo $basenameC; ?>').change(addRestFields);
-                if (jQuery('input[name^= <?php echo $basenameC; ?>').val().length > 0) {
+                jQuery('#<?php echo $basenameID; ?>-terms').change(addRestFields);
+                if (jQuery('#<?php echo $basenameID; ?>-terms').val().length > 0) {
                     addRestFields();
                 }
             </script>
@@ -157,7 +158,7 @@ $formAttributes['method'] = 'GET';
     jQuery(document).ready(function () {
         Omeka.Search.activateSearchButtons();
         jQuery(window).bind("pageshow", function() {
-            console.log(jQuery('#advanced-search-form'));
+//            console.log(jQuery('#advanced-search-form'));
             jQuery('#advanced-search-form')[0].reset();
         });
     });
