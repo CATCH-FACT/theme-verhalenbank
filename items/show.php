@@ -47,7 +47,8 @@
                                          'imageSize'=>'square_thumbnail',
                                          'icons' => array('application/pdf'=>img('pdf-icon.png'),
                                                          'audio/mpeg'=>img('audio-file-xxl.png'),
-                                                         'video/quicktime'=>img('video-file-xxl.png'))
+                                                         'video/quicktime'=>img('video-file-xxl.png'),
+                                                         'video/mp4'=>img('video-file-xxl.png'))
                                  ));?>
         </div>
     </div>
