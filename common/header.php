@@ -16,6 +16,7 @@
 
     <!-- Stylesheets -->
     <?php
+    queue_css_url("//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css");
     queue_css_url('http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic');
     queue_css_file('normalize');
     queue_css_file('style');
@@ -23,12 +24,22 @@
     ?>
 
     <!-- JavaScripts -->
-    <?php queue_js_file('vendor/modernizr'); ?>
-    <?php queue_js_file('vendor/selectivizr'); ?>
-    <?php queue_js_file('jquery-extra-selectors'); ?>
-    <?php queue_js_file('vendor/respond'); ?>
-    <?php queue_js_file('globals'); ?>
+    <?php 
+    queue_js_file('vendor/modernizr');
+    queue_js_file('vendor/selectivizr');
+    queue_js_file('jquery-extra-selectors');
+    queue_js_file('vendor/respond');
+    queue_js_file('globals'); 
+    ?>
+    
     <?php echo head_js(); ?>
+    
+    <style>
+    .ui-menu {
+      width: 200px;
+    }
+    </style>
+    
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
