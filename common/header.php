@@ -36,7 +36,7 @@
     
     <style>
     .ui-menu {
-      width: 200px;
+      width: 140px;
     }
     </style>
     
