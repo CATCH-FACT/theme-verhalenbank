@@ -665,11 +665,11 @@ footer {
     & > .element { border-bottom: 0; }
 
     & > * >.element {
-        @include trailer(.5);
+        @include trailer(.1);
         border-bottom: 1px solid $winter-light-gray;
 
         div {
-            @include padding-trailer(.5);
+            @include padding-trailer(.1);
             
             &:only-of-type, &:last-of-type {
                 border-bottom: 0;
@@ -682,12 +682,12 @@ footer {
     .element-set {
         border-width: 0 0 0 0;
         div {
-            @include padding-trailer(.5);
+            @include padding-trailer(.0);
             margin-bottom: 0;
             
             &:only-of-type, &:last-of-type {
                 border-bottom: 0;
-                @include padding-trailer(.25);
+                @include padding-trailer(.0);
             }
         }
     }
@@ -759,7 +759,7 @@ footer {
     .pagination { 
         display: inline; 
         
-        & > *:last-child { padding-bottom: rhythm(.25); }
+        & > *:last-child { padding-bottom: rhythm(.1); }
     }
 
     .pagination_list { 
