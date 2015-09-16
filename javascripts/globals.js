@@ -19,7 +19,7 @@ Modernizr.addTest("boxsizing", function() {
             advancedForm.click(function (event) {
                 event.stopPropagation();
             });
-            $("#query").focus(
+/*            $("#query").focus(
                 function (event) {
                 event.preventDefault();
                 event.stopPropagation();
@@ -31,7 +31,7 @@ Modernizr.addTest("boxsizing", function() {
                     advancedForm.fadeOut();
                     $(this).unbind(event);
                 });
-            });            
+            }); */
             $("#advanced-search").click(
                 function (event) {
                 event.preventDefault();

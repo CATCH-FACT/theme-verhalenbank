@@ -60,7 +60,7 @@
                 <?php echo link_to_home_page(theme_logo()); ?>
             </div>
             <div id="search-container">
-                <?php echo search_form_extended(array('show_advanced' => true)); ?>
+                <?php echo search_form(array('show_advanced' => true)); ?>
                 <br>
                 <div class="advanced-search-link"><?php echo link_to_item_search(__('Advanced Search')); ?></div><!-- ADDED BY IWE-->
             </div>
