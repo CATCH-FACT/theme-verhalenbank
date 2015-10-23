@@ -67,10 +67,8 @@
                     <div class="logos" id="vkLogo">
                  	    <span class="icon-Verhalenkaart"></span><a href=" <?php echo url("") . "visuals/map?q=";# . urlencode($q) . "&facet=" . urlencode($facet) ?> "><strong>Kaart</strong></a>
                     </div>
-
                     <div class="logos" id="vbLogo">
-                	    <span class="icon-book3"></span>
-                	    Nederlandse Volksverhalen<strong>Bank</strong>
+                	    <span class="icon-book3"></span>Nederlandse Volksverhalen<a href="<?php echo url(""); ?>" style="padding-left:0px;"><strong>Bank</strong></a>
                 	</div>
                 </div>
                 <?php #echo link_to_home_page(theme_logo()); ?>
