@@ -133,22 +133,29 @@ fieldset {
 /* == Header == */
 
 header { 
-    padding: 0 16px;
-
+    padding: 10px 0px;
 }
 
 #site-title {
     font-size: 2.5 * $base-font-size;
     line-height: 2 * $base-line-height;
+    left: 60px;
     font-weight: 300;
     text-align: center;
-    margin: 0;
+    margin: 8;
     @include padding-leader(.5);
-    @include padding-trailer(.5);
+    @include padding-trailer(.3);
+    
+    > #logowrapper {
+        position: relative;
+        width: 510px;
+        left: 0px;
+    }
 }
 
 #search-container {
-    @include padding-trailer(0.2);
+    @include padding-trailer(0.1);
+    margin-top:52px;
     
     &:after {
         content: "";
@@ -157,10 +164,18 @@ header {
         width: 100px;
         clear: both;
     }
-    
+
+    > #advanced-search-link{
+        width: 150px;
+    }
+
     > div{
-        margin: 12px;
+        margin-left: 10%;
+        margin-right: 10%;
         position: relative;
+        float: left;
+        word-wrap: normal;
+        width: 300px;
     }
     
 }
@@ -175,7 +190,9 @@ header {
         width: 60%;
         @include adjust-font-size-to(14px);
         float: left;
-        
+        box-shadow:0 0 4px rgba(0,0,0,1);
+    	border:0 solid #000000;
+    	border-radius:3px;
     }
     
     input[type=submit] {
@@ -272,7 +289,7 @@ footer {
     #content {
         clear:both;
         overflow:visible;
-        padding: rhythm(0.25) 16px;
+        padding: rhythm(0.25) 4px;
     }
     
     /* -- General -- */
@@ -370,8 +387,9 @@ footer {
         
         li {
             display:inline-block;
-            font-family: Georgia, Times, "Times New Roman", serif;
-            font-style: italic;
+            font-family: 'Open Sans',sans-serif;
+/*            font-family: Georgia, Times, "Times New Roman", serif;*/
+/*            font-style: italic;*/
             margin-right: 16px;
             ul li {
                 padding-left: 16px;
@@ -1241,7 +1259,7 @@ VERHALENBANK Styles
             line-height: 1.3;
             margin-top: 0;
             font-weight: normal;
-            margin-bottom: 0.3em;
+            margin-bottom: 0.2em;
             padding-left: 16px;
             color: $verhalenbank_super_h_colors; 
         }

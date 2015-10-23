@@ -17,9 +17,23 @@ header {
 }
 
 #search-container {
-    @include span-columns(3 alpha,12);
+    @include span-columns(3 alpha, 12);
     @include leader(1.5);
-    input { padding: rhythm(.3125) 8px; }
+    float: right;
+    input { padding: rhythm(.3125) 16px; }
+
+    > #advanced-search-link{
+        width: 150px;
+    }
+    
+    > div{
+        width: 100%;
+        display: inline-block;
+        visibility: visible;
+        margin: 2px;
+        position: relative;
+        word-wrap: normal;
+    }
 }
 
 nav.top {
@@ -32,7 +46,7 @@ nav.top {
             width: auto;
             position: relative;
             
-            a { padding: rhythm(.5) 16px; }
+            a { padding: rhythm(.5) 8px; }
             
             &:hover {
                 background-color:rgba(0,0,0,.05);
@@ -71,7 +85,38 @@ header, nav.top, #content, footer {
     @include post(1);
 /*    @include prefix(1);
     @include suffix(1);*/
+
 }
+
+#site-title {
+    font-size: 2.5 * $base-font-size;
+    line-height: 2 * $base-line-height;
+    left: 60px;
+    font-weight: 300;
+    text-align: center;
+    margin: 8;
+    @include padding-leader(.5);
+    @include padding-trailer(.3);
+    
+    > #logowrapper {
+        position: relative;
+        width: 510px;
+        left: -80px;
+    }
+}
+
+
+/* == Content == */
+
+    /* -- Structure -- */
+    #content {
+        clear:both;
+        overflow:visible;
+        padding: rhythm(0.25) 16px;
+    }
+    
+    
+    
 
 #content .pagination_list {
     float: left;

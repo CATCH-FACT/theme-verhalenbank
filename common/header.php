@@ -20,6 +20,7 @@
     queue_css_url('http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic');
     queue_css_file('normalize');
     queue_css_file('style');
+    queue_css_file('logo');
     echo head_css();
     ?>
 
@@ -57,12 +58,26 @@
         <header>
             <?php fire_plugin_hook('public_header'); ?>
             <div id="site-title">
-                <?php echo link_to_home_page(theme_logo()); ?>
+                <?php 
+                    $q = array_key_exists("q", $_REQUEST) ? $_REQUEST["q"] : "";
+                    $facet = array_key_exists("facet", $_REQUEST) ? $_REQUEST["facet"] : "";
+                 ?>
+
+                <div id="logowrapper">
+                    <div class="logos" id="vkLogo">
+                 	    <span class="icon-Verhalenkaart"></span><a href=" <?php echo url("") . "visuals/map?q=";# . urlencode($q) . "&facet=" . urlencode($facet) ?> "><strong>Kaart</strong></a>
+                    </div>
+
+                    <div class="logos" id="vbLogo">
+                	    <span class="icon-book3"></span>
+                	    Nederlandse Volksverhalen<strong>Bank</strong>
+                	</div>
+                </div>
+                <?php #echo link_to_home_page(theme_logo()); ?>
             </div>
             <div id="search-container">
-                <?php echo search_form(array('show_advanced' => true)); ?>
-                <br>
-                <div class="advanced-search-link"><?php echo link_to_item_search(__('Advanced Search')); ?></div><!-- ADDED BY IWE-->
+                <div><?php echo search_form(array('show_advanced' => true)); ?></div>
+                <div id="advanced-search-link"><?php echo link_to_item_search(__('Advanced Search')); ?></div><!-- ADDED BY IWE-->
             </div>
         </header>
 
