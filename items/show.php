@@ -1,19 +1,48 @@
+<?php echo common("functions");?>
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'item show')); ?>
 
 <h1><?php echo metadata('item', array('Dublin Core', 'Identifier')) . (metadata('item', array('Dublin Core', 'Title')) ? " - " . metadata('item', array('Dublin Core', 'Title')) : ""); ?></h1>
+
+<p class="folktale-description" style="border:0; color:grey">Een <?php echo metadata('item', array('Item Type Metadata', 'Subgenre'), array('no_filter' => true)); ?> (<?php echo metadata('item', array('Dublin Core', 'Type'), array('no_filter' => true)); ?>), <?php echo metadata('item', array('Dublin Core', 'Date')); ?></p>
 
 <div id="primary">
     
     <?php fire_plugin_hook('public_items_show_top', array('view' => $this, 'item' => $item)); ?>
     
-    <?php if (metadata('item', 'Item Type Name') == "2Volksverhaal"): ?>
-        <?php ?>
-    <?php else: ?>
-        <?php echo all_element_texts('item'); ?>
+    <?php if (metadata('item', 'Item Type Name') == "Volksverhaal"): ?>
+        <?php if (metadata('item', 'has files')): ?>
+            <div id="image-fold" class="image-fold" style="height:250px; overflow:hidden; margin: 0px">
+                <center>
+                    <?php echo item_image_gallery(
+                          array('wrapper' => null,
+                            'linkWrapper' => array('class' => 'admin-thumb panel',
+                                                    'style' => 'display:inline; margin:5px; padding:0px; border:0px; '),
+                            'link' => array('class' => 'link'),
+                            'image' => array('class' => 'image')),
+                          'square_thumbnail',
+//                          'fullsize',
+                          true,
+                          $item
+                      );?>
+                  </center>
+              </div>
+              <div style="position: relative; margin-top:-80px; z-index:9999; height:80px; background: -webkit-gradient(linear, left top, left bottom, color-stop(1000%,rgba(255,255,255,1)), color-stop(0%,rgba(125,185,232,0)));">
+                  <center><a id='showimages' href='#'><img src="<?php echo url("themes/verhalenbank/images/down.gif"); ?>"></a></center>
+              </div>
+          <?php endif; ?>
 
-    <?php endif; ?>    
-
-    <?php Null;# echo some_element_texts('item', array("Identifier", "Title", "Description", "Text")); ?>
+          <div class="element-set">
+              <div class="element">
+                  <h3>Hoofdtekst</h3>
+                  <div class="element-text">
+                    <?php echo metadata('item', array('Item Type Metadata', 'Text')); ?>
+                  </div>
+              </div>
+          </div>
+          <?php echo all_element_texts('item'); ?>
+        <?php else: ?>
+            <?php echo all_element_texts('item'); ?>
+    <?php endif; ?>
 
 </div><!-- end primary -->
 
@@ -22,15 +51,6 @@
     <!-- To add divs under the collection div. -->
     <?php fire_plugin_hook('public_items_show_sidebar_ultimate_top', array('view' => $this, 'item' => $item)); ?>
 
-    <!-- If the item belongs to a collection, the following creates a link to that collection. -->
-    <?php if (metadata('item', 'Collection Name')): ?>
-    <div id="collection" class="element">
-        <h2><?php echo __('Collection'); ?></h2>
-        <div class="element-text"><p><?php echo link_to_collection_for_item(); ?></p></div>
-    </div>
-    <?php endif; ?>
-
-    
     <!-- To add divs under the collection div. -->
     <?php fire_plugin_hook('public_items_show_sidebar_top', array('view' => $this, 'item' => $item)); ?>
     
@@ -58,12 +78,12 @@
     <?php if (metadata('item', 'has tags')): ?>
     <div id="item-tags" class="element">
         <h2><?php echo __('Tags'); ?></h2>
-        <div class="element-text"><?php echo tag_string('item'); ?></div>
+        <div class="element-text"><?php echo tag_string_solr('item', '/solr-search?q=&facet='); ?></div>
     </div>
     <?php endif;?>
 
     <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
-
+    
 </aside>
 
 <ul class="item-pagination navigation">

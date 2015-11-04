@@ -2,9 +2,9 @@ var fixedNav = false,
     carouselfototimer;
 var el = document.getElementsByTagName('html')[0];
     if( window.matchMedia && window.matchMedia('(min--moz-device-pixel-ratio: 1.3),(-o-min-device-pixel-ratio: 2.6/2),(-webkit-min-device-pixel-ratio: 1.3),(min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx)').matches ) {
-      el.classList.add('retina');
-
+        el.classList.add('retina');
     }
+
 $(function(){
 
     wHeight = $(window).height();
@@ -17,7 +17,6 @@ $(function(){
         });
 
     });
-
 
     $(".carousel")
         .on('click','.description',function(){
@@ -169,7 +168,6 @@ $(function(){
     if (!Modernizr.mq('only screen and (min-width: 768px)')){
        // so we're not using googlemaps, we'll set an image as the background
         $("#map_canvas").css("background-image", "url(css/images/map_meertens.gif)");
-
     }
 
     $(".shownav").click(function(){

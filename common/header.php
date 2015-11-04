@@ -31,6 +31,7 @@
     queue_js_file('jquery-extra-selectors');
     queue_js_file('vendor/respond');
     queue_js_file('globals'); 
+    queue_js_file('images'); 
     ?>
     
     <?php echo head_js(); ?>

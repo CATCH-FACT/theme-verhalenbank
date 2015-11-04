@@ -2,12 +2,12 @@ if (!Seasons) {
     var Seasons = {};
 }
 
-
 Modernizr.addTest("boxsizing", function() {
     return Modernizr.testAllProps("boxSizing") && (document.documentMode === undefined || document.documentMode > 7);
 });
 
 (function ($) {
+    
     Seasons.showAdvancedForm = function () {
         var advancedForm = $('#advanced-form');
         var searchTextbox = $('#search-form input[type=text]');
