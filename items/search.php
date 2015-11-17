@@ -5,13 +5,9 @@ echo head(array('title' => $pageTitle,
 ?>
 
 <h1><?php echo $pageTitle; ?></h1>
-<?php 
 
-if (!empty($_GET['style'])) {
-    $search_style = $_GET['style'];
-} else {
-    $search_style = "advanced";
-}
+<?php
+echo $this->partial('items/search-navigation.php');
 ?>
 
 <nav class="items-nav navigation secondary-nav">
@@ -19,8 +15,8 @@ if (!empty($_GET['style'])) {
         <li class="<?php if (isset($_GET['style']) &&  $_GET['style'] == 'advanced') {echo 'navigation_current';} ?>">
             <a href="<?php echo html_escape(url('items/search?style=advanced')); ?>"><?php echo __('Advanced Search'); ?></a>
         </li>
-        <li class="<?php if (isset($_GET['style']) && $_GET['style'] == 'veryadvanced') {echo 'navigation_current';} ?>">
-            <a href="<?php echo html_escape(url('items/search?style=veryadvanced')); ?>"><?php echo __('VERY advanced Search'); ?></a>
+        <li class="<?php if (isset($_GET['style']) && $_GET['style'] == 'allcontent') {echo 'navigation_current';} ?>">
+            <a href="<?php echo html_escape(url('items/search?style=allcontent')); ?>"><?php echo __('VERY advanced Search'); ?></a>
         </li>
     </ul>
 </nav>
@@ -30,8 +26,8 @@ if ($search_style == "advanced"){
     echo $this->partial('items/search-form.php', array('formAttributes' =>
                         array('id'=>'advanced-search-form')));
 }
-elseif ($search_style == "veryadvanced"){
-    echo $this->partial('items/search-form-hard.php', array('formAttributes' =>
+elseif ($search_style == "allcontent"){
+    echo $this->partial('items/search-form-classic.php', array('formAttributes' =>
                         array('id'=>'advanced-search-form')));
 }?>
 

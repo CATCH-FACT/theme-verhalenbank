@@ -2,7 +2,6 @@
 //"Identifier", "Title", "Subject", "Description"
 // Settings from the verhalenbank plugin
 $medium_commonly_searched_fields = explode(",", get_option('mediumsearchablefields'));
-#$medium_commonly_searched_fields = array(43, 50, 49); #TEMPORARY
 
 $collections_search_options = array(1 => "Nederlandse volksverhalen", null => __("Complete website"));
 
