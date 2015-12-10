@@ -76,8 +76,7 @@
             </div>
             <div id="search-container">
                 <div><?php echo search_form(array('show_advanced' => true)); ?></div>
-                <div id="advanced-search-link"><?php echo SolrSearch_Helpers_View::link_to_advanced_search(__('Advanced Search')); ?> 
-                                                <?php #echo link_to_item_search(__('Advanced Search')); ?></div><!-- ADDED BY IWE-->
+                <div id="advanced-search-link"><?php echo SolrSearch_Helpers_View::link_to_advanced_search(__('Advanced Search')); ?></div><!-- ADDED BY IWE-->
             </div>
         </header>
 
