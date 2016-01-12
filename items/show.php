@@ -11,19 +11,18 @@
     
     <?php if (metadata('item', 'Item Type Name') == "Volksverhaal"): ?>
         <?php if (metadata('item', 'has files')): ?>
-            <div id="image-fold" class="image-fold" style="height:250px; overflow:hidden; margin: 0px">
+            <div id="image-fold" class="image-fold" style="height:180px; overflow:hidden; margin: 0px; padding: 0px">
                 <center>
-                    <?php echo item_image_gallery(
-                          array('wrapper' => null,
-                            'linkWrapper' => array('class' => 'admin-thumb panel',
-                                                    'style' => 'display:inline; margin:5px; padding:0px; border:0px; '),
-                            'link' => array('class' => 'link'),
-                            'image' => array('class' => 'image')),
-                          'square_thumbnail',
-//                          'fullsize',
-                          true,
-                          $item
-                      );?>
+                    <?php echo files_for_item(array('showFilename' => false, 
+                                                     'linkToMetadata' => true,
+                                                     'linkAttributes' => array('rel'=>'lightbox', 'class'=>'lightboxlink'),
+                                                     'imageSize'=> 'square_thumbnail',
+                                                     'attributes' => array('style'=>'float:left'),
+                                                     'icons' => array('application/pdf'=>img('pdf-icon.png'),
+                                                                     'audio/mpeg'=>img('audio-file-xxl.png'),
+                                                                     'video/quicktime'=>img('video-file-xxl.png'),
+                                                                     'video/mp4'=>img('video-file-xxl.png'))
+                                             ));?>
                   </center>
               </div>
               <div style="position: relative; margin-top:-80px; z-index:9999; height:80px; background: -webkit-gradient(linear, left top, left bottom, color-stop(1000%,rgba(255,255,255,1)), color-stop(0%,rgba(125,185,232,0)));">
