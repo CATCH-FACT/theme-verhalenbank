@@ -1,7 +1,7 @@
 <nav id="admin-bar">
 
 <?php 
-
+//admin bar setup
 if($user = current_user()) {
     $item = get_view()->item;
     $collection = get_view()->collection;
@@ -29,6 +29,12 @@ if($user = current_user()) {
     }                
 
     if(isset($record)) {
+        if(isset($item)) {
+            $item_links['Annotate'] = array(
+                'label' => __('Annotate'),
+                'uri' => admin_url('annotation/annotation/edit/id/' . $record->id)
+            );
+        }
         if(is_allowed($aclRecord, 'edit')) {
             if(get_class($record) == 'ExhibitPage') {
                 $edit_url = admin_url('exhibits/edit-page-content/' . $record->id);
@@ -42,22 +48,15 @@ if($user = current_user()) {
             }
             //want to place it first in the navigation, so do an array merge
             $item_links['Edit Link'] = array(
-                    'label'=>'Simple edit',
+                    'label'=>__('Classic edit'),
                     'uri'=> $edit_url
                     );
             $item_links['Show Link'] = array(
-                    'label'=>'Show in Admin',
+                    'label'=>__('Show in Admin'),
                     'uri'=> $show_url
                     );
 //            revert_theme_base_url();
     //        $navLinks = array_merge($editLinks, $navLinks);
-        }
-
-        if(isset($item)) {
-            $item_links['Annotate'] = array(
-                'label' => __('Annotate'),
-                'uri' => admin_url('annotation/annotation/edit/id/' . $record->id)
-            );
         }
     }
     $user_links = array(
@@ -88,7 +87,7 @@ else {
 
 <?php if (isset($item_links)): ?>
 <ul id="item" style='display:inline; margin: 5px;'>
-    <li>Item &nbsp&nbsp&nbsp&nbsp
+    <li><?php echo __("Item"); ?> &nbsp&nbsp&nbsp&nbsp
         <?php echo nav($item_links); ?>
     </li>
 </ul>
@@ -96,7 +95,7 @@ else {
 
 <?php if (isset($user_links)): ?>
 <ul id="user" style='display:inline; margin: 5px;'>
-    <li>User &nbsp&nbsp&nbsp&nbsp
+    <li><?php echo __("Users"); ?> &nbsp&nbsp&nbsp&nbsp
         <?php echo nav($user_links, 'public_navigation_admin_bar'); ?>
     </li>
 </ul>
