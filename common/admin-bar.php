@@ -85,25 +85,44 @@ else {
 
 ?>
 
-<?php if (isset($item_links)): ?>
-<ul id="item" style='display:inline; margin: 5px;'>
-    <li><?php echo __("Item"); ?> &nbsp&nbsp&nbsp&nbsp
-        <?php echo nav($item_links); ?>
-    </li>
+<ul class="topnav" id="item" style='display:inline;'>
+    <?php if (isset($item_links)): ?>
+        <li><a href="#"><?php echo __("Item"); ?></a>
+            <?php echo nav($item_links); ?>
+            <div class="clear"></div>
+        </li>
+    <?php endif; ?>
+    <?php if (isset($user_links)): ?>
+        <?php if ($user = current_user()): ?>
+            <?php
+                $userLink = html_escape($user->name);
+            ?>
+            <li><a href="#"><?php echo __('Welcome, %s', $userLink); ?></a>
+                <?php echo nav($user_links, 'public_navigation_admin_bar'); ?>
+            </li>
+        <?php else:?>
+            <li><a href="#"><?php echo __("Users"); ?></a>
+                <?php echo nav($user_links, 'public_navigation_admin_bar'); ?>
+            </li>
+        <?php endif; ?>
+    <?php endif; ?>
 </ul>
-<?php endif; ?>
-
-<?php if (isset($user_links)): ?>
-<ul id="user" style='display:inline; margin: 5px;'>
-    <li><?php echo __("Users"); ?> &nbsp&nbsp&nbsp&nbsp
-        <?php echo nav($user_links, 'public_navigation_admin_bar'); ?>
-    </li>
-</ul>
-<?php endif; ?>
-
 </nav>
 
 <script>
-    jQuery( "#item" ).menu();
-    jQuery( "#user" ).menu();
+// hover property will help us set the events for mouse enter and mouse leave
+jQuery('.topnav li').hover(
+	// When mouse enters the .navigation element
+	function () {
+		//Fade in the navigation submenu
+		jQuery('ul', this).fadeIn(); 	// fadeIn will show the sub cat menu
+	}, 
+	// When mouse leaves the .navigation element
+	function () {
+		//Fade out the navigation submenu
+		jQuery('ul', this).fadeOut();	 // fadeOut will hide the sub cat menu		
+	}
+);
+/*    jQuery( "#item" ).menu();
+    jQuery( "#user" ).menu();*/
 </script>
