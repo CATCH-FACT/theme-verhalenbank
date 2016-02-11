@@ -75,6 +75,8 @@
 	width:150px; 
 	float:right; 
 	border-top:none;
+	display: block;
+	position: relative;
 }
 	
 /* Sub Cat menu link properties */
