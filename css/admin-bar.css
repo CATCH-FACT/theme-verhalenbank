@@ -69,11 +69,17 @@
 	float:left; 
 	border-top:none;
 }
+
+.topnav  ul li ul{
+	margin: 0px 0px 0px 0px; 
+	width:150px; 
+	float:right; 
+	border-top:none;
+}
 	
 /* Sub Cat menu link properties */
 .topnav  ul a {
 	display:block;    	/* Making sure a element covers whole li area */
-	height:15px;
 	padding:8px 7px 13px 7px; 
 	text-decoration:none;	
 	border-top:none;
